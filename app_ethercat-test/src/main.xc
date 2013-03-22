@@ -460,8 +460,8 @@ static void pdo_handler(chanend pdo_out, chanend pdo_in)
 		pdo_in :> count;
 		for (i=0; i<count; i++) {
 			pdo_in :> inBuffer[i];
-			printstr("data "); printint(i);
-			printstr(": "); printhexln(inBuffer[i]);
+//			printstr("data "); printint(i);
+//			printstr(": "); printhexln(inBuffer[i]);
 		}
 
 		if (count>0) {
