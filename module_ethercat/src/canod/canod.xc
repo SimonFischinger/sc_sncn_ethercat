@@ -95,14 +95,14 @@ struct _sdoinfo_entry_description SDO_Info_Entries[] = {
 #ifdef CIA402
 	/* RxPDO Mapping */
 	{ 0x1600, 0, 0, DEFTYPE_UNSIGNED8, 8, 0x0207, 5, "Rx PDO Mapping" }, /* input */
-	{ 0x1600, 1, 0, DEFTYPE_UNSIGNED32, 32, 0x0207, PDOMAPING(CIA402_CONTROLWORD,0,8), "Rx PDO Mapping Controlword" },
+	{ 0x1600, 1, 0, DEFTYPE_UNSIGNED32, 32, 0x0207, PDOMAPING(CIA402_CONTROLWORD,0,16), "Rx PDO Mapping Controlword" },
 	{ 0x1600, 2, 0, DEFTYPE_UNSIGNED32, 32, 0x0207, PDOMAPING(CIA402_OP_MODES,0,8), "Rx PDO Mapping Opmode" },
 	{ 0x1600, 3, 0, DEFTYPE_UNSIGNED32, 32, 0x0207, PDOMAPING(CIA402_TARGET_TORQUE,0,16), "Rx PDO Mapping Target Torque" },
 	{ 0x1600, 4, 0, DEFTYPE_UNSIGNED32, 32, 0x0207, PDOMAPING(CIA402_TARGET_POSITION,0,32), "Rx PDO Mapping Target Position" },
 	{ 0x1600, 5, 0, DEFTYPE_UNSIGNED32, 32, 0x0207, PDOMAPING(CIA402_TARGET_VELOCITY,0,32), "Rx PDO Mapping Target Velocity" },
 	/* TxPDO Mapping */
 	{ 0x1A00, 0, 0, DEFTYPE_UNSIGNED8, 8, 0x0207, 5, "Tx PDO Mapping" }, /* output */
-	{ 0x1A00, 1, 0, DEFTYPE_UNSIGNED32, 32, 0x0207, PDOMAPING(CIA402_STATUSWORD,0,8), "Tx PDO Mapping Statusword" },
+	{ 0x1A00, 1, 0, DEFTYPE_UNSIGNED32, 32, 0x0207, PDOMAPING(CIA402_STATUSWORD,0,16), "Tx PDO Mapping Statusword" },
 	{ 0x1A00, 2, 0, DEFTYPE_UNSIGNED32, 32, 0x0207, PDOMAPING(CIA402_OP_MODES_DISP,0,8), "Tx PDO Mapping Modes Display" },
 	{ 0x1A00, 3, 0, DEFTYPE_UNSIGNED32, 32, 0x0207, PDOMAPING(CIA402_POSITION_VALUE,0,32), "Tx PDO Mapping Position Value" },
 	{ 0x1A00, 4, 0, DEFTYPE_UNSIGNED32, 32, 0x0207, PDOMAPING(CIA402_VELOCITY_VALUE,0,32), "Tx PDO Mapping Velocity Value" },
@@ -142,8 +142,8 @@ struct _sdoinfo_entry_description SDO_Info_Entries[] = {
 #endif
 	/* CiA objects */
 	/* index, sub, value info, datatype, bitlength, object access, value, name */
-	{ CIA402_CONTROLWORD, 0, 0, DEFTYPE_UNSIGNED8, 8, 0x0207 |COD_RXPDO_MAPABLE|COD_WR_OP_STATE, 0, "CiA402 Control Word" }, /* map to PDO */
-	{ CIA402_STATUSWORD, 0, 0, DEFTYPE_UNSIGNED8, 8, 0x0207|COD_TXPDO_MAPABLE, 0, "CiA402 Status Word" },  /* map to PDO */
+	{ CIA402_CONTROLWORD, 0, 0, DEFTYPE_UNSIGNED16, 16, 0x0207 |COD_RXPDO_MAPABLE|COD_WR_OP_STATE, 0, "CiA402 Control Word" }, /* map to PDO */
+	{ CIA402_STATUSWORD, 0, 0, DEFTYPE_UNSIGNED16, 16, 0x0207|COD_TXPDO_MAPABLE, 0, "CiA402 Status Word" },  /* map to PDO */
 	{ CIA402_SUPPORTED_DRIVE_MODES, 0, 0, DEFTYPE_UNSIGNED32, 32, 0x0207, 0x0280 /* csv, csp, cst */, "Supported drive modes" },
 	{ CIA402_OP_MODES, 0, 0, DEFTYPE_INTEGER8, 8, 0x0207|COD_RXPDO_MAPABLE|COD_WR_OP_STATE/* writeable? */, CIA402_OP_MODE_CSP, "Operating mode" },
 	{ CIA402_OP_MODES_DISP, 0, 0, DEFTYPE_INTEGER8, 8, 0x0207|COD_TXPDO_MAPABLE, CIA402_OP_MODE_CSP, "Operating mode" },
