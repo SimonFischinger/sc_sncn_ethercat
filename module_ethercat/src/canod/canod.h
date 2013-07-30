@@ -58,7 +58,7 @@
 #define CIA402_POSITION_RANGELIMIT      0x607B /* used with csp */
 #define CIA402_SOFTWARE_POSITION_LIMIT  0x607D /* recommended with csp */
 
-//#define CIA402_POSITION_OFFSET          0x60B0 - optional
+#define CIA402_POSITION_OFFSET          0x60B0
 #define CIA402_VELOCITY_OFFSET          0x60B1 /* recommended with csp */
 #define CIA402_TORQUE_OFFSET            0x60B2 /* recommended with csp or csv */
 
@@ -66,6 +66,39 @@
 #define CIA402_FOLLOWING_ERROR          0x60F4 /* TPDO - recommended if csp is used */
 
 #define CIA402_TARGET_VELOCITY          0x60FF /* RPDO  - mandatory if csv is used */
+
+#define CIA402_SENSOR_SELECTION_CODE    0x606A
+#define CIA402_MAX_TORQUE               0x6072
+#define CIA402_MAX_CURRENT              0x6073
+#define CIA402_MOTOR_RATED_CURRENT      0x6075
+#define CIA402_MOTOR_RATED_TORQUE       0x6076
+#define CIA402_HOME_OFFSET              0x607C
+#define CIA402_POLARITY                 0x607E
+#define CIA402_MAX_PROFILE_VELOCITY     0x607F
+#define CIA402_MAX_MOTOR_SPEED          0x6080
+#define CIA402_PROFILE_VELOCITY         0x6081
+#define CIA402_END_VELOCITY             0x6082
+#define CIA402_PROFILE_ACCELERATION     0x6083
+#define CIA402_PROFILE_DECELERATION     0x6084
+#define CIA402_QUICK_STOP_DECELERATION  0x6085
+#define CIA402_MOTION_PROFILE_TYPE      0x6086
+#define CIA402_TORQUE_SLOPE             0x6087
+#define CIA402_TORQUE_PROFILE_TYPE      0x6088
+#define CIA402_POSITION_ENC_RESOLUTION  0x608F
+#define CIA402_GEAR_RATIO               0x6091
+#define CIA402_POSITIVE_TORQUE_LIMIT    0x60E0
+#define CIA402_NEGATIVE_TORQUE_LIMIT    0x60E1
+
+#define CIA402_MOTOR_TYPE               0x6402
+#define CIA402_MOTOR_SPECIFIC           0x6410 /* Sub 01 = nominal current
+	                                          Sub 02 = ???
+						  Sub 03 = pole pair number
+						  Sub 04 = max motor speed
+						  sub 05 = motor torque constant */
+#define CIA402_CURRNET_GAIN             0x60F6 /* sub 1 = p-gain; sub 2 = i-gain; sub 3 = d-gain */
+#define CIA402_VELOCITY_GAIN            0x60F9 /* sub 1 = p-gain; sub 2 = i-gain; sub 3 = d-gain */
+#define CIA402_POSITION_GAIN            0x60FB /* sub 1 = p-gain; sub 2 = i-gain; sub 3 = d-gain */
+
 
 
 /* only if touch probe is supported */
