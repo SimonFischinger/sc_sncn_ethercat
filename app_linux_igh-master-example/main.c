@@ -294,6 +294,9 @@ static ec_sdo_request_t *sdo;
 
 /* additional sdo requests */
 static ec_sdo_request_t *request[3];
+
+static ec_sdo_request_t *sdo_download_requests[1]; // one for each object
+static unsigned sdoexample;
 #endif
 
 /*****************************************************************************/
@@ -359,10 +362,10 @@ void read_sdo(ec_sdo_request_t *req)
             ecrt_sdo_request_read(req); // trigger first read
             break;
         case EC_REQUEST_BUSY:
-            fprintf(stderr, "Still busy...\n");
+            fprintf(stderr, "SDO still busy...\n");
             break;
         case EC_REQUEST_SUCCESS:
-            logmsg(1, "SDO value: 0x%X\n",
+            logmsg(1, "SDO value read: 0x%X\n",
                     EC_READ_U32(ecrt_sdo_request_data(req)));
             ecrt_sdo_request_read(req); // trigger next read
             break;
@@ -371,6 +374,28 @@ void read_sdo(ec_sdo_request_t *req)
             ecrt_sdo_request_read(req); // retry reading
             break;
     }
+}
+
+void write_sdo(ec_sdo_request_t *req, unsigned data)
+{
+	EC_WRITE_U32(ecrt_sdo_request_data(req), data&0xffffffff);
+
+	switch (ecrt_sdo_request_state(req)) {
+		case EC_REQUEST_UNUSED: // request was not used yet
+			ecrt_sdo_request_write(req); // trigger first read
+			break;
+		case EC_REQUEST_BUSY:
+			fprintf(stderr, "SDO write still busy...\n");
+			break;
+		case EC_REQUEST_SUCCESS:
+			logmsg(1, "SDO value written: 0x%X\n", data);
+			ecrt_sdo_request_write(req); // trigger next read ???
+			break;
+		case EC_REQUEST_ERROR:
+			fprintf(stderr, "Failed to write SDO!\n");
+			ecrt_sdo_request_write(req); // retry writing
+			break;
+	}
 }
 #endif
 
@@ -408,6 +433,8 @@ void cyclic_task()
 		read_sdo(request[0]);
 		read_sdo(request[1]);
 		read_sdo(request[2]);
+
+		write_sdo(sdo_download_requests[0], sdoexample); /* SDO download value to the node */
 #endif
 	}
 
@@ -596,6 +623,16 @@ int main(int argc, char **argv)
 	    return -1;
     }
     ecrt_sdo_request_timeout(request[2], 500); // ms
+
+    /* register sdo download request */
+    if (!(sdo_download_requests[0] = ecrt_slave_config_create_sdo_request(sc_data_in, CAN_OD_MODES, 0, 4))) {
+	    fprintf(stderr, "Failed to create SDO download request for object 0x%4x\n", CAN_OD_MODES);
+	    return -1;
+    }
+    ecrt_sdo_request_timeout(sdo_download_requests[0], 500); // ms
+
+    /* set the sdoexample to a specific bit muster */
+    sdoexample = 0x22442244;
 #endif
 
 #if CONFIGURE_PDOS
