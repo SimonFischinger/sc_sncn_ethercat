@@ -249,8 +249,100 @@ static int sdo_request(unsigned char buffer[], unsigned size)
 	case COE_CMD_UPLOAD_SEG_REQ:
 		return -1; /* currently unsupported */
 
+#if 0
 	case COE_CMD_UPLOAD_SEG_RSP:
 		return -1; /* currently unsupported */
+#endif
+
+	case COE_CMD_DOWNLOAD_SEG_REQ:
+		return -1; /* currently unsupported */
+
+	case COE_CMD_DOWNLOAD_REQ:
+		index = (buffer[3]&0xff) | (((unsigned)buffer[4]<<8)&0xff00);
+		subindex = buffer[5];
+
+		if (completeAccess == 1) {
+			if (buffer[5] != 0 || buffer[5] != 1) {
+				/* error complete access requested, but subindex is not zero or one*/
+				printstr("[ERROR] Complete Access with wrong subindex field\n");
+				return -1;
+			}
+		}
+
+		for (i=0; (i+5) < size; i++) {
+			value |= buffer[6+i]<<(i*8);
+		}
+
+#if 0
+		printstr("[DEBUG] index: "); printhexln(index);
+		printstr("[DEBUG] subindex: "); printhexln(subindex);
+		printstr("[DEBUG] complete access: "); printhexln(completeAccess);
+		printstr("[DEBUG] value: "); printhexln(value);
+		printstr("[DEBUG] should: 0x"); printhex(buffer[6]); printhex(buffer[7]); printhex(buffer[8]); printhexln(buffer[9]);
+#endif
+
+		canod_set_entry(index, subindex, value, type);
+
+		header.command = COE_CMD_DOWNLOAD_RSP;
+		header.complete = completeAccess;
+		header.dataSetSize = 0x00; /* temporary 0 */
+		header.transfereType = 0x00; /* normal transfer */
+		header.sizeIndicator = 0x01;
+
+		tmp[0/*dataSize++*/] = index&0xff;
+		tmp[1/*dataSize++*/] = (index>>8)&0xff;
+		tmp[2/*dataSize++*/] = subindex&0xff;
+		tmp[3/*dataSize++*/] = 0x00; //type&0xff; // index 3
+		tmp[4/*dataSize++*/] = 0x00; //(type>>8)&0xff;
+		tmp[5/*dataSize++*/] = 0x00; //(type>>16)&0xff;
+		tmp[6/*dataSize++*/] = 0x00; //(type>>24)&0xff;
+
+		dataSize = 7;
+
+		if (completeAccess==1) {
+			canod_get_entry(index, 0, value, type);
+			maxSubindex = value;
+			if (subindex==0x00) {
+				tmp[dataSize++] = value&0xff; /* subindex 0 is alway UNSIGNED8 */
+			}
+
+			for (i=1; i<maxSubindex; i++) {
+				canod_get_entry(index, i, value, type);
+
+//				printstr("[DEBUG complete object values: "); printintln(i); printstr(": ");
+				for (k=0; k<(type/8); k++) {
+					tmp[dataSize++] = (value>>(k*8))&0xff;
+//					printhexln(tmp[dataSize-1]);
+				}
+			}
+
+		} else {
+			if (canod_get_entry(index, subindex, value, type)) { // type is bitlength
+				printstr("error, entry not found\n");
+				return 1;
+			}
+
+			//printstr("[DEBUG] single value: ");
+			for (k=0; k<(type/8); k++) {
+				tmp[dataSize++] = (value>>(k*8))&0xff;
+				//printhexln(tmp[dataSize-1]);
+			}
+		}
+
+		type = dataSize-7; /* recycling of variable type */
+		tmp[3] = type&0xff;
+		tmp[4] = (type>>8)&0xff;
+		tmp[5] = (type>>16)&0xff;
+		tmp[6] = (type>>24)&0xff;
+#if 0
+		printstr("[DEBUG] datasize to send: ");
+		printhex(tmp[6]);
+		printhex(tmp[5]);
+		printhex(tmp[4]);
+		printhexln(tmp[3]);
+#endif
+		build_sdo_reply(header, tmp, dataSize);
+		break;
 
 	case COE_CMD_ABORT_REQ:
 		/* FIXME handle abort request appropriately */
