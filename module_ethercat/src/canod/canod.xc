@@ -109,6 +109,20 @@ static struct _sdoinfo_object_description SDO_Info_Objects[] =  {
 
 #define PDOMAPING(idx,sub,bit)    ( ((unsigned)idx<<16) | ((unsigned)sub<<8) | bit )
 
+/* Note on object access:
+ * Bit 0: read in pre op state
+ * Bit 1: read in safe op state
+ * bit 2: read in op state
+ * bit 3: write in pre op state
+ * bit 4: write in safe op state
+ * bit 5: write in op state
+ * bit 6: mapable in rx pdo
+ * bit 7: mapable in tx pdo
+ * bit 8: obj can be used for backup
+ * bit 9: obj can be used for setting
+ * bit 10-15: reserved
+ */
+
 /* static list of od entries description and value */
 struct _sdoinfo_entry_description SDO_Info_Entries[] = {
 #ifndef CIA402
