@@ -278,9 +278,9 @@ static void check_file(chanend foe_comm, chanend foe_signal)
 #define CANOD_OP_MODE           0x6060
 
 struct _cia402_values {
-	unsigned char status;
-	unsigned char modes;
-	unsigned torque; /* 16 bit value !!! */
+	unsigned status;
+	unsigned modes;
+	unsigned torque;
 	unsigned position;
 	unsigned velocity;
 };
@@ -312,7 +312,7 @@ static void cia402_example(chanend coe_od, chanend coe_in, chanend pdo_in, chane
 	coe_od <: CAN_GET_OBJECT;
 	coe_od <: CAN_OBJ_ADR(CANOD_STATUS, 0);
 	coe_od :> tmp;
-	status = (unsigned char)(tmp&0xff);
+	status = (unsigned char)(tmp&0xffff);
 	if (status == 0) {
 		coe_od <: CAN_SET_OBJECT;
 		coe_od <: CAN_OBJ_ADR(CANOD_STATUS, 0);
@@ -347,18 +347,18 @@ static void cia402_example(chanend coe_od, chanend coe_in, chanend pdo_in, chane
 		pdo_in :> count;
 		for (i=0; i<count; i++) {
 			pdo_in :> inBuffer[i];
-			/*
+			/* DEBUG * /
 			printstr("data "); printint(i);
 			printstr(": "); printhexln(inBuffer[i]);
-			 */
+			// */
 		}
 
 		if (count>0) {
-			values.status = inBuffer[0]&0xff;
-			values.modes = (inBuffer[0]>>8)&0xff;
-			values.torque = inBuffer[1]&0xffff;
-			values.position = (inBuffer[2]<<16) | inBuffer[3];
-			values.velocity = (inBuffer[4]<<16) | inBuffer[5];
+			values.status = inBuffer[0]&0xffff;
+			values.modes = inBuffer[1]&0xffff;
+			values.torque = inBuffer[2]&0xffff;
+			values.position = (inBuffer[3]<<16) | inBuffer[4];
+			values.velocity = (inBuffer[5]<<16) | inBuffer[6];
 
 			/* set the objects in the object dictionary */
 			coe_od <: CAN_SET_OBJECT;
@@ -386,10 +386,10 @@ static void cia402_example(chanend coe_od, chanend coe_in, chanend pdo_in, chane
 			coe_od <: (unsigned)values.velocity;
 			coe_od :> tmp;
 
-
 			/* build reply - attention the parameter order is different than the receive side */
-			pdo_out <: 6;
-			pdo_out <: ((unsigned)values.modes<<8) | values.status;
+			pdo_out <: 7;
+			pdo_out <: values.status&0xffff;
+			pdo_out <: values.modes&0xffff;
 			pdo_out <: values.position&0xffff;
 			pdo_out <: (values.position>>16)&0xffff;
 			pdo_out <: values.velocity&0xffff;
