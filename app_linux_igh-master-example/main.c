@@ -224,13 +224,13 @@ static unsigned int blink = 0;
  */
 
 ec_pdo_entry_info_t slave_0_pdo_entries[] = {
-    {0x6040, 0x00, 8}, /* control word */
-    {0x6060, 0x00, 8}, /* operating modes */
+    {0x6040, 0x00, 16}, /* control word */
+    {0x6060, 0x00, 16}, /* operating modes */
     {0x6071, 0x00, 16}, /* torque target */
     {0x607a, 0x00, 32}, /* position target */
     {0x60ff, 0x00, 32}, /* velocity target */
-    {0x6041, 0x00, 8}, /* status */
-    {0x6061, 0x00, 8}, /* modes display */
+    {0x6041, 0x00, 16}, /* status */
+    {0x6061, 0x00, 16}, /* modes display */
     {0x6064, 0x00, 32}, /* position value */
     {0x606c, 0x00, 32}, /* velocity value */
     {0x6077, 0x00, 16}, /* torque value */
@@ -439,13 +439,13 @@ void cyclic_task()
 	}
 
 	/* Read process data */
-	unsigned char sn_status = EC_READ_U8(domain1_pd + off_pdo1_in);
-	unsigned char sn_modes = EC_READ_U8(domain1_pd + off_pdo2_in);
+	unsigned int sn_status = EC_READ_U16(domain1_pd + off_pdo1_in);
+	unsigned int sn_modes = EC_READ_U16(domain1_pd + off_pdo2_in);
 	unsigned int sn_position = EC_READ_U32(domain1_pd + off_pdo3_in);
 	unsigned int sn_velocity = EC_READ_U32(domain1_pd + off_pdo4_in);
 	unsigned int sn_torque = EC_READ_U16(domain1_pd + off_pdo5_in);
 
-	logmsg(2, "[REC] 0x%2x 0x%2x 0x%8x 0x%8x 0x%4x\n",
+	logmsg(2, "[REC] 0x%4x 0x%4x 0x%8x 0x%8x 0x%4x\n",
 			sn_status, sn_modes,
 			sn_position, sn_velocity, sn_torque);
 
@@ -460,10 +460,10 @@ void cyclic_task()
     //EC_WRITE_U8(domain1_pd + off_dig_out, blink ? 0x06 : 0x09);
     
 #ifdef CIA402
-#define STATUSW1   0x88
-#define STATUSW2   0xAA
-#define OPMODES1   0xf1
-#define OPMODES2   0x1f
+#define STATUSW1   0x88AA
+#define STATUSW2   0xAA88
+#define OPMODES1   0xf11f
+#define OPMODES2   0x1ff1
 #define TORVAL1    0xabab
 #define TORVAL2    0xbaba
 #define VELVAL1    0x2d2d4d4d
@@ -471,8 +471,8 @@ void cyclic_task()
 #define POSVAL1    0xe4e4e2e2
 #define POSVAL2    0x2e2e4e4e
 
-	EC_WRITE_U8(domain1_pd + off_pdo1_out, (blink ? STATUSW1 : STATUSW2)&0xff);
-	EC_WRITE_U8(domain1_pd + off_pdo2_out, (blink ? OPMODES1 : OPMODES2)&0xff);
+	EC_WRITE_U16(domain1_pd + off_pdo1_out, (blink ? STATUSW1 : STATUSW2)&0xffff);
+	EC_WRITE_U16(domain1_pd + off_pdo2_out, (blink ? OPMODES1 : OPMODES2)&0xffff);
 	EC_WRITE_U16(domain1_pd + off_pdo3_out, (blink ? TORVAL1 : TORVAL2)&0xffff);
 	EC_WRITE_U32(domain1_pd + off_pdo4_out, blink ? POSVAL1 : POSVAL2);
 	EC_WRITE_U32(domain1_pd + off_pdo5_out, blink ? VELVAL1 : VELVAL2);
