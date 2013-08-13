@@ -881,7 +881,7 @@ void ecat_handler(chanend c_coe_r, chanend c_coe_s,
 					if ((al_state&0xf) >= AL_STATE_SAFEOP) {
 							if (lastwritten_inbuffer != ((manager[i].status>>4)&0x03)) {
 								if ((manager[i].status & 0x01) == 1) { /* read buffer is accessible, buffer was successfully written */
-									pdo_insize = ecat_read_block(manager[i].address, (manager[i].size/2), pdo_inbuf);
+									pdo_insize = ecat_read_block(manager[i].address, ((manager[i].size+1)/2), pdo_inbuf);
 
 #if 0 /* DEBUG output */
 									for (int k=0; k<pdo_insize; k++) {

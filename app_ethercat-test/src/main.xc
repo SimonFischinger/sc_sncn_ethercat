@@ -285,6 +285,43 @@ struct _cia402_values {
 	unsigned velocity;
 };
 
+#define PDO_BUFFER_SIZE         64 /* byte */
+
+static void cia402_set_values(struct _cia402_values &val, unsigned char buffer[])
+{
+	val.status   = (buffer[1]<<8 | buffer[0]) & 0xffff;
+	val.modes    = buffer[2] & 0xff;
+	val.torque   = (buffer[4]<<8 | buffer[3]) & 0xffff;
+	val.position = (buffer[8]<<24 | buffer[7]<<16 | buffer[6]<<8 |  buffer[5])&0xffffffff;
+	val.velocity = (buffer[12]<<24 | buffer[11]<<16 | buffer[10]<<8 |  buffer[9])&0xffffffff;
+}
+
+static void cia402_get_values(struct _cia402_values &val, unsigned char buffer[])
+{
+	buffer[0] = val.status&0xff;
+	buffer[1] = (val.status>>8)&0xff;
+	buffer[2] = val.modes;
+
+	/* position */
+	buffer[3] = val.position&0xff;
+	buffer[4] = (val.position>>8)&0xff;
+	buffer[5] = (val.position>>16)&0xff;
+	buffer[6] = (val.position>>24)&0xff;
+
+	/* velocity */
+	buffer[7]  =  val.velocity&0xff;
+	buffer[8]  = (val.velocity>>8)&0xff;
+	buffer[9]  = (val.velocity>>16)&0xff;
+	buffer[10] = (val.velocity>>24)&0xff;
+
+	/* torque */
+	buffer[11] = val.torque&0xff;
+	buffer[12] = (val.torque>>8)&0xff;
+
+	/* padding */
+	buffer[13] = 0;
+}
+
 static void cia402_example(chanend coe_od, chanend coe_in, chanend pdo_in, chanend pdo_out)
 {
 	unsigned char status = 0;
@@ -293,9 +330,8 @@ static void cia402_example(chanend coe_od, chanend coe_in, chanend pdo_in, chane
 	unsigned position = 0;
 	unsigned opmodes = 0;
 	unsigned coein;
-
-	unsigned int inBuffer[64];
-	unsigned int outBuffer[64];
+	uint16_t inBuffer[PDO_BUFFER_SIZE];
+	uint16_t outBuffer[PDO_BUFFER_SIZE];
 	unsigned int count=0;
 	unsigned int outCount=0;
 	unsigned int tmp;
@@ -346,7 +382,9 @@ static void cia402_example(chanend coe_od, chanend coe_in, chanend pdo_in, chane
 		pdo_in <: DATA_REQUEST;
 		pdo_in :> count;
 		for (i=0; i<count; i++) {
-			pdo_in :> inBuffer[i];
+			unsigned tmp;
+			pdo_in :> tmp;
+			inBuffer[i] = tmp&0xffff;
 			/* DEBUG * /
 			printstr("data "); printint(i);
 			printstr(": "); printhexln(inBuffer[i]);
@@ -354,11 +392,7 @@ static void cia402_example(chanend coe_od, chanend coe_in, chanend pdo_in, chane
 		}
 
 		if (count>0) {
-			values.status = inBuffer[0]&0xffff;
-			values.modes = inBuffer[1]&0xffff;
-			values.torque = inBuffer[2]&0xffff;
-			values.position = (inBuffer[3]<<16) | inBuffer[4];
-			values.velocity = (inBuffer[5]<<16) | inBuffer[6];
+			cia402_set_values(values, (inBuffer, unsigned char[]));
 
 			/* set the objects in the object dictionary */
 			coe_od <: CAN_SET_OBJECT;
@@ -387,14 +421,12 @@ static void cia402_example(chanend coe_od, chanend coe_in, chanend pdo_in, chane
 			coe_od :> tmp;
 
 			/* build reply - attention the parameter order is different than the receive side */
+			cia402_get_values(values, (outBuffer, unsigned char[]));
+
 			pdo_out <: 7;
-			pdo_out <: values.status&0xffff;
-			pdo_out <: values.modes&0xffff;
-			pdo_out <: values.position&0xffff;
-			pdo_out <: (values.position>>16)&0xffff;
-			pdo_out <: values.velocity&0xffff;
-			pdo_out <: (values.velocity>>16)&0xffff;
-			pdo_out <: values.torque;
+			for (i=0; i<7; i++) {
+				pdo_out <: (unsigned)outBuffer[i];
+			}
 		}
 
 		t :> time;
