@@ -19,7 +19,7 @@
 
 #define CIA402_APP    1
 
-#define MAX_BUFFER_SIZE   1024
+#define MAX_BUFFER_SIZE   512
 
 on stdcore[1] : out port ledBlue = LED_BLUE;
 on stdcore[1] : out port ledGreen = LED_GREEN;
