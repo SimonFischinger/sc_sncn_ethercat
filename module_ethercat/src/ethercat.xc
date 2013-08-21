@@ -170,9 +170,9 @@ static uint16_t ecat_read(uint16_t address)
 		ecatBUSY :> busy;
 	 */
 
-	/* after max 5ns the data are valid */
+	/* wait until data are valid */
 	t :> time;
-	t when timerafter(time+1) :> void; /* this is about 10ns */
+	t when timerafter(time+30) :> void; /* this is about 300ns */
 
 	ecatData :> data; /* read data word */
 
@@ -448,13 +448,14 @@ static void ecat_read_syncm(void)
 {
 	int i;
 	uint16_t address = EC_SYNCM_BASE;
-	uint16_t data;
+	uint16_t data = 0;
 
 	for (i=0; i<EC_SYNCM_COUNT; i++) {
 		address = EC_SYNCM_BASE+i*8;
 
 		data = ecat_read(address);
 		manager[i].address = data&0xffff;
+
 		address+=2;
 		data = ecat_read(address);
 		manager[i].size = data&0xffff;
