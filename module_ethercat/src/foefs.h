@@ -11,7 +11,7 @@
 #ifndef FOEFS_H
 #define FOEFS_H
 
-#define BLKSZ      10000
+#define BLKSZ      2400
 #define MAX_FNAME  10
 #define SEEK_SET   0
 #define SEEK_CUR   1
