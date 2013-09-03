@@ -87,7 +87,8 @@ static struct _sdoinfo_object_description SDO_Info_Objects[] =  {
 	{ CIA402_TORQUE_PROFILE_TYPE,       DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Torque Profile Type" },
 	{ CIA402_POSITION_ENC_RESOLUTION,   DEFTYPE_UNSIGNED16,  0, CANOD_TYPE_VAR,   "Position Encoder Resolution" },
 	{ CIA402_GEAR_RATIO,                DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Gear Ratio" },
-	{ CIA402_POSITIVE_TORQUE_LIMIT,     DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Positive Torze Limit" },
+	{ CIA402_MAX_ACCELERATION,      	DEFTYPE_UNSIGNED32,  0, CANOD_TYPE_VAR,   "Max Acceleration" },
+	{ CIA402_POSITIVE_TORQUE_LIMIT,     DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Positive Torque Limit" },
 	{ CIA402_NEGATIVE_TORQUE_LIMIT,     DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Negative Torque Limit" },
 
 	{ CIA402_MOTOR_TYPE,                DEFTYPE_UNSIGNED16,  0, CANOD_TYPE_VAR, "Motor Type" },
@@ -222,7 +223,8 @@ struct _sdoinfo_entry_description SDO_Info_Entries[] = {
 	{ CIA402_TORQUE_PROFILE_TYPE,     0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Torque Profile Type" },
 	{ CIA402_POSITION_ENC_RESOLUTION, 0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Position Encoder Resolution" },
 	{ CIA402_GEAR_RATIO,              0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Gear Ratio" },
-	{ CIA402_POSITIVE_TORQUE_LIMIT,   0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Positive Torze Limit" },
+	{ CIA402_MAX_ACCELERATION,    	  0, 0, DEFTYPE_UNSIGNED32,  32, 0x023f, 0,   "Max Acceleration" },
+	{ CIA402_POSITIVE_TORQUE_LIMIT,   0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Positive Torque Limit" },
 	{ CIA402_NEGATIVE_TORQUE_LIMIT,   0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Negative Torque Limit" },
 	{ CIA402_MOTOR_TYPE,              0, 0, DEFTYPE_UNSIGNED16,  16, 0x023f, 0,   "Motor Type" },
 	/* the following objects are vendor specific and defined by CiA402_Objects.xlsx */

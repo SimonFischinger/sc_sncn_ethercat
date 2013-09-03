@@ -88,6 +88,7 @@
 #define CIA402_GEAR_RATIO               0x6091
 #define CIA402_POSITIVE_TORQUE_LIMIT    0x60E0
 #define CIA402_NEGATIVE_TORQUE_LIMIT    0x60E1
+#define CIA402_MAX_ACCELERATION 		0x60C5
 
 #define CIA402_MOTOR_TYPE               0x6402
 #define CIA402_MOTOR_SPECIFIC           0x6410 /* Sub 01 = nominal current
@@ -117,6 +118,7 @@
 #define CIA402_OP_MODE_CSV    9
 #define CIA402_OP_MODE_CST   10
 
+#ifdef __XC__
 #if 0
 struct _sdoinfo_service {
 	unsigned opcode;                   ///< OD operation code
@@ -241,5 +243,6 @@ int canod_get_entry(unsigned index, unsigned subindex, unsigned &value, unsigned
  */
 int canod_set_entry(unsigned index, unsigned subindex, unsigned value, unsigned type);
 
+#endif /* __XC__*/
 #endif /* CANOD_H */
 
