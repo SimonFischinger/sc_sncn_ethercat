@@ -698,6 +698,8 @@ int ecat_init(void)
 	timer t;
 	unsigned time;
 
+	printstr(ecat_version);
+
 	ecatCS <: 1;
 	ecatWR <: 1;
 	ecatRD <: 1;

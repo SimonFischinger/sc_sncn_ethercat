@@ -12,6 +12,8 @@
 
 #include <stdint.h>
 
+static const char ecat_version[] = "Version 1.0";
+
 #define DATA_REQUEST     1
 
 enum EC_MailboxProtocolTypes {
