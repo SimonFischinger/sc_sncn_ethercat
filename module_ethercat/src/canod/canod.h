@@ -96,7 +96,7 @@
 						  Sub 03 = pole pair number
 						  Sub 04 = max motor speed
 						  sub 05 = motor torque constant */
-#define CIA402_CURRNET_GAIN             0x60F6 /* sub 1 = p-gain; sub 2 = i-gain; sub 3 = d-gain */
+#define CIA402_CURRENT_GAIN             0x60F6 /* sub 1 = p-gain; sub 2 = i-gain; sub 3 = d-gain */
 #define CIA402_VELOCITY_GAIN            0x60F9 /* sub 1 = p-gain; sub 2 = i-gain; sub 3 = d-gain */
 #define CIA402_POSITION_GAIN            0x60FB /* sub 1 = p-gain; sub 2 = i-gain; sub 3 = d-gain */
 

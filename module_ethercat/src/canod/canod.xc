@@ -99,7 +99,7 @@ static struct _sdoinfo_object_description SDO_Info_Objects[] =  {
 						  Sub 04 = max motor speed
 						  sub 05 = motor thermal constant
 						  sub 06 = motor torque constant */
-	{ CIA402_CURRNET_GAIN,              DEFTYPE_INTEGER32,   3, CANOD_TYPE_ARRAY, "Current Gain" }, /* sub 1 = p-gain; sub 2 = i-gain; sub 3 = d-gain */
+	{ CIA402_CURRENT_GAIN,              DEFTYPE_INTEGER32,   3, CANOD_TYPE_ARRAY, "Current Gain" }, /* sub 1 = p-gain; sub 2 = i-gain; sub 3 = d-gain */
 	{ CIA402_VELOCITY_GAIN,             DEFTYPE_INTEGER32,   3, CANOD_TYPE_ARRAY, "Velocity Gain" }, /* sub 1 = p-gain; sub 2 = i-gain; sub 3 = d-gain */
 	{ CIA402_POSITION_GAIN,             DEFTYPE_INTEGER32,   3, CANOD_TYPE_ARRAY, "Position Gain" }, /* sub 1 = p-gain; sub 2 = i-gain; sub 3 = d-gain */
 	{ CIA402_POSITION_OFFSET,           DEFTYPE_UNSIGNED32,  0, CANOD_TYPE_VAR,   "Postion Offset" }, /* FIXME add this to OD */
@@ -235,10 +235,10 @@ struct _sdoinfo_entry_description SDO_Info_Entries[] = {
 	{ CIA402_MOTOR_SPECIFIC,          4, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Motor Specific Max Speed" },
 	{ CIA402_MOTOR_SPECIFIC,          5, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Motor Specific Thermal Time Constant" },
 	{ CIA402_MOTOR_SPECIFIC,          6, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Motor Specific Torque Constant" },
-	{ CIA402_CURRNET_GAIN,            0, 0, DEFTYPE_INTEGER8,     8, 0x0207, 3,   "Current Gain" },
-	{ CIA402_CURRNET_GAIN,            1, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Current P-Gain" },
-	{ CIA402_CURRNET_GAIN,            2, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Current I-Gain" },
-	{ CIA402_CURRNET_GAIN,            3, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Current D-Gain" },
+	{ CIA402_CURRENT_GAIN,            0, 0, DEFTYPE_INTEGER8,     8, 0x0207, 3,   "Current Gain" },
+	{ CIA402_CURRENT_GAIN,            1, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Current P-Gain" },
+	{ CIA402_CURRENT_GAIN,            2, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Current I-Gain" },
+	{ CIA402_CURRENT_GAIN,            3, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Current D-Gain" },
 	{ CIA402_VELOCITY_GAIN,           0, 0, DEFTYPE_INTEGER8,     8, 0x0207, 3,   "Velocity Gain" },
 	{ CIA402_VELOCITY_GAIN,           1, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Velocity P-Gain" },
 	{ CIA402_VELOCITY_GAIN,           2, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Velocity I-Gain" },
