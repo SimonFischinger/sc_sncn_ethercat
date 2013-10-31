@@ -103,6 +103,7 @@ static struct _sdoinfo_object_description SDO_Info_Objects[] =  {
 	{ CIA402_VELOCITY_GAIN,             DEFTYPE_INTEGER32,   3, CANOD_TYPE_ARRAY, "Velocity Gain" }, /* sub 1 = p-gain; sub 2 = i-gain; sub 3 = d-gain */
 	{ CIA402_POSITION_GAIN,             DEFTYPE_INTEGER32,   3, CANOD_TYPE_ARRAY, "Position Gain" }, /* sub 1 = p-gain; sub 2 = i-gain; sub 3 = d-gain */
 	{ CIA402_POSITION_OFFSET,           DEFTYPE_UNSIGNED32,  0, CANOD_TYPE_VAR,   "Postion Offset" }, /* FIXME add this to OD */
+	{ CIA402_QEI_OFFSET,                DEFTYPE_INTEGER16,   4, CANOD_TYPE_ARRAY, "QEI Offset" }, /* sub 1 = offset clk; sub 2 = offset cclk */
 #endif
 	{ 0, 0, 0, 0, {0}}
 };
@@ -248,6 +249,11 @@ struct _sdoinfo_entry_description SDO_Info_Entries[] = {
 	{ CIA402_POSITION_GAIN,           2, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Position I-Gain" },
 	{ CIA402_POSITION_GAIN,           3, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Position D-Gain" },
 	{ CIA402_POSITION_OFFSET,         0, 0, DEFTYPE_UNSIGNED32,  32, 0x023f, 0,   "Postion Offset" },
+	{ CIA402_QEI_OFFSET,              0, 0,  DEFTYPE_INTEGER8,    8, 0x0207, 4,   "QEI Offset" },
+	{ CIA402_QEI_OFFSET,              1, 0,  DEFTYPE_INTEGER16,  16, 0x023f, 0,   "QEI Offset Clk" },
+	{ CIA402_QEI_OFFSET,              2, 0,  DEFTYPE_INTEGER16,  16, 0x023f, 0,   "QEI Offset CClk" },
+	{ CIA402_QEI_OFFSET,              3, 0,  DEFTYPE_INTEGER16,  16, 0x023f, 0,   "QEI Offset Commmutation Clk" },
+	{ CIA402_QEI_OFFSET,              4, 0,  DEFTYPE_INTEGER16,  16, 0x023f, 0,   "QEI Offset Commmutation CClk" },
 	{ 0, 0, 0, 0, 0, 0, 0, "\0" }
 };
 
