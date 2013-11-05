@@ -948,6 +948,7 @@ void ecat_handler(chanend c_coe_r, chanend c_coe_s,
 		}
 
 		/* send pending mailbox data */
+		// FIXME possible bug since i isn't any longer within for loop!
 		if (pending_mailbox) {
 			//printstr("DEBUG: Pending mailbox, calling ecat_mbox_packet_send()\n");
 			packet_error = ecat_mbox_packet_send(manager[i].address, manager[i].size,
