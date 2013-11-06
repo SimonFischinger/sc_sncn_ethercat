@@ -39,6 +39,17 @@
 
 #define BYTESWAP_16(x)   (((x>>8)&0x00ff) | ((x<<8)&0xff00))
 
+/* --- handlers for currently active services --- */
+#define SERVICE_MBOX_IS_ACTIVE(x)    (x&0x01)
+#define SERVICE_PDORX_IS_ACTIVE(x)   ((x>>1)&0x01)
+#define SERVICE_PDOTX_IS_ACTIVE(x)   ((x>>2)&0x01)
+
+#define SERVICE_MBOX_SET(x,v)        (x = (x&~0x01) | (v&0x01))
+#define SERVICE_PDORX_SET(x,v)       (x = (x&~0x02) | ((v<<1)&0x02))
+#define SERVICE_PDOTX_SET(x,v)       (x = (x&~0x04) | ((v<<2)&0x04))
+
+static int g_services = 0; /* bit0: mailbox active; bit1: process data active */
+
 /* --- sync manager defines and global variables --- */
 
 #define EC_SYNCM_COUNT  8 /* # of syncmanager channels for et1100 */
@@ -545,6 +556,7 @@ static void ecat_clear_fmmu(void)
 /**
  * @brief State machine for application layer.
  *
+ * As sideeffect the global g_services is set accordingly.
  * FIXME handle BOOTSTRAP separately
  * 
  * @param reqState   master requested state
@@ -564,6 +576,9 @@ static void ecat_clear_fmmu(void)
 		ecat_clear_syncm();
 		newstate = AL_STATE_INIT;
 		error = AL_NO_ERROR;
+		SERVICE_MBOX_IS_ACTIVE(g_services, 0);
+		SERVICE_PDORX_IS_ACTIVE(g_services, 0); // no pdo communication
+		SERVICE_PDOTX_IS_ACTIVE(g_services, 0); // no pdo communication
 		break;
 
 	case AL_STATE_BOOTSTRAP: /* possible use for configuration (FoE) */
@@ -577,6 +592,9 @@ static void ecat_clear_fmmu(void)
 		ecat_read_syncm();
 		newstate = AL_STATE_PREOP;
 		error = AL_NO_ERROR;
+		SERVICE_MBOX_IS_ACTIVE(g_services, 1);
+		SERVICE_PDORX_IS_ACTIVE(g_services, 0); // no pdo communication
+		SERVICE_PDOTX_IS_ACTIVE(g_services, 0); // no pdo communication
 		break;
 
 	case AL_STATE_SAFEOP:
@@ -585,26 +603,37 @@ static void ecat_clear_fmmu(void)
 		 * starting input PDOs
 		 */
 		ecat_read_syncm(); /* reread for process data */
-		if (ecat_read_fmmu_config() < 1) { /* FIXME check if FMMU input is configured */
-			newstate = currentState; /* FIXME stay on state and ignore FMMU configure if fallback from higher sate */
-			error = AL_INVALID_INPUT_MAPPING;
+		SERVICE_MBOX_IS_ACTIVE(g_services, 1);
+
+		if (ecat_read_fmmu_config() < 1) {
+			//newstate = currentState; /* FIXME stay on state and ignore FMMU configure if fallback from higher sate */
+			//error = AL_INVALID_INPUT_MAPPING;
+			SERVICE_PDORX_IS_ACTIVE(g_services, 0); // no pdo communication
+			SERVICE_PDOTX_IS_ACTIVE(g_services, 0); // no pdo communication
 		} else {
-			newstate = AL_STATE_SAFEOP;
-			error = AL_NO_ERROR;
+			SERVICE_PDORX_IS_ACTIVE(g_services, 1); // receive pdo
+			SERVICE_PDOTX_IS_ACTIVE(g_services, 0); // but don't send
 		}
+		newstate = AL_STATE_SAFEOP;
+		error = AL_NO_ERROR;
 		break;
 
 	case AL_STATE_OP:
 		/* slave now fully operational, input and output PDOs and mailbox communication */
 		ecat_read_syncm(); /* reread for process data */
+		SERVICE_MBOX_IS_ACTIVE(g_services, 1);
 
-		if (ecat_read_fmmu_config() < 2) { /* FIXME check if FMMU output is configured */
-			newstate = currentState; /* FIXME stay on state and ignore FMMU configure if fallback from higher sate */
-			error = AL_INVALID_OUTPUT_MAPPING;
+		if (ecat_read_fmmu_config() < 2) {
+			//newstate = currentState; /* FIXME stay on state and ignore FMMU configure if fallback from higher sate */
+			//error = AL_INVALID_OUTPUT_MAPPING;
+			SERVICE_PDORX_IS_ACTIVE(g_services, 0); // no pdo communication
+			SERVICE_PDOTX_IS_ACTIVE(g_services, 0); // no pdo communication
 		} else {
-			newstate = AL_STATE_OP;
-			error = AL_NO_ERROR;
+			SERVICE_PDORX_IS_ACTIVE(g_services, 1);
+			SERVICE_PDOTX_IS_ACTIVE(g_services, 1);
 		}
+		newstate = AL_STATE_OP;
+		error = AL_NO_ERROR;
 		break;
 
 	default:
@@ -803,6 +832,7 @@ void ecat_handler(chanend c_coe_r, chanend c_coe_s,
 			chanend c_foe_r, chanend c_foe_s,
 			chanend c_pdo_r, chanend c_pdo_s)
 {
+
 	timer tpdo;
 	unsigned int pdotime;
 	unsigned int pdotimeprev;
@@ -881,7 +911,7 @@ void ecat_handler(chanend c_coe_r, chanend c_coe_s,
 
 				switch (manager[i].control&0x0f) {
 				case SYNCM_BUFFER_MODE_READ:
-					if ((al_state&0xf) >= AL_STATE_SAFEOP) {
+					if ((al_state&0xf) >= AL_STATE_SAFEOP) { /* SERVICE_PDORX_IS_ACTIVE(g_services) */
 							if (lastwritten_inbuffer != ((manager[i].status>>4)&0x03)) {
 								if ((manager[i].status & 0x01) == 1) { /* read buffer is accessible, buffer was successfully written */
 									pdo_insize = ecat_read_block(manager[i].address, ((manager[i].size+1)/2), pdo_inbuf);
@@ -903,7 +933,7 @@ void ecat_handler(chanend c_coe_r, chanend c_coe_s,
 
 				case SYNCM_BUFFER_MODE_WRITE:
 					/* send packets pending? */
-					if ((al_state&0xf) == AL_STATE_OP) {
+					if ((al_state&0xf) == AL_STATE_OP) { /* SERVICE_PDOTX_IS_ACTIVE(g_services) */
 						tpdo :> pdotime;
 						if (((pdotime-pdotimeprev) >= 100) /*&& (lastwritten_outbuffer != (manager[i].status>>4)&0x03)*/) {
 							//printstr("Write Buffer SyncM: ");
