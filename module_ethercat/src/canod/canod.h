@@ -100,7 +100,6 @@
 #define CIA402_VELOCITY_GAIN            0x60F9 /* sub 1 = p-gain; sub 2 = i-gain; sub 3 = d-gain */
 #define CIA402_POSITION_GAIN            0x60FB /* sub 1 = p-gain; sub 2 = i-gain; sub 3 = d-gain */
 
-#define CIA402_QEI_OFFSET				0x2000 /* sub 1 = offset clk; sub 2 = offset cclk */
 
 
 /* only if touch probe is supported */
