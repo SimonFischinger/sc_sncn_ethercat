@@ -911,7 +911,7 @@ void ecat_handler(chanend c_coe_r, chanend c_coe_s,
 
 				switch (manager[i].control&0x0f) {
 				case SYNCM_BUFFER_MODE_READ:
-					if ((al_state&0xf) >= AL_STATE_SAFEOP) { /* SERVICE_PDORX_IS_ACTIVE(g_services) */
+					if (/*(al_state&0xf) >= AL_STATE_SAFEOP */ SERVICE_PDORX_IS_ACTIVE(g_services)) {
 							if (lastwritten_inbuffer != ((manager[i].status>>4)&0x03)) {
 								if ((manager[i].status & 0x01) == 1) { /* read buffer is accessible, buffer was successfully written */
 									pdo_insize = ecat_read_block(manager[i].address, ((manager[i].size+1)/2), pdo_inbuf);
@@ -933,7 +933,7 @@ void ecat_handler(chanend c_coe_r, chanend c_coe_s,
 
 				case SYNCM_BUFFER_MODE_WRITE:
 					/* send packets pending? */
-					if ((al_state&0xf) == AL_STATE_OP) { /* SERVICE_PDOTX_IS_ACTIVE(g_services) */
+					if (/* (al_state&0xf) == AL_STATE_OP */ SERVICE_PDOTX_IS_ACTIVE(g_services)) {
 						tpdo :> pdotime;
 						if (((pdotime-pdotimeprev) >= 100) /*&& (lastwritten_outbuffer != (manager[i].status>>4)&0x03)*/) {
 							//printstr("Write Buffer SyncM: ");
@@ -948,7 +948,7 @@ void ecat_handler(chanend c_coe_r, chanend c_coe_s,
 
 				case SYNCM_MAILBOX_MODE_READ:
 					//printstr("[DEBUG:] Mailbox ready to read.\n");
-					if ((manager[i].status & 0x08) != 0) { /* mailbox full */
+					if (SERVICE_MBOX_IS_ACTIVE(g_services) && ((manager[i].status & 0x08) != 0)) { /* mailbox full */
 						//printstr("Read Mailbox SyncM: ");
 						//printintln(i);
 						//printstr("Mailbox address and size:\n");
@@ -961,7 +961,7 @@ void ecat_handler(chanend c_coe_r, chanend c_coe_s,
 
 				case SYNCM_MAILBOX_MODE_WRITE:
 					/* send packets pending? */
-					if (pending_mailbox == 1 /*&& manager[i].status == 0*/) {
+					if (SERVICE_MBOX_IS_ACTIVE(g_services) && pending_mailbox == 1 /*&& manager[i].status == 0*/) {
 						packet_error = ecat_mbox_packet_send(manager[i].address, manager[i].size,
 									 out_type, out_buffer, out_size);
 						pending_mailbox=0;
