@@ -576,9 +576,9 @@ static void ecat_clear_fmmu(void)
 		ecat_clear_syncm();
 		newstate = AL_STATE_INIT;
 		error = AL_NO_ERROR;
-		SERVICE_MBOX_IS_ACTIVE(g_services, 0);
-		SERVICE_PDORX_IS_ACTIVE(g_services, 0); // no pdo communication
-		SERVICE_PDOTX_IS_ACTIVE(g_services, 0); // no pdo communication
+		SERVICE_MBOX_SET(g_services, 0);
+		SERVICE_PDORX_SET(g_services, 0); // no pdo communication
+		SERVICE_PDOTX_SET(g_services, 0); // no pdo communication
 		break;
 
 	case AL_STATE_BOOTSTRAP: /* possible use for configuration (FoE) */
@@ -592,9 +592,9 @@ static void ecat_clear_fmmu(void)
 		ecat_read_syncm();
 		newstate = AL_STATE_PREOP;
 		error = AL_NO_ERROR;
-		SERVICE_MBOX_IS_ACTIVE(g_services, 1);
-		SERVICE_PDORX_IS_ACTIVE(g_services, 0); // no pdo communication
-		SERVICE_PDOTX_IS_ACTIVE(g_services, 0); // no pdo communication
+		SERVICE_MBOX_SET(g_services, 1);
+		SERVICE_PDORX_SET(g_services, 0); // no pdo communication
+		SERVICE_PDOTX_SET(g_services, 0); // no pdo communication
 		break;
 
 	case AL_STATE_SAFEOP:
@@ -603,16 +603,16 @@ static void ecat_clear_fmmu(void)
 		 * starting input PDOs
 		 */
 		ecat_read_syncm(); /* reread for process data */
-		SERVICE_MBOX_IS_ACTIVE(g_services, 1);
+		SERVICE_MBOX_SET(g_services, 1);
 
 		if (ecat_read_fmmu_config() < 1) {
 			//newstate = currentState; /* FIXME stay on state and ignore FMMU configure if fallback from higher sate */
 			//error = AL_INVALID_INPUT_MAPPING;
-			SERVICE_PDORX_IS_ACTIVE(g_services, 0); // no pdo communication
-			SERVICE_PDOTX_IS_ACTIVE(g_services, 0); // no pdo communication
+			SERVICE_PDORX_SET(g_services, 0); // no pdo communication
+			SERVICE_PDOTX_SET(g_services, 0); // no pdo communication
 		} else {
-			SERVICE_PDORX_IS_ACTIVE(g_services, 1); // receive pdo
-			SERVICE_PDOTX_IS_ACTIVE(g_services, 0); // but don't send
+			SERVICE_PDORX_SET(g_services, 1); // receive pdo
+			SERVICE_PDOTX_SET(g_services, 0); // but don't send
 		}
 		newstate = AL_STATE_SAFEOP;
 		error = AL_NO_ERROR;
@@ -621,16 +621,16 @@ static void ecat_clear_fmmu(void)
 	case AL_STATE_OP:
 		/* slave now fully operational, input and output PDOs and mailbox communication */
 		ecat_read_syncm(); /* reread for process data */
-		SERVICE_MBOX_IS_ACTIVE(g_services, 1);
+		SERVICE_MBOX_SET(g_services, 1);
 
 		if (ecat_read_fmmu_config() < 2) {
 			//newstate = currentState; /* FIXME stay on state and ignore FMMU configure if fallback from higher sate */
 			//error = AL_INVALID_OUTPUT_MAPPING;
-			SERVICE_PDORX_IS_ACTIVE(g_services, 0); // no pdo communication
-			SERVICE_PDOTX_IS_ACTIVE(g_services, 0); // no pdo communication
+			SERVICE_PDORX_SET(g_services, 0); // no pdo communication
+			SERVICE_PDOTX_SET(g_services, 0); // no pdo communication
 		} else {
-			SERVICE_PDORX_IS_ACTIVE(g_services, 1);
-			SERVICE_PDOTX_IS_ACTIVE(g_services, 1);
+			SERVICE_PDORX_SET(g_services, 1);
+			SERVICE_PDOTX_SET(g_services, 1);
 		}
 		newstate = AL_STATE_OP;
 		error = AL_NO_ERROR;
