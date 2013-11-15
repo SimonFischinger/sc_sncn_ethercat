@@ -912,22 +912,16 @@ void ecat_handler(chanend c_coe_r, chanend c_coe_s,
 				switch (manager[i].control&0x0f) {
 				case SYNCM_BUFFER_MODE_READ:
 					if (/*(al_state&0xf) >= AL_STATE_SAFEOP */ SERVICE_PDORX_IS_ACTIVE(g_services)) {
-							if (lastwritten_inbuffer != ((manager[i].status>>4)&0x03)) {
-								if ((manager[i].status & 0x01) == 1) { /* read buffer is accessible, buffer was successfully written */
-									pdo_insize = ecat_read_block(manager[i].address, ((manager[i].size+1)/2), pdo_inbuf);
+						if ( (manager[i].status&0x1) && ( lastwritten_inbuffer ^ ((manager[i].status>>4)&0x03))) {
+							pdo_insize = ecat_read_block(manager[i].address, ((manager[i].size+1)/2), pdo_inbuf);
 
 #if 0 /* DEBUG output */
-									for (int k=0; k<pdo_insize; k++) {
-										printstr("pdo received: "); printhexln(pdo_inbuf[k]);
-									}
-#endif
-#if 0
-									packet_error = ecat_process_packet(manager[i].address, manager[i].size, SYNCM_BUFFER_MODE,
-												c_coe_s, c_eoe_s, c_eoe_sig, c_foe_s, c_pdo_s);
-#endif
-									lastwritten_inbuffer = (manager[i].status>>4)&0x03;
-								}
+							for (int k=0; k<pdo_insize; k++) {
+								printstr("pdo received: "); printhexln(pdo_inbuf[k]);
 							}
+#endif
+							lastwritten_inbuffer = (manager[i].status>>4)&0x03;
+						}
 					}
 					break;
 
