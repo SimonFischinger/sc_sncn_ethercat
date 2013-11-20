@@ -727,7 +727,9 @@ int ecat_init(void)
 	timer t;
 	unsigned time;
 
-	printstr(ecat_version);
+	/* DEBUG output of current module version */
+	printstr("EtherCAT Module ");
+	printstrln(ecat_version);
 
 	ecatCS <: 1;
 	ecatWR <: 1;
@@ -884,9 +886,6 @@ void ecat_handler(chanend c_coe_r, chanend c_coe_s,
 			{al_state, al_error} = al_state_machine(data&0x001f, al_state); /* bits 15:5 are reserved */
 			ecat_write(AL_REG_STATUS, al_state);
 			ecat_write(AL_REG_STATUS_CODE, al_error);
-			//if (al_state==AL_STATE_OP)
-				//printstr("Device OPERATIONAL\n");
-			//printstr("new state: "); printhexln(al_state);
 		}
 
 		/* check if state transission errors occured */
