@@ -5,7 +5,7 @@
  *
  * \brief Implementation of the CoE handling of the EtherCAT module.
  *
- * Copyright (c) 2013, Synapticon GmbH
+ * Copyright (c) 2014, Synapticon GmbH
  * All rights reserved.
  * Author: Frank Jeschke <jeschke@fjes.de>
  *
