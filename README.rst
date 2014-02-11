@@ -1,8 +1,8 @@
 Ethercat Communication SOFTWARE COMPONENT
-.................................
+.........................................
 .. image:: http://forum.synapticon.com/Themes/MinimalistAndEffective_by_SMFSimple/images/logo.png
 
- Implementation of Ethercat Communication for SOMANET devices
+Implementation of Ethercat Communication for SOMANET devices
 
 :Latest release: 0.9beta
 :Maintainer: support@synapticon.com
