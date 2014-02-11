@@ -18,7 +18,7 @@ Key Features
 Further information
 =======
 
-   sc_somanet-base `DOCUMENTATION`_.
+   sc_sncn_ethercat `DOCUMENTATION`_.
 
 Known Issues
 ============
