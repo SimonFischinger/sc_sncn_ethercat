@@ -1,0 +1,25 @@
+<map id="sc_sncn_motorctrl_sin/module_commutation" name="sc_sncn_motorctrl_sin/module_commutation">
+<area shape="rect" id="node4" href="dir_de3dd8d11691a701421c80f1db368c05.html" title="commutation" alt="" coords="37,65,133,113"/>
+<area shape="rect" id="node5" href="dir_770027be22922bbd5e56fe0fd262512a.html" title="predriver" alt="" coords="123,161,195,209"/>
+<area shape="rect" id="edge22" href="dir_000014_000015.html" title="2" alt="" coords="132,133,140,150"/>
+<area shape="rect" id="node6" href="dir_22a1b53be9dc859771a4a8ed2611d47b.html" title="pwm" alt="" coords="219,161,291,209"/>
+<area shape="rect" id="edge14" href="dir_000014_000016.html" title="2" alt="" coords="203,140,211,157"/>
+<area shape="rect" id="node7" href="dir_62e7531ac24ae9777c8fd4838747f5e8.html" title="module_common" alt="" coords="321,257,441,305"/>
+<area shape="rect" id="edge16" href="dir_000014_000011.html" title="4" alt="" coords="300,259,308,277"/>
+<area shape="rect" id="node8" href="dir_f09c3b427b976d25df5798c94ead2711.html" title="module_hall" alt="" coords="563,161,653,209"/>
+<area shape="rect" id="edge18" href="dir_000014_000023.html" title="2" alt="" coords="543,143,551,161"/>
+<area shape="rect" id="node9" href="dir_abe45dc8b1cc9f97b7e47880dd4c58ab.html" title="module_qei" alt="" coords="451,161,539,209"/>
+<area shape="rect" id="edge20" href="dir_000014_000032.html" title="1" alt="" coords="431,143,439,161"/>
+<area shape="rect" id="node10" href="dir_de5b21f60c9b48d7f9c24a439eb9f86b.html" title="module_blocks" alt="" coords="553,257,663,305"/>
+<area shape="rect" id="edge24" href="dir_000014_000003.html" title="3" alt="" coords="659,242,667,259"/>
+<area shape="rect" id="node11" href="dir_b340887aa9bf63c8bd7f2c51ddf95ed3.html" title="module_adc" alt="" coords="336,161,427,209"/>
+<area shape="rect" id="edge26" href="dir_000014_000001.html" title="2" alt="" coords="318,144,326,162"/>
+<area shape="rect" id="edge12" href="dir_000015_000011.html" title="1" alt="" coords="301,250,309,268"/>
+<area shape="rect" id="edge4" href="dir_000023_000011.html" title="2" alt="" coords="457,264,465,282"/>
+<area shape="rect" id="edge6" href="dir_000023_000003.html" title="1" alt="" coords="612,230,620,247"/>
+<area shape="rect" id="edge8" href="dir_000032_000011.html" title="2" alt="" coords="425,243,433,261"/>
+<area shape="rect" id="edge10" href="dir_000032_000003.html" title="2" alt="" coords="567,230,575,248"/>
+<area shape="rect" id="edge28" href="dir_000001_000011.html" title="1" alt="" coords="386,230,394,247"/>
+<area shape="rect" id="graph3" href="dir_f91c3a65d026366508ce19366a60dbb2.html" alt="" coords="27,55,315,220"/>
+<area shape="rect" id="graph2" href="dir_3f516140d233d862b5dd243fcba2bb3d.html" title="sc_sncn_motorctrl_sin" alt="" coords="16,16,325,231"/>
+</map>

@@ -1,0 +1,22 @@
+<map id="sc_sncn_motorctrl_sin/test_position&#45;ctrl/src/test_position&#45;ctrl.xc" name="sc_sncn_motorctrl_sin/test_position&#45;ctrl/src/test_position&#45;ctrl.xc">
+<area shape="rect" id="node15" href="$da/d3b/hall__server_8h.html" title="hall_server.h" alt="" coords="390,272,486,301"/>
+<area shape="rect" id="node22" href="$df/df8/refclk_8h.html" title="refclk.h" alt="" coords="236,349,300,379"/>
+<area shape="rect" id="node29" href="$de/d9c/internal__config_8h.html" title="internal_config.h" alt="" coords="44,349,162,379"/>
+<area shape="rect" id="node37" href="$d2/dcd/comm__loop__server_8h.html" title="comm_loop_server.h" alt="" coords="1390,117,1531,147"/>
+<area shape="rect" id="node65" href="$db/da9/qei__server_8h.html" title="qei_server.h" alt="" coords="222,272,315,301"/>
+<area shape="rect" id="node75" href="$de/d45/profile_8h.html" title="Profile Generation for Position, Velocity and Torque Implements position profile based on Linear Func..." alt="" coords="1947,117,2014,147"/>
+<area shape="rect" id="node80" href="$d1/dfd/position__ctrl__server_8h.html" title="position_ctrl_server.h" alt="" coords="667,117,814,147"/>
+<area shape="rect" id="node95" href="$df/d07/drive__config_8h.html" title="drive_config.h" alt="" coords="2268,117,2370,147"/>
+<area shape="rect" id="node97" href="$d4/db2/profile__control_8h.html" title="Profile Control functions Implements position profile control, velocity profile control and torque pr..." alt="" coords="1606,117,1720,147"/>
+<area shape="rect" id="node20" href="$d4/daa/filter__blocks_8h.html" title="filter_blocks.h" alt="" coords="324,349,426,379"/>
+<area shape="rect" id="node31" href="$d6/da2/hall__config_8h.html" title="hall_config.h" alt="" coords="924,349,1018,379"/>
+<area shape="rect" id="node40" href="$da/de8/comm__loop__client_8h.html" title="comm_loop_client.h" alt="" coords="1100,195,1239,224"/>
+<area shape="rect" id="node61" href="$d9/da3/watchdog_8h.html" title="watchdog.h" alt="" coords="1427,195,1515,224"/>
+<area shape="rect" id="node42" href="$de/d09/pwm__config_8h.html" title="pwm_config.h" alt="" coords="1416,272,1518,301"/>
+<area shape="rect" id="node46" href="$da/d31/a4935_8h.html" title="predriver/a4935.h" alt="" coords="560,272,683,301"/>
+<area shape="rect" id="node50" href="$d8/d85/sine__table__big_8h.html" title="sine_table_big.h" alt="" coords="1112,272,1227,301"/>
+<area shape="rect" id="node52" href="$d1/dd9/adc__client__ad7949_8h.html" title="adc_client_ad7949.h" alt="" coords="1251,272,1392,301"/>
+<area shape="rect" id="node54" href="$d0/d50/hall__client_8h.html" title="hall_client.h" alt="" coords="870,272,960,301"/>
+<area shape="rect" id="node69" href="$d3/dc2/qei__config_8h.html" title="qei_config.h" alt="" coords="450,349,540,379"/>
+<area shape="rect" id="node85" href="$db/d40/qei__client_8h.html" title="qei_client.h" alt="" coords="707,272,795,301"/>
+</map>

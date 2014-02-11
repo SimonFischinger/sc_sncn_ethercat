@@ -1,0 +1,7 @@
+<map id="httpd_handle_event" name="httpd_handle_event">
+<area shape="rect" id="node3" href="$d1/de7/httpd_8c.html#abe7c8ffe9daef9ae41b6b3efba7c2fb1" title="httpd_free_state" alt="" coords="191,5,305,35"/>
+<area shape="rect" id="node5" href="$d1/de7/httpd_8c.html#a42568d5932b72ad4894ac88b58be473b" title="httpd_init_state" alt="" coords="193,59,303,88"/>
+<area shape="rect" id="node7" href="$d1/de7/httpd_8c.html#a3e408a894690c9e8fe327b2d83923668" title="httpd_recv" alt="" coords="207,112,289,141"/>
+<area shape="rect" id="node11" href="$d1/de7/httpd_8c.html#a2b18c21c964018a82c9344c5f8ef1ee8" title="httpd_send" alt="" coords="205,165,291,195"/>
+<area shape="rect" id="node9" href="$d1/de7/httpd_8c.html#abe7e6007150fd9ed49c8d505eb4e6baa" title="parse_http_request" alt="" coords="355,112,488,141"/>
+</map>

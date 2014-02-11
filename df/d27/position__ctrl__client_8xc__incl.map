@@ -1,0 +1,11 @@
+<map id="sc_sncn_motorctrl_sin/module_ctrl_loops/position/position_ctrl_client.xc" name="sc_sncn_motorctrl_sin/module_ctrl_loops/position/position_ctrl_client.xc">
+<area shape="rect" id="node3" href="$d7/d5f/position__ctrl__client_8h.html" title="position_ctrl_client.h" alt="" coords="361,117,503,147"/>
+<area shape="rect" id="node34" href="$df/d07/drive__config_8h.html" title="drive_config.h" alt="" coords="755,117,856,147"/>
+<area shape="rect" id="node7" href="$de/d9c/internal__config_8h.html" title="internal_config.h" alt="" coords="224,195,341,224"/>
+<area shape="rect" id="node9" href="$df/df8/refclk_8h.html" title="refclk.h" alt="" coords="365,195,429,224"/>
+<area shape="rect" id="node13" href="$db/d40/qei__client_8h.html" title="qei_client.h" alt="" coords="504,195,592,224"/>
+<area shape="rect" id="node25" href="$d0/d50/hall__client_8h.html" title="hall_client.h" alt="" coords="109,195,200,224"/>
+<area shape="rect" id="node16" href="$d4/daa/filter__blocks_8h.html" title="filter_blocks.h" alt="" coords="565,272,667,301"/>
+<area shape="rect" id="node23" href="$d3/dc2/qei__config_8h.html" title="qei_config.h" alt="" coords="451,272,541,301"/>
+<area shape="rect" id="node30" href="$d6/da2/hall__config_8h.html" title="hall_config.h" alt="" coords="5,272,99,301"/>
+</map>

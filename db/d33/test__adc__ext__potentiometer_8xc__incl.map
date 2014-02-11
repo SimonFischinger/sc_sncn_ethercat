@@ -1,0 +1,18 @@
+<map id="sc_sncn_motorctrl_sin/test_adc_ext_potentiometer/src/test_adc_ext_potentiometer.xc" name="sc_sncn_motorctrl_sin/test_adc_ext_potentiometer/src/test_adc_ext_potentiometer.xc">
+<area shape="rect" id="node15" href="$db/d1c/adc__server__ad7949_8h.html" title="adc_server_ad7949.h" alt="" coords="550,117,696,147"/>
+<area shape="rect" id="node22" href="$d1/dd9/adc__client__ad7949_8h.html" title="adc_client_ad7949.h" alt="" coords="803,272,944,301"/>
+<area shape="rect" id="node24" href="$da/d3b/hall__server_8h.html" title="hall_server.h" alt="" coords="367,272,463,301"/>
+<area shape="rect" id="node31" href="$df/df8/refclk_8h.html" title="refclk.h" alt="" coords="730,349,794,379"/>
+<area shape="rect" id="node46" href="$d2/dcd/comm__loop__server_8h.html" title="comm_loop_server.h" alt="" coords="1310,117,1451,147"/>
+<area shape="rect" id="node74" href="$df/d07/drive__config_8h.html" title="drive_config.h" alt="" coords="1824,117,1926,147"/>
+<area shape="rect" id="node20" href="$d2/d4f/adc__common_8h.html" title="adc_common.h" alt="" coords="568,195,678,224"/>
+<area shape="rect" id="node29" href="$d4/daa/filter__blocks_8h.html" title="filter_blocks.h" alt="" coords="436,349,538,379"/>
+<area shape="rect" id="node38" href="$de/d9c/internal__config_8h.html" title="internal_config.h" alt="" coords="295,349,412,379"/>
+<area shape="rect" id="node40" href="$d6/da2/hall__config_8h.html" title="hall_config.h" alt="" coords="612,349,706,379"/>
+<area shape="rect" id="node49" href="$da/de8/comm__loop__client_8h.html" title="comm_loop_client.h" alt="" coords="1220,195,1359,224"/>
+<area shape="rect" id="node69" href="$d9/da3/watchdog_8h.html" title="watchdog.h" alt="" coords="1611,195,1699,224"/>
+<area shape="rect" id="node51" href="$de/d09/pwm__config_8h.html" title="pwm_config.h" alt="" coords="1419,272,1520,301"/>
+<area shape="rect" id="node55" href="$da/d31/a4935_8h.html" title="predriver/a4935.h" alt="" coords="1083,272,1206,301"/>
+<area shape="rect" id="node59" href="$d8/d85/sine__table__big_8h.html" title="sine_table_big.h" alt="" coords="1280,272,1395,301"/>
+<area shape="rect" id="node62" href="$d0/d50/hall__client_8h.html" title="hall_client.h" alt="" coords="968,272,1059,301"/>
+</map>

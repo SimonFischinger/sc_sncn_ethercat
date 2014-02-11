@@ -1,0 +1,15 @@
+<map id="sc_sncn_motorctrl_sin/module_comm/src/comm.xc" name="sc_sncn_motorctrl_sin/module_comm/src/comm.xc">
+<area shape="rect" id="node3" href="$d8/db4/comm_8h.html" title="comm.h" alt="" coords="1037,101,1107,131"/>
+<area shape="rect" id="node7" href="$df/df8/refclk_8h.html" title="refclk.h" alt="" coords="1256,333,1320,363"/>
+<area shape="rect" id="node13" href="$db/d40/qei__client_8h.html" title="qei_client.h" alt="" coords="249,256,337,285"/>
+<area shape="rect" id="node25" href="$de/d9c/internal__config_8h.html" title="internal_config.h" alt="" coords="1436,179,1553,208"/>
+<area shape="rect" id="node27" href="$da/de8/comm__loop__client_8h.html" title="comm_loop_client.h" alt="" coords="780,179,919,208"/>
+<area shape="rect" id="node16" href="$d4/daa/filter__blocks_8h.html" title="filter_blocks.h" alt="" coords="5,333,107,363"/>
+<area shape="rect" id="node23" href="$d3/dc2/qei__config_8h.html" title="qei_config.h" alt="" coords="299,333,389,363"/>
+<area shape="rect" id="node29" href="$de/d09/pwm__config_8h.html" title="pwm_config.h" alt="" coords="463,256,564,285"/>
+<area shape="rect" id="node33" href="$da/d31/a4935_8h.html" title="predriver/a4935.h" alt="" coords="1135,256,1257,285"/>
+<area shape="rect" id="node38" href="$d8/d85/sine__table__big_8h.html" title="sine_table_big.h" alt="" coords="716,256,831,285"/>
+<area shape="rect" id="node40" href="$d1/dd9/adc__client__ad7949_8h.html" title="adc_client_ad7949.h" alt="" coords="855,256,996,285"/>
+<area shape="rect" id="node42" href="$d0/d50/hall__client_8h.html" title="hall_client.h" alt="" coords="1020,256,1111,285"/>
+<area shape="rect" id="node47" href="$d6/da2/hall__config_8h.html" title="hall_config.h" alt="" coords="955,333,1048,363"/>
+</map>

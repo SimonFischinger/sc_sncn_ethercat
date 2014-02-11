@@ -1,0 +1,14 @@
+<map id="sc_sncn_motorctrl_sin/module_comm" name="sc_sncn_motorctrl_sin/module_comm">
+<area shape="rect" id="node4" href="dir_e45fe9b45bc2efb97f08fb856a0f047e.html" title="src" alt="" coords="37,65,109,113"/>
+<area shape="rect" id="node5" href="dir_62e7531ac24ae9777c8fd4838747f5e8.html" title="module_common" alt="" coords="44,353,164,401"/>
+<area shape="rect" id="edge4" href="dir_000010_000011.html" title="2" alt="" coords="69,325,77,343"/>
+<area shape="rect" id="node6" href="dir_abe45dc8b1cc9f97b7e47880dd4c58ab.html" title="module_qei" alt="" coords="60,257,148,305"/>
+<area shape="rect" id="edge6" href="dir_000010_000032.html" title="1" alt="" coords="102,229,110,247"/>
+<area shape="rect" id="node7" href="dir_f91c3a65d026366508ce19366a60dbb2.html" title="module_commutation" alt="" coords="111,161,257,209"/>
+<area shape="rect" id="edge8" href="dir_000010_000013.html" title="1" alt="" coords="140,134,148,152"/>
+<area shape="rect" id="edge10" href="dir_000032_000011.html" title="2" alt="" coords="108,326,116,343"/>
+<area shape="rect" id="edge12" href="dir_000013_000011.html" title="5" alt="" coords="141,336,149,353"/>
+<area shape="rect" id="edge14" href="dir_000013_000032.html" title="1" alt="" coords="139,240,147,257"/>
+<area shape="rect" id="graph3" href="dir_f5f8fd77b56a4ff929d31240ec260c7e.html" alt="" coords="27,55,251,124"/>
+<area shape="rect" id="graph2" href="dir_3f516140d233d862b5dd243fcba2bb3d.html" title="sc_sncn_motorctrl_sin" alt="" coords="16,16,261,135"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="sc_sncn_motorctrl_sin/module_profile/include/profile_control.h" name="sc_sncn_motorctrl_sin/module_profile/include/profile_control.h">
+<area shape="rect" id="node3" href="$d3/dd8/profile__position_8xc.html" title="Profile Position Control functions Implements position profile control function. " alt="" coords="5,117,160,181"/>
+<area shape="rect" id="node5" href="$d3/d1b/profile__torque_8xc.html" title="Profile Torque Control functions Implements torque profile control function. " alt="" coords="184,117,336,181"/>
+<area shape="rect" id="node7" href="$da/d91/profile__velocity_8xc.html" title="Profile Velocity Control functions Implements velocity profile control function. " alt="" coords="360,117,515,181"/>
+<area shape="rect" id="node9" href="$d1/d58/test__position-ctrl_8xc.html" title="Main project file Test illustrates usage of profile position control. " alt="" coords="539,117,691,181"/>
+<area shape="rect" id="node11" href="$dc/dcb/test__torque-ctrl_8xc.html" title="Main project file Test illustrates usage of profile torque control. " alt="" coords="715,117,867,181"/>
+<area shape="rect" id="node13" href="$d6/d95/test__velocity-ctrl_8xc.html" title="Main project file Test illustrates usage of profile velocity control. " alt="" coords="891,117,1043,181"/>
+</map>

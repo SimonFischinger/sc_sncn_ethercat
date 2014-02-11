@@ -1,0 +1,9 @@
+<map id="sc_sncn_motorctrl_sin/module_commutation/commutation/comm_loop_client.h" name="sc_sncn_motorctrl_sin/module_commutation/commutation/comm_loop_client.h">
+<area shape="rect" id="node3" href="$de/d09/pwm__config_8h.html" title="pwm_config.h" alt="" coords="5,117,107,147"/>
+<area shape="rect" id="node7" href="$da/d31/a4935_8h.html" title="predriver/a4935.h" alt="" coords="259,117,381,147"/>
+<area shape="rect" id="node15" href="$d8/d85/sine__table__big_8h.html" title="sine_table_big.h" alt="" coords="405,117,520,147"/>
+<area shape="rect" id="node17" href="$d1/dd9/adc__client__ad7949_8h.html" title="adc_client_ad7949.h" alt="" coords="544,117,685,147"/>
+<area shape="rect" id="node19" href="$d0/d50/hall__client_8h.html" title="hall_client.h" alt="" coords="709,117,800,147"/>
+<area shape="rect" id="node9" href="$df/df8/refclk_8h.html" title="refclk.h" alt="" coords="288,195,352,224"/>
+<area shape="rect" id="node25" href="$d6/da2/hall__config_8h.html" title="hall_config.h" alt="" coords="693,195,787,224"/>
+</map>

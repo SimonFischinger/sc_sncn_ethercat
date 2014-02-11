@@ -1,0 +1,7 @@
+<map id="cyclic_task" name="cyclic_task">
+<area shape="rect" id="node3" href="$d0/d29/main_8c.html#a54789270dccb8eccbd08aec04200a446" title="check_domain1_state" alt="" coords="141,5,291,35"/>
+<area shape="rect" id="node5" href="$d0/d29/main_8c.html#a17736068bd6664404ad732ff7809a79a" title="check_master_state" alt="" coords="147,59,285,88"/>
+<area shape="rect" id="node7" href="$d0/d29/main_8c.html#ab5271f1067ae861b511a11d1163c83dd" title="check_slave_config\l_states" alt="" coords="148,111,284,158"/>
+<area shape="rect" id="node9" href="$d0/d29/main_8c.html#a43bd22fc1aa9ddd24d095b63939a826b" title="read_sdo" alt="" coords="179,181,253,211"/>
+<area shape="rect" id="node11" href="$d0/d29/main_8c.html#a94c50b698d3f9a2b8cd080e68a80dcee" title="write_sdo" alt="" coords="177,235,255,264"/>
+</map>

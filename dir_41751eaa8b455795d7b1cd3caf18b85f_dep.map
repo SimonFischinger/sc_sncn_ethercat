@@ -1,0 +1,23 @@
+<map id="sc_sncn_motorctrl_sin/module_ecat_drive" name="sc_sncn_motorctrl_sin/module_ecat_drive">
+<area shape="rect" id="node4" href="dir_3684baf8d3ed8444cfa5a4d884119ffb.html" title="src" alt="" coords="201,65,273,113"/>
+<area shape="rect" id="node5" href="dir_8c5b8ebd3588770a9c79f18fe8be7767.html" title="module_ctrl_loops" alt="" coords="189,257,315,305"/>
+<area shape="rect" id="edge16" href="dir_000022_000017.html" title="3" alt="" coords="262,232,270,249"/>
+<area shape="rect" id="node6" href="dir_f09c3b427b976d25df5798c94ead2711.html" title="module_hall" alt="" coords="5,353,96,401"/>
+<area shape="rect" id="edge18" href="dir_000022_000023.html" title="2" alt="" coords="57,327,65,344"/>
+<area shape="rect" id="node7" href="dir_abe45dc8b1cc9f97b7e47880dd4c58ab.html" title="module_qei" alt="" coords="308,353,396,401"/>
+<area shape="rect" id="edge20" href="dir_000022_000032.html" title="2" alt="" coords="350,325,358,342"/>
+<area shape="rect" id="node8" href="dir_efded18fa72ab41524ffb2cc7db7f959.html" title="module_profile" alt="" coords="139,161,245,209"/>
+<area shape="rect" id="edge22" href="dir_000022_000025.html" title="1" alt="" coords="215,139,223,157"/>
+<area shape="rect" id="node9" href="dir_f5f8fd77b56a4ff929d31240ec260c7e.html" title="module_comm" alt="" coords="389,161,496,209"/>
+<area shape="rect" id="edge24" href="dir_000022_000009.html" title="1" alt="" coords="371,145,379,162"/>
+<area shape="rect" id="node10" href="dir_33c6dd037d360e482402f5e4ad8c312a.html" title="module_sm" alt="" coords="120,353,208,401"/>
+<area shape="rect" id="edge26" href="dir_000022_000034.html" title="1" alt="" coords="146,324,154,342"/>
+<area shape="rect" id="edge4" href="dir_000017_000023.html" title="4" alt="" coords="112,347,120,364"/>
+<area shape="rect" id="edge6" href="dir_000017_000032.html" title="4" alt="" coords="316,326,324,343"/>
+<area shape="rect" id="edge8" href="dir_000017_000034.html" title="6" alt="" coords="201,336,209,354"/>
+<area shape="rect" id="edge10" href="dir_000025_000017.html" title="3" alt="" coords="230,228,238,246"/>
+<area shape="rect" id="edge12" href="dir_000025_000034.html" title="3" alt="" coords="172,327,180,344"/>
+<area shape="rect" id="edge14" href="dir_000009_000032.html" title="1" alt="" coords="375,332,383,349"/>
+<area shape="rect" id="graph3" href="dir_41751eaa8b455795d7b1cd3caf18b85f.html" alt="" coords="191,55,439,124"/>
+<area shape="rect" id="graph2" href="dir_3f516140d233d862b5dd243fcba2bb3d.html" title="sc_sncn_motorctrl_sin" alt="" coords="180,16,449,135"/>
+</map>

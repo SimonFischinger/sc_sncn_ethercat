@@ -1,0 +1,44 @@
+<map id="sc_sncn_motorctrl_sin/module_common/src/refclk.h" name="sc_sncn_motorctrl_sin/module_common/src/refclk.h">
+<area shape="rect" id="node3" href="$d0/d2e/adc__server__ad7949_8xc.html" title="sc_sncn_motorctrl_sin\l/module_adc/src/adc_server\l_ad7949.xc" alt="" coords="5,111,192,175"/>
+<area shape="rect" id="node5" href="$d8/db4/comm_8h.html" title="sc_sncn_motorctrl_sin\l/module_comm/src/comm.h" alt="" coords="2508,353,2692,399"/>
+<area shape="rect" id="node15" href="$dd/d71/delay_8xc.html" title="sc_sncn_motorctrl_sin\l/module_common/src/delay.xc" alt="" coords="267,119,467,166"/>
+<area shape="rect" id="node17" href="$da/d61/comm__loop__client_8xc.html" title="sc_sncn_motorctrl_sin\l/module_commutation/commutation\l/comm_loop_client.xc" alt="" coords="404,344,633,408"/>
+<area shape="rect" id="node19" href="$dc/dd7/comm__loop__server_8xc.html" title="sc_sncn_motorctrl_sin\l/module_commutation/commutation\l/comm_loop_server.xc" alt="" coords="339,456,568,520"/>
+<area shape="rect" id="node21" href="$da/d31/a4935_8h.html" title="sc_sncn_motorctrl_sin\l/module_commutation/predriver\l/a4935.h" alt="" coords="896,111,1099,175"/>
+<area shape="rect" id="node30" href="$d3/dd6/test__adc__ext__potentiometer_8xc.html" title="Main project file Test illustrates usage of adc to get external potentiometer sensor values..." alt="" coords="751,456,977,520"/>
+<area shape="rect" id="node33" href="$d1/d58/test__position-ctrl_8xc.html" title="Main project file Test illustrates usage of profile position control. " alt="" coords="1481,456,1633,520"/>
+<area shape="rect" id="node35" href="$dc/dcb/test__torque-ctrl_8xc.html" title="Main project file Test illustrates usage of profile torque control. " alt="" coords="1052,456,1204,520"/>
+<area shape="rect" id="node37" href="$d6/d95/test__velocity-ctrl_8xc.html" title="Main project file Test illustrates usage of profile velocity control. " alt="" coords="1884,456,2036,520"/>
+<area shape="rect" id="node39" href="$d1/dfd/position__ctrl__server_8h.html" title="sc_sncn_motorctrl_sin\l/module_ctrl_loops/position\l/position_ctrl_server.h" alt="" coords="1409,344,1588,408"/>
+<area shape="rect" id="node47" href="$d8/d57/torque__ctrl__server_8xc.html" title="sc_sncn_motorctrl_sin\l/module_ctrl_loops/torque\l/torque_ctrl_server.xc" alt="" coords="144,456,315,520"/>
+<area shape="rect" id="node51" href="$d3/df7/velocity__ctrl__server_8xc.html" title="sc_sncn_motorctrl_sin\l/module_ctrl_loops/velocity\l/velocity_ctrl_server.xc" alt="" coords="1156,344,1335,408"/>
+<area shape="rect" id="node56" href="$d7/d5f/position__ctrl__client_8h.html" title="sc_sncn_motorctrl_sin\l/module_ctrl_loops/position\l/position_ctrl_client.h" alt="" coords="2163,111,2341,175"/>
+<area shape="rect" id="node61" href="$d3/dd8/profile__position_8xc.html" title="Profile Position Control functions Implements position profile control function. " alt="" coords="2048,232,2203,296"/>
+<area shape="rect" id="node64" href="$da/d0f/torque__ctrl__client_8xc.html" title="sc_sncn_motorctrl_sin\l/module_ctrl_loops/torque\l/torque_ctrl_client.xc" alt="" coords="1715,111,1885,175"/>
+<area shape="rect" id="node67" href="$d5/d37/velocity__ctrl__client_8xc.html" title="sc_sncn_motorctrl_sin\l/module_ctrl_loops/velocity\l/velocity_ctrl_client.xc" alt="" coords="1909,111,2088,175"/>
+<area shape="rect" id="node70" href="$da/d3b/hall__server_8h.html" title="sc_sncn_motorctrl_sin\l/module_hall/src/hall\l_server.h" alt="" coords="1663,344,1815,408"/>
+<area shape="rect" id="node77" href="$d3/dc3/test__hall_8xc.html" title="Main project file Test illustrates usage of hall sensor for position and velocity information..." alt="" coords="2329,465,2497,511"/>
+<area shape="rect" id="node83" href="$d3/d1b/profile__torque_8xc.html" title="Profile Torque Control functions Implements torque profile control function. " alt="" coords="2365,111,2517,175"/>
+<area shape="rect" id="node85" href="$da/d91/profile__velocity_8xc.html" title="Profile Velocity Control functions Implements velocity profile control function. " alt="" coords="2541,111,2696,175"/>
+<area shape="rect" id="node87" href="$db/da9/qei__server_8h.html" title="sc_sncn_motorctrl_sin\l/module_qei/src/qei_server.h" alt="" coords="1935,353,2124,399"/>
+<area shape="rect" id="node94" href="$d4/d33/test__qei_8xc.html" title="Main project file Test illustrates usage of qei sensor for position and velocity information. " alt="" coords="2703,465,2865,511"/>
+<area shape="rect" id="node98" href="$d8/d94/test__adc__ext__potentiometer_2config_2motor_2bldc__motor__init_8xc.html" title="sc_sncn_motorctrl_sin\l/test_adc_ext_potentiometer\l/config/motor/bldc_motor\l_init.xc" alt="" coords="2821,102,3008,183"/>
+<area shape="rect" id="node101" href="$d5/dbc/test__ethercat-motorctrl-mode_2config_2motor_2bldc__motor__init_8xc.html" title="sc_sncn_motorctrl_sin\l/test_ethercat&#45;motorctrl\l&#45;mode/config/motor/bldc\l_motor_init.xc" alt="" coords="3032,102,3195,183"/>
+<area shape="rect" id="node103" href="$d3/d63/test__hall_2config_2motor_2bldc__motor__init_8xc.html" title="sc_sncn_motorctrl_sin\l/test_hall/config/motor\l/bldc_motor_init.xc" alt="" coords="3219,111,3371,175"/>
+<area shape="rect" id="node106" href="$d3/d73/test__position-ctrl_2config_2motor_2bldc__motor__init_8xc.html" title="sc_sncn_motorctrl_sin\l/test_position&#45;ctrl/config\l/motor/bldc_motor_init.xc" alt="" coords="3395,111,3563,175"/>
+<area shape="rect" id="node109" href="$d9/ddb/test__qei_2config_2motor_2bldc__motor__init_8xc.html" title="sc_sncn_motorctrl_sin\l/test_qei/config/motor\l/bldc_motor_init.xc" alt="" coords="3587,111,3739,175"/>
+<area shape="rect" id="node112" href="$d3/dbf/test__torque-ctrl_2config_2motor_2bldc__motor__init_8xc.html" title="sc_sncn_motorctrl_sin\l/test_torque&#45;ctrl/config\l/motor/bldc_motor_init.xc" alt="" coords="3763,111,3931,175"/>
+<area shape="rect" id="node115" href="$d0/d73/test__velocity-ctrl_2config_2motor_2bldc__motor__init_8xc.html" title="sc_sncn_motorctrl_sin\l/test_velocity&#45;ctrl/config\l/motor/bldc_motor_init.xc" alt="" coords="3955,111,4123,175"/>
+<area shape="rect" id="node7" href="$d1/d32/comm_8xc.html" title="sc_sncn_motorctrl_sin\l/module_comm/src/comm.xc" alt="" coords="2889,465,3079,511"/>
+<area shape="rect" id="node9" href="$d3/dd8/ecat__motor__drive_8h.html" title="sc_sncn_motorctrl_sin\l/module_ecat_drive/src\l/ecat_motor_drive.h" alt="" coords="2521,456,2679,520"/>
+<area shape="rect" id="node11" href="$db/d79/ecat__motor__drive_8xc.html" title="sc_sncn_motorctrl_sin\l/module_ecat_drive/src\l/ecat_motor_drive.xc" alt="" coords="2521,577,2679,641"/>
+<area shape="rect" id="node13" href="$d8/d77/test__ethercat-mode_8xc.html" title="Main project file Test illustrates usage of Motor Control with Ethercat. " alt="" coords="1477,569,1637,650"/>
+<area shape="rect" id="node23" href="$da/de8/comm__loop__client_8h.html" title="sc_sncn_motorctrl_sin\l/module_commutation/commutation\l/comm_loop_client.h" alt="" coords="1003,232,1232,296"/>
+<area shape="rect" id="node54" href="$db/dc7/a4935_8xc.html" title="sc_sncn_motorctrl_sin\l/module_commutation/predriver\l/a4935.xc" alt="" coords="776,232,979,296"/>
+<area shape="rect" id="node27" href="$d2/dcd/comm__loop__server_8h.html" title="sc_sncn_motorctrl_sin\l/module_commutation/commutation\l/comm_loop_server.h" alt="" coords="903,344,1132,408"/>
+<area shape="rect" id="node45" href="$d9/d47/torque__ctrl__server_8h.html" title="sc_sncn_motorctrl_sin\l/module_ctrl_loops/torque\l/torque_ctrl_server.h" alt="" coords="708,344,879,408"/>
+<area shape="rect" id="node41" href="$d5/dda/position__ctrl__server_8xc.html" title="sc_sncn_motorctrl_sin\l/module_ctrl_loops/position\l/position_ctrl_server.xc" alt="" coords="1228,456,1407,520"/>
+<area shape="rect" id="node58" href="$d7/d27/position__ctrl__client_8xc.html" title="sc_sncn_motorctrl_sin\l/module_ctrl_loops/position\l/position_ctrl_client.xc" alt="" coords="2227,232,2405,296"/>
+<area shape="rect" id="node73" href="$d6/de0/hall__server_8xc.html" title="sc_sncn_motorctrl_sin\l/module_hall/src/hall\l_server.xc" alt="" coords="1708,456,1860,520"/>
+<area shape="rect" id="node90" href="$da/dc9/qei__server_8xc.html" title="sc_sncn_motorctrl_sin\l/module_qei/src/qei_server.xc" alt="" coords="2111,465,2305,511"/>
+</map>

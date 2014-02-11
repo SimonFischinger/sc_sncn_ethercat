@@ -1,0 +1,11 @@
+<map id="sc_sncn_motorctrl_sin/module_hall/src/hall_server.h" name="sc_sncn_motorctrl_sin/module_hall/src/hall_server.h">
+<area shape="rect" id="node3" href="$d3/dd8/ecat__motor__drive_8h.html" title="sc_sncn_motorctrl_sin\l/module_ecat_drive/src\l/ecat_motor_drive.h" alt="" coords="72,117,229,181"/>
+<area shape="rect" id="node7" href="$d8/d77/test__ethercat-mode_8xc.html" title="Main project file Test illustrates usage of Motor Control with Ethercat. " alt="" coords="187,230,347,311"/>
+<area shape="rect" id="node9" href="$d6/de0/hall__server_8xc.html" title="sc_sncn_motorctrl_sin\l/module_hall/src/hall\l_server.xc" alt="" coords="304,117,456,181"/>
+<area shape="rect" id="node11" href="$d3/dd6/test__adc__ext__potentiometer_8xc.html" title="Main project file Test illustrates usage of adc to get external potentiometer sensor values..." alt="" coords="480,117,707,181"/>
+<area shape="rect" id="node14" href="$d3/dc3/test__hall_8xc.html" title="Main project file Test illustrates usage of hall sensor for position and velocity information..." alt="" coords="731,126,899,173"/>
+<area shape="rect" id="node16" href="$d1/d58/test__position-ctrl_8xc.html" title="Main project file Test illustrates usage of profile position control. " alt="" coords="923,117,1075,181"/>
+<area shape="rect" id="node18" href="$dc/dcb/test__torque-ctrl_8xc.html" title="Main project file Test illustrates usage of profile torque control. " alt="" coords="1099,117,1251,181"/>
+<area shape="rect" id="node20" href="$d6/d95/test__velocity-ctrl_8xc.html" title="Main project file Test illustrates usage of profile velocity control. " alt="" coords="1275,117,1427,181"/>
+<area shape="rect" id="node5" href="$db/d79/ecat__motor__drive_8xc.html" title="sc_sncn_motorctrl_sin\l/module_ecat_drive/src\l/ecat_motor_drive.xc" alt="" coords="5,239,163,303"/>
+</map>
