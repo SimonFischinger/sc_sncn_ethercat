@@ -35,6 +35,10 @@ Required software (dependencies)
 
   * `sc_somanet-base`_ 
 
+Changelog
+=======
+
+  * * `0.9beta`_ (2013-01-24)
 
 License
 =======
