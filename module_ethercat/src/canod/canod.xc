@@ -1,4 +1,3 @@
-
 /**
  *
  * \file canod.xc
@@ -90,37 +89,44 @@ static struct _sdoinfo_object_description SDO_Info_Objects[] =  {
 	{ CIA402_TARGET_TORQUE, DEFTYPE_INTEGER16, 0, CANOD_TYPE_VAR, "Target Torque"},
 	{ CIA402_TORQUE_VALUE, DEFTYPE_INTEGER16, 0, CANOD_TYPE_VAR, "Torque actual Value"},
 	{ CIA402_TARGET_POSITION, DEFTYPE_INTEGER32, 0, CANOD_TYPE_VAR, "Target Position" },
-	{ CIA402_POSITION_RANGELIMIT,       DEFTYPE_INTEGER32, 2, CANOD_TYPE_ARRAY, "Postition Range Limits"},
+//	{ CIA402_POSITION_RANGELIMIT,       DEFTYPE_INTEGER32, 2, CANOD_TYPE_ARRAY, "Postition Range Limits"},
 	{ CIA402_SOFTWARE_POSITION_LIMIT, DEFTYPE_INTEGER32, 2, CANOD_TYPE_ARRAY, "Software Postition Range Limits"},
 	{ CIA402_VELOCITY_OFFSET, DEFTYPE_INTEGER32, 0, CANOD_TYPE_VAR, "Velocity Offset" },
 	{ CIA402_TORQUE_OFFSET, DEFTYPE_INTEGER32, 0, CANOD_TYPE_VAR, "Torque Offset" },
 	{ CIA402_INTERPOL_TIME_PERIOD, 0x80/*???*/, 2, CANOD_TYPE_RECORD, "Interpolation Time Period"},
 	{ CIA402_FOLLOWING_ERROR,           DEFTYPE_UNSIGNED32, 0, CANOD_TYPE_VAR , "Following Error"}, /* no object description available but recommendet in csp, csv, cst mode*/
 	{ CIA402_TARGET_VELOCITY, DEFTYPE_INTEGER32, 0, CANOD_TYPE_VAR, "Target Velocity" },
-	{ CIA402_SUPPORTED_DRIVE_MODES, DEFTYPE_UNSIGNED32, 0, CANOD_TYPE_VAR, "Supported drive modes" },
+//  { CIA402_SUPPORTED_DRIVE_MODES, DEFTYPE_UNSIGNED32, 0, CANOD_TYPE_VAR, "Supported drive modes" },
 	/* FIXME new objects, add to object description index */
 	{ CIA402_SENSOR_SELECTION_CODE,     DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Sensor Selection Mode" },
 	{ CIA402_MAX_TORQUE,                DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Max Torque" },
 	{ CIA402_MAX_CURRENT,               DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Max Current" },
-	{ CIA402_MOTOR_RATED_CURRENT,       DEFTYPE_UNSIGNED32,  0, CANOD_TYPE_VAR,   "Motor Rated Current" },
-	{ CIA402_MOTOR_RATED_TORQUE,        DEFTYPE_UNSIGNED32,  0, CANOD_TYPE_VAR,   "Motor Rated Torque" },
+//  { CIA402_MOTOR_RATED_CURRENT,       DEFTYPE_UNSIGNED32,  0, CANOD_TYPE_VAR,   "Motor Rated Current" },//
+//  { CIA402_MOTOR_RATED_TORQUE,        DEFTYPE_UNSIGNED32,  0, CANOD_TYPE_VAR,   "Motor Rated Torque" },//
 	{ CIA402_HOME_OFFSET,               DEFTYPE_INTEGER32,   0, CANOD_TYPE_VAR,   "Home Offset" },
 	{ CIA402_POLARITY,                  DEFTYPE_INTEGER32,   0, CANOD_TYPE_VAR,   "Polarity" },
 	{ CIA402_MAX_PROFILE_VELOCITY,      DEFTYPE_INTEGER32,   0, CANOD_TYPE_VAR,   "Max Profile Velocity" },
-	{ CIA402_MAX_MOTOR_SPEED,           DEFTYPE_UNSIGNED32,  0, CANOD_TYPE_VAR,   "Max Profile Speed" },
+//  { CIA402_MAX_MOTOR_SPEED,           DEFTYPE_UNSIGNED32,  0, CANOD_TYPE_VAR,   "Max Profile Speed" }, //
 	{ CIA402_PROFILE_VELOCITY,          DEFTYPE_INTEGER32,   0, CANOD_TYPE_VAR,   "Profile Velocity" },
-	{ CIA402_END_VELOCITY,              DEFTYPE_UNSIGNED32,  0, CANOD_TYPE_VAR,   "End Velocity" },
+//  { CIA402_END_VELOCITY,              DEFTYPE_UNSIGNED32,  0, CANOD_TYPE_VAR,   "End Velocity" },//
 	{ CIA402_PROFILE_ACCELERATION,      DEFTYPE_INTEGER32,   0, CANOD_TYPE_VAR,   "Profile Acceleration" },
 	{ CIA402_PROFILE_DECELERATION,      DEFTYPE_INTEGER32,   0, CANOD_TYPE_VAR,   "Profile Deceleration" },
 	{ CIA402_QUICK_STOP_DECELERATION,   DEFTYPE_INTEGER32,   0, CANOD_TYPE_VAR,   "Quick Stop Deceleration" },
-	{ CIA402_MOTION_PROFILE_TYPE,       DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Motion Profile Type" },
+//  { CIA402_MOTION_PROFILE_TYPE,       DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Motion Profile Type" },//
 	{ CIA402_TORQUE_SLOPE,              DEFTYPE_UNSIGNED32,  0, CANOD_TYPE_VAR,   "Torque Slope" },
-	{ CIA402_TORQUE_PROFILE_TYPE,       DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Torque Profile Type" },
+//  { CIA402_TORQUE_PROFILE_TYPE,       DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Torque Profile Type" },//
 	{ CIA402_POSITION_ENC_RESOLUTION,   DEFTYPE_UNSIGNED16,  0, CANOD_TYPE_VAR,   "Position Encoder Resolution" },
 	{ CIA402_GEAR_RATIO,                DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Gear Ratio" },
 	{ CIA402_MAX_ACCELERATION,      	DEFTYPE_INTEGER32,   0, CANOD_TYPE_VAR,   "Max Acceleration" },
-	{ CIA402_POSITIVE_TORQUE_LIMIT,     DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Positive Torque Limit" },
-	{ CIA402_NEGATIVE_TORQUE_LIMIT,     DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Negative Torque Limit" },
+	{ CIA402_HOMING_METHOD,				DEFTYPE_INTEGER8,	 0, CANOD_TYPE_VAR,   "Homing Method"},
+	{ CIA402_HOMING_SPEED,				DEFTYPE_INTEGER32,	 0, CANOD_TYPE_VAR,   "Homing Speed"},
+	{ CIA402_HOMING_ACCELERATION,		DEFTYPE_INTEGER32, 	 0, CANOD_TYPE_VAR,   "Homing Acceleration"},
+	{ COMMUTATION_OFFSET_CLKWISE,	  	DEFTYPE_INTEGER16,	 0, CANOD_TYPE_VAR,   "Commutation Offset Clockwise"},
+	{ COMMUTATION_OFFSET_CCLKWISE,	 	DEFTYPE_INTEGER16,	 0, CANOD_TYPE_VAR,   "Commutation Offset Counter Clockwise"},
+	{ MOTOR_WINDING_TYPE,	         	DEFTYPE_INTEGER8, 	 0, CANOD_TYPE_VAR,   "Motor Winding Type"},
+	{ LIMIT_SWITCH_TYPE,				DEFTYPE_INTEGER8, 	 0, CANOD_TYPE_VAR,   "Limit Switch Type"},
+//  { CIA402_POSITIVE_TORQUE_LIMIT,     DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Positive Torque Limit" },//
+//  { CIA402_NEGATIVE_TORQUE_LIMIT,     DEFTYPE_INTEGER16,   0, CANOD_TYPE_VAR,   "Negative Torque Limit" },//
 
 	{ CIA402_MOTOR_TYPE,                DEFTYPE_UNSIGNED16,  0, CANOD_TYPE_VAR, "Motor Type" },
 	/* the following objects are vendor specific and defined by CiA402_Objects.xlsx */
@@ -225,7 +231,7 @@ struct _sdoinfo_entry_description SDO_Info_Entries[] = {
 	/* index, sub, value info, datatype, bitlength, object access, value, name */
 	{ CIA402_CONTROLWORD, 0, 0, DEFTYPE_UNSIGNED16, 16, 0x023f |COD_RXPDO_MAPABLE|COD_WR_OP_STATE, 0, "CiA402 Control Word" }, /* map to PDO */
 	{ CIA402_STATUSWORD, 0, 0, DEFTYPE_UNSIGNED16, 16, 0x023f|COD_TXPDO_MAPABLE, 0, "CiA402 Status Word" },  /* map to PDO */
-	{ CIA402_SUPPORTED_DRIVE_MODES, 0, 0, DEFTYPE_UNSIGNED32, 32, 0x023f, 0x0280 /* csv, csp, cst */, "Supported drive modes" },
+//  { CIA402_SUPPORTED_DRIVE_MODES, 0, 0, DEFTYPE_UNSIGNED32, 32, 0x023f, 0x0280 /* csv, csp, cst */, "Supported drive modes" },
 	{ CIA402_OP_MODES, 0, 0, DEFTYPE_INTEGER8, 8, 0x023f|COD_RXPDO_MAPABLE|COD_WR_OP_STATE/* writeable? */, CIA402_OP_MODE_CSP, "Operating mode" },
 	{ CIA402_OP_MODES_DISP, 0, 0, DEFTYPE_INTEGER8, 8, 0x023f|COD_TXPDO_MAPABLE, CIA402_OP_MODE_CSP, "Operating mode" },
 	{ CIA402_POSITION_VALUE, 0, 0,  DEFTYPE_INTEGER32, 32, 0x023f|COD_TXPDO_MAPABLE, 0, "Position Value" }, /* csv, csp */
@@ -235,9 +241,9 @@ struct _sdoinfo_entry_description SDO_Info_Entries[] = {
 	{ CIA402_TARGET_TORQUE, 0, 0, DEFTYPE_INTEGER16, 16, 0x023f|COD_RXPDO_MAPABLE|COD_WR_OP_STATE, 0, "Target Torque"}, /* cst */
 	{ CIA402_TORQUE_VALUE, 0, 0, DEFTYPE_INTEGER16, 16, 0x023f|COD_TXPDO_MAPABLE, 0, "Torque actual Value"}, /* csv, cst */
 	{ CIA402_TARGET_POSITION, 0, 0, DEFTYPE_INTEGER32, 32, 0x023f|COD_RXPDO_MAPABLE|COD_WR_OP_STATE, 0, "Target Position" }, /* csp */
-	{ CIA402_POSITION_RANGELIMIT, 0, 0, DEFTYPE_INTEGER32, 32, 0x0207, 2, "Postition Range Limits"}, /* csp */
-	{ CIA402_POSITION_RANGELIMIT, 1, 0, DEFTYPE_INTEGER32, 32, 0x023f, 0, "Min Postition Range Limit"},
-	{ CIA402_POSITION_RANGELIMIT, 2, 0, DEFTYPE_INTEGER32, 32, 0x023f, 0, "Max Postition Range Limit"},
+//	{ CIA402_POSITION_RANGELIMIT, 0, 0, DEFTYPE_INTEGER32, 32, 0x0207, 2, "Postition Range Limits"}, /* csp */
+//	{ CIA402_POSITION_RANGELIMIT, 1, 0, DEFTYPE_INTEGER32, 32, 0x023f, 0, "Min Postition Range Limit"},
+//	{ CIA402_POSITION_RANGELIMIT, 2, 0, DEFTYPE_INTEGER32, 32, 0x023f, 0, "Max Postition Range Limit"},
 	{ CIA402_SOFTWARE_POSITION_LIMIT, 0, 0,  DEFTYPE_INTEGER32, 32, 0x0207, 2, "Software Postition Range Limits"}, /* csp */
 	{ CIA402_SOFTWARE_POSITION_LIMIT, 1, 0,  DEFTYPE_INTEGER32, 32, 0x023f, 0, "Min Software Postition Range Limit"},
 	{ CIA402_SOFTWARE_POSITION_LIMIT, 2, 0,  DEFTYPE_INTEGER32, 32, 0x023f, 0, "Max Software Postition Range Limit"},
@@ -252,25 +258,32 @@ struct _sdoinfo_entry_description SDO_Info_Entries[] = {
 	{ CIA402_SENSOR_SELECTION_CODE,   0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Sensor Selection Mode" },
 	{ CIA402_MAX_TORQUE,              0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Max Torque" },
 	{ CIA402_MAX_CURRENT,             0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Max Current" },
-	{ CIA402_MOTOR_RATED_CURRENT,     0, 0, DEFTYPE_UNSIGNED32,  32, 0x023f, 0,   "Motor Rated Current" },
-	{ CIA402_MOTOR_RATED_TORQUE,      0, 0, DEFTYPE_UNSIGNED32,  32, 0x023f, 0,   "Motor Rated Torque" },
+//  { CIA402_MOTOR_RATED_CURRENT,     0, 0, DEFTYPE_UNSIGNED32,  32, 0x023f, 0,   "Motor Rated Current" },
+//  { CIA402_MOTOR_RATED_TORQUE,      0, 0, DEFTYPE_UNSIGNED32,  32, 0x023f, 0,   "Motor Rated Torque" },
 	{ CIA402_HOME_OFFSET,             0, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Home Offset" },
 	{ CIA402_POLARITY,                0, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Polarity" },
 	{ CIA402_MAX_PROFILE_VELOCITY,    0, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Max Profile Velocity" },
-	{ CIA402_MAX_MOTOR_SPEED,         0, 0, DEFTYPE_UNSIGNED32,  32, 0x023f, 0,   "Max Profile Speed" },
+//  { CIA402_MAX_MOTOR_SPEED,         0, 0, DEFTYPE_UNSIGNED32,  32, 0x023f, 0,   "Max Profile Speed" },
 	{ CIA402_PROFILE_VELOCITY,        0, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Profile Velocity" },
-	{ CIA402_END_VELOCITY,            0, 0, DEFTYPE_UNSIGNED32,  32, 0x023f, 0,   "End Velocity" },
+//  { CIA402_END_VELOCITY,            0, 0, DEFTYPE_UNSIGNED32,  32, 0x023f, 0,   "End Velocity" },
 	{ CIA402_PROFILE_ACCELERATION,    0, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Profile Acceleration" },
 	{ CIA402_PROFILE_DECELERATION,    0, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Profile Deceleration" },
 	{ CIA402_QUICK_STOP_DECELERATION, 0, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Quick Stop Deceleration" },
-	{ CIA402_MOTION_PROFILE_TYPE,     0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Motion Profile Type" },
+//  { CIA402_MOTION_PROFILE_TYPE,     0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Motion Profile Type" },
 	{ CIA402_TORQUE_SLOPE,            0, 0, DEFTYPE_UNSIGNED32,  32, 0x023f, 0,   "Torque Slope" },
-	{ CIA402_TORQUE_PROFILE_TYPE,     0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Torque Profile Type" },
+//  { CIA402_TORQUE_PROFILE_TYPE,     0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Torque Profile Type" },
 	{ CIA402_POSITION_ENC_RESOLUTION, 0, 0, DEFTYPE_UNSIGNED16,  16, 0x023f, 0,   "Position Encoder Resolution" },
 	{ CIA402_GEAR_RATIO,              0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Gear Ratio" },
 	{ CIA402_MAX_ACCELERATION,    	  0, 0, DEFTYPE_INTEGER32,   32, 0x023f, 0,   "Max Acceleration" },
-	{ CIA402_POSITIVE_TORQUE_LIMIT,   0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Positive Torque Limit" },
-	{ CIA402_NEGATIVE_TORQUE_LIMIT,   0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Negative Torque Limit" },
+	{ CIA402_HOMING_METHOD,			  0, 0, DEFTYPE_INTEGER8,	  8, 0x023f, 0,   "Homing Method"},
+	{ CIA402_HOMING_SPEED,			  0, 0,	DEFTYPE_INTEGER32,	 32, 0x023f, 0,   "Homing Speed"},
+	{ CIA402_HOMING_ACCELERATION,	  0, 0,	DEFTYPE_INTEGER32, 	 32, 0x023f, 0,   "Homing Acceleration"},
+	{ COMMUTATION_OFFSET_CLKWISE,	  0, 0, DEFTYPE_INTEGER16,	 16, 0x023f, 0,   "Commutation Offset Clockwise"},
+	{ COMMUTATION_OFFSET_CCLKWISE,	  0, 0,	DEFTYPE_INTEGER16,	 16, 0x023f, 0,   "Commutation Offset Counter Clockwise"},
+	{ MOTOR_WINDING_TYPE,	          0, 0,	DEFTYPE_INTEGER8, 	  8, 0x023f, 0,   "Motor Winding Type"},
+	{ LIMIT_SWITCH_TYPE,			  0, 0, DEFTYPE_INTEGER8, 	  8, 0x023f, 0,   "Limit Switch Type"},
+//  { CIA402_POSITIVE_TORQUE_LIMIT,   0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Positive Torque Limit" },
+//  { CIA402_NEGATIVE_TORQUE_LIMIT,   0, 0, DEFTYPE_INTEGER16,   16, 0x023f, 0,   "Negative Torque Limit" },
 	{ CIA402_MOTOR_TYPE,              0, 0, DEFTYPE_UNSIGNED16,  16, 0x023f, 0,   "Motor Type" },
 	/* the following objects are vendor specific and defined by CiA402_Objects.xlsx */
 	{ CIA402_MOTOR_SPECIFIC,          0, 0, DEFTYPE_UNSIGNED8,    8, 0x0207, 6,   "Motor Specific Settings" },
@@ -563,4 +576,3 @@ int canod_set_entry(unsigned index, unsigned subindex, unsigned value, unsigned 
 
 	return 1; /* cannot set value */
 }
-
