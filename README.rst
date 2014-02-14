@@ -48,4 +48,4 @@ Please see `LICENSE`_.
 
 .. _DOCUMENTATION: http://synapticon.github.io/sc_sncn_ethercat/
 .. _sc_somanet-base: https://github.com/synapticon/sc_somanet-base
-.. _LICENSE: https://github.com/synapticon/sc_sncn_motorctrl_sin/blob/master/LICENSE
+.. _LICENSE: https://github.com/synapticon/sc_sncn_motorctrl_sin/blob/master/LICENSE.dox
