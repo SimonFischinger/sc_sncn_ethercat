@@ -1,5 +1,5 @@
-<map id="sc_sncn_ethercat/module_ethercat/src/canod/canod.h" name="sc_sncn_ethercat/module_ethercat/src/canod/canod.h">
-<area shape="rect" id="node3" href="$dc/df5/canod_8xc.html" title="managing object dictionary " alt="" coords="5,102,200,149"/>
-<area shape="rect" id="node5" href="$d7/d33/coe_8xc.html" title="Implementation of the CoE handling of the EtherCAT module. " alt="" coords="224,102,395,149"/>
-<area shape="rect" id="node7" href="$d3/d46/ethercat_8xc.html" title="A simple configuration file for the ethercat module to activate or disable specific features..." alt="" coords="419,102,589,149"/>
+<map id="module_ethercat/src/canod/canod.h" name="module_ethercat/src/canod/canod.h">
+<area shape="rect" id="node3" href="$dc/df5/canod_8xc.html" title="managing object dictionary " alt="" coords="5,102,144,149"/>
+<area shape="rect" id="node5" href="$d7/d33/coe_8xc.html" title="Implementation of the CoE handling of the EtherCAT module. " alt="" coords="168,102,307,149"/>
+<area shape="rect" id="node7" href="$d3/d46/ethercat_8xc.html" title="A simple configuration file for the ethercat module to activate or disable specific features..." alt="" coords="331,102,469,149"/>
 </map>

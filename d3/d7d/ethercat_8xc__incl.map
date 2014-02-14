@@ -1,4 +1,4 @@
-<map id="sc_sncn_ethercat/module_ethercat/src/ethercat.xc" name="sc_sncn_ethercat/module_ethercat/src/ethercat.xc">
+<map id="module_ethercat/src/ethercat.xc" name="module_ethercat/src/ethercat.xc">
 <area shape="rect" id="node3" href="$df/d04/ethercat_8h.html" title="ethercat.h" alt="" coords="8,101,88,131"/>
 <area shape="rect" id="node9" href="$d6/dda/alstate_8h.html" title="alstate.h" alt="" coords="112,101,184,131"/>
 <area shape="rect" id="node11" href="$d0/df5/foefs_8h.html" title="API for simple and specialized filesystem for use within the EtherCAT module. " alt="" coords="208,101,269,131"/>

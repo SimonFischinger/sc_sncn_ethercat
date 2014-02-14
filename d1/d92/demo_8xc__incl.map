@@ -1,4 +1,4 @@
-<map id="sc_sncn_ethercat/app_ethernet&#45;demo/src/demo.xc" name="sc_sncn_ethercat/app_ethernet&#45;demo/src/demo.xc">
+<map id="app_ethernet&#45;demo/src/demo.xc" name="app_ethernet&#45;demo/src/demo.xc">
 <area shape="rect" id="node17" href="$dc/d31/checksum_8h.html" title="checksum.h" alt="" coords="685,101,779,131"/>
 <area shape="rect" id="node21" href="$df/d04/ethercat_8h.html" title="ethercat.h" alt="" coords="901,101,981,131"/>
 <area shape="rect" id="node23" href="$d5/d7e/foe__chan_8h.html" title="foe_chan.h" alt="" coords="849,179,935,208"/>

@@ -1,8 +1,0 @@
-<map id="sc_sncn_motorctrl_sin/module_profile/profile_ctrl/profile_torque.xc" name="sc_sncn_motorctrl_sin/module_profile/profile_ctrl/profile_torque.xc">
-<area shape="rect" id="node3" href="$d4/d2e/torque__ctrl__client_8h.html" title="torque_ctrl_client.h" alt="" coords="101,117,232,147"/>
-<area shape="rect" id="node7" href="$de/d9c/internal__config_8h.html" title="internal_config.h" alt="" coords="5,195,123,224"/>
-<area shape="rect" id="node9" href="$df/df8/refclk_8h.html" title="refclk.h" alt="" coords="619,117,683,147"/>
-<area shape="rect" id="node16" href="$df/d07/drive__config_8h.html" title="drive_config.h" alt="" coords="493,117,595,147"/>
-<area shape="rect" id="node18" href="$de/d45/profile_8h.html" title="Profile Generation for Position, Velocity and Torque Implements position profile based on Linear Func..." alt="" coords="707,117,773,147"/>
-<area shape="rect" id="node24" href="$d4/db2/profile__control_8h.html" title="Profile Control functions Implements position profile control, velocity profile control and torque pr..." alt="" coords="256,117,371,147"/>
-</map>

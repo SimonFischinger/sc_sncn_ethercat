@@ -1,8 +1,8 @@
 var NAVTREE =
 [
   [ "sc_sncn_ethercat", "index.html", [
-    [ "License", "de/d54/legal.html", null ],
     [ "Synapticon", "d4/df0/Synapticon.html", null ],
+    [ "License", "de/d54/legal.html", null ],
     [ "Data Structures", null, [
       [ "Data Structures", "annotated.html", "annotated" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -31,7 +31,7 @@ var NAVTREEINDEX =
 "annotated.html",
 "d3/d51/foe_8h.html#a9672aa84af83a4b3e2399547c2505a01",
 "da/d39/main_8xc.html#ae2bf4dd485d02ba7f03b0c499a59fcec",
-"globals_o.html"
+"globals_p.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

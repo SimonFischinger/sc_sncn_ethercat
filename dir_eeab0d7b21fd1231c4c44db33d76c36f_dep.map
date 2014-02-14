@@ -1,7 +1,0 @@
-<map id="sc_sncn_motorctrl_sin/test_ethercat&#45;motorctrl&#45;mode/config" name="sc_sncn_motorctrl_sin/test_ethercat&#45;motorctrl&#45;mode/config">
-<area shape="rect" id="node4" href="dir_4bbd3b6dc62718db9fdc9dd093f99772.html" title="motor" alt="" coords="37,65,109,113"/>
-<area shape="rect" id="node5" href="dir_62e7531ac24ae9777c8fd4838747f5e8.html" title="module_common" alt="" coords="13,161,133,209"/>
-<area shape="rect" id="edge4" href="dir_000041_000011.html" title="2" alt="" coords="78,134,86,151"/>
-<area shape="rect" id="graph3" href="dir_eeab0d7b21fd1231c4c44db33d76c36f.html" alt="" coords="27,55,216,124"/>
-<area shape="rect" id="graph2" href="dir_130fff46d009881ce6a8f2a9f11f376e.html" title="test_ethercat&#45;motorctrl&#45;mode" alt="" coords="16,16,227,135"/>
-</map>

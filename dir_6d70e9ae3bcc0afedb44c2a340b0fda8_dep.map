@@ -1,7 +1,0 @@
-<map id="sc_sncn_motorctrl_sin/test_qei/config" name="sc_sncn_motorctrl_sin/test_qei/config">
-<area shape="rect" id="node4" href="dir_afcb0e2447c323e841740f21b95390a6.html" title="motor" alt="" coords="37,65,109,113"/>
-<area shape="rect" id="node5" href="dir_62e7531ac24ae9777c8fd4838747f5e8.html" title="module_common" alt="" coords="13,161,133,209"/>
-<area shape="rect" id="edge4" href="dir_000050_000011.html" title="2" alt="" coords="78,134,86,151"/>
-<area shape="rect" id="graph3" href="dir_6d70e9ae3bcc0afedb44c2a340b0fda8.html" alt="" coords="27,55,216,124"/>
-<area shape="rect" id="graph2" href="dir_9c800e58450440449deaced66471582d.html" title="test_qei" alt="" coords="16,16,227,135"/>
-</map>

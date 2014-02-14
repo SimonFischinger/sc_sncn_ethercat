@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>sc_sncn_ethercat: sc_sncn_ethercat/module_ethercat/src/coe.h File Reference</title>
+<title>sc_sncn_ethercat: module_ethercat/src/coe.h File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -119,14 +119,14 @@ $(document).ready(function(){initNavTree('d1/d68/coe_8h.html','../../');});
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for coe.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../dd/dc1/coe_8h__incl.png" border="0" usemap="#sc__sncn__ethercat_2module__ethercat_2src_2coe_8h" alt=""/></div>
+<div class="center"><img src="../../dd/dc1/coe_8h__incl.png" border="0" usemap="#module__ethercat_2src_2coe_8h" alt=""/></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d9/d9b/coe_8h__dep__incl.png" border="0" usemap="#sc__sncn__ethercat_2module__ethercat_2src_2coe_8hdep" alt=""/></div>
-<map name="sc__sncn__ethercat_2module__ethercat_2src_2coe_8hdep" id="sc__sncn__ethercat_2module__ethercat_2src_2coe_8hdep">
-<area shape="rect" id="node3" href="../../d7/d33/coe_8xc.html" title="Implementation of the CoE handling of the EtherCAT module. " alt="" coords="5,102,176,149"/><area shape="rect" id="node5" href="../../d3/d46/ethercat_8xc.html" title="A simple configuration file for the ethercat module to activate or disable specific features..." alt="" coords="200,102,371,149"/></map>
+<div class="center"><img src="../../d9/d9b/coe_8h__dep__incl.png" border="0" usemap="#module__ethercat_2src_2coe_8hdep" alt=""/></div>
+<map name="module__ethercat_2src_2coe_8hdep" id="module__ethercat_2src_2coe_8hdep">
+<area shape="rect" id="node3" href="../../d7/d33/coe_8xc.html" title="Implementation of the CoE handling of the EtherCAT module. " alt="" coords="5,102,144,149"/><area shape="rect" id="node5" href="../../d3/d46/ethercat_8xc.html" title="A simple configuration file for the ethercat module to activate or disable specific features..." alt="" coords="168,102,307,149"/></map>
 </div>
 </div>
 <p><a href="../../d1/d68/coe_8h_source.html">Go to the source code of this file.</a></p>
@@ -144,127 +144,127 @@ Macros</h2></td></tr>
 <tr class="separator:a251ceef29d31df0648246a7ef11b5d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7925ce6a16fa67de1b90d0eaa91c5e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#ac7925ce6a16fa67de1b90d0eaa91c5e2">COE_MAX_DATA_SIZE</a>&#160;&#160;&#160;(<a class="el" href="../../d1/d68/coe_8h.html#a251ceef29d31df0648246a7ef11b5d4c">COE_MAX_MSG_SIZE</a>-<a class="el" href="../../d1/d68/coe_8h.html#a80263752d12793df8ebd8d787998bcd3">COE_MAX_HEADER_SIZE</a>)</td></tr>
 <tr class="separator:ac7925ce6a16fa67de1b90d0eaa91c5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a640fc8a0603a0be2588a22cdf75dcaad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a640fc8a0603a0be2588a22cdf75dcaad">COE_SERVICE_EMERGENCY</a>&#160;&#160;&#160;0x01  /* Emergency */</td></tr>
+<tr class="memitem:a640fc8a0603a0be2588a22cdf75dcaad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a640fc8a0603a0be2588a22cdf75dcaad">COE_SERVICE_EMERGENCY</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="separator:a640fc8a0603a0be2588a22cdf75dcaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac959dc3aaf95d20177db7914b24f0af0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#ac959dc3aaf95d20177db7914b24f0af0">COE_SERVICE_SDO_REQ</a>&#160;&#160;&#160;0x02  /* SDO Request */</td></tr>
+<tr class="memitem:ac959dc3aaf95d20177db7914b24f0af0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#ac959dc3aaf95d20177db7914b24f0af0">COE_SERVICE_SDO_REQ</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="separator:ac959dc3aaf95d20177db7914b24f0af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19db9b83bf9a14ef3168b86201440129"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a19db9b83bf9a14ef3168b86201440129">COE_SERVICE_SDO_RSP</a>&#160;&#160;&#160;0x03  /* SDO Response */</td></tr>
+<tr class="memitem:a19db9b83bf9a14ef3168b86201440129"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a19db9b83bf9a14ef3168b86201440129">COE_SERVICE_SDO_RSP</a>&#160;&#160;&#160;0x03</td></tr>
 <tr class="separator:a19db9b83bf9a14ef3168b86201440129"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21c02496070d167de920c815e1334815"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a21c02496070d167de920c815e1334815">COE_SERVICE_TXPDO</a>&#160;&#160;&#160;0x04  /* TxPDO */</td></tr>
+<tr class="memitem:a21c02496070d167de920c815e1334815"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a21c02496070d167de920c815e1334815">COE_SERVICE_TXPDO</a>&#160;&#160;&#160;0x04</td></tr>
 <tr class="separator:a21c02496070d167de920c815e1334815"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fe9a4dc0545a549f24b024c8c38aad9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a3fe9a4dc0545a549f24b024c8c38aad9">COE_SERVICE_RXPDO</a>&#160;&#160;&#160;0x05  /* RxPDO */</td></tr>
+<tr class="memitem:a3fe9a4dc0545a549f24b024c8c38aad9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a3fe9a4dc0545a549f24b024c8c38aad9">COE_SERVICE_RXPDO</a>&#160;&#160;&#160;0x05</td></tr>
 <tr class="separator:a3fe9a4dc0545a549f24b024c8c38aad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa364c51236b7a39eb2e24d6a25b3ef32"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#aa364c51236b7a39eb2e24d6a25b3ef32">COE_SERVICE_TXPDO_REMOTE</a>&#160;&#160;&#160;0x06  /* TxPDO remote request */</td></tr>
+<tr class="memitem:aa364c51236b7a39eb2e24d6a25b3ef32"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#aa364c51236b7a39eb2e24d6a25b3ef32">COE_SERVICE_TXPDO_REMOTE</a>&#160;&#160;&#160;0x06</td></tr>
 <tr class="separator:aa364c51236b7a39eb2e24d6a25b3ef32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bb34d7d146f103846f480545d6cee7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a8bb34d7d146f103846f480545d6cee7e">COE_SERVICE_RXPDO_REMOTE</a>&#160;&#160;&#160;0x07  /* RxPDO remote request */</td></tr>
+<tr class="memitem:a8bb34d7d146f103846f480545d6cee7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a8bb34d7d146f103846f480545d6cee7e">COE_SERVICE_RXPDO_REMOTE</a>&#160;&#160;&#160;0x07</td></tr>
 <tr class="separator:a8bb34d7d146f103846f480545d6cee7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a68ff04ee50388f1427fadc2b5976aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a3a68ff04ee50388f1427fadc2b5976aa">COE_SERVICE_SDO_INFO</a>&#160;&#160;&#160;0x08  /* SDO Information */</td></tr>
+<tr class="memitem:a3a68ff04ee50388f1427fadc2b5976aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a3a68ff04ee50388f1427fadc2b5976aa">COE_SERVICE_SDO_INFO</a>&#160;&#160;&#160;0x08</td></tr>
 <tr class="separator:a3a68ff04ee50388f1427fadc2b5976aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b51f976099bf604f88eabf20345ec72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a2b51f976099bf604f88eabf20345ec72">COE_SDOI_GET_ODLIST_REQ</a>&#160;&#160;&#160;0x01 /* Get OD List Request */</td></tr>
+<tr class="memitem:a2b51f976099bf604f88eabf20345ec72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a2b51f976099bf604f88eabf20345ec72">COE_SDOI_GET_ODLIST_REQ</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="separator:a2b51f976099bf604f88eabf20345ec72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90dcc2e4822ca7a94d8d88127da5aa23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a90dcc2e4822ca7a94d8d88127da5aa23">COE_SDOI_GET_ODLIST_RSP</a>&#160;&#160;&#160;0x02 /* Get OD List Response */</td></tr>
+<tr class="memitem:a90dcc2e4822ca7a94d8d88127da5aa23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a90dcc2e4822ca7a94d8d88127da5aa23">COE_SDOI_GET_ODLIST_RSP</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="separator:a90dcc2e4822ca7a94d8d88127da5aa23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92cfd5e8f28db23e379d0e3a2ce5a158"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a92cfd5e8f28db23e379d0e3a2ce5a158">COE_SDOI_OBJDICT_REQ</a>&#160;&#160;&#160;0x03 /* Get Object Description Request */</td></tr>
+<tr class="memitem:a92cfd5e8f28db23e379d0e3a2ce5a158"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a92cfd5e8f28db23e379d0e3a2ce5a158">COE_SDOI_OBJDICT_REQ</a>&#160;&#160;&#160;0x03</td></tr>
 <tr class="separator:a92cfd5e8f28db23e379d0e3a2ce5a158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a482064759538a9f0a8ce640798a6907e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a482064759538a9f0a8ce640798a6907e">COE_SDOI_OBJDICT_RSP</a>&#160;&#160;&#160;0x04 /* Get Object Description Response */</td></tr>
+<tr class="memitem:a482064759538a9f0a8ce640798a6907e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a482064759538a9f0a8ce640798a6907e">COE_SDOI_OBJDICT_RSP</a>&#160;&#160;&#160;0x04</td></tr>
 <tr class="separator:a482064759538a9f0a8ce640798a6907e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5c466c896ca728e886aca8648d9b2be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#aa5c466c896ca728e886aca8648d9b2be">COE_SDOI_ENTRY_DESCRIPTION_REQ</a>&#160;&#160;&#160;0x05 /* Get Entry Description Request */</td></tr>
+<tr class="memitem:aa5c466c896ca728e886aca8648d9b2be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#aa5c466c896ca728e886aca8648d9b2be">COE_SDOI_ENTRY_DESCRIPTION_REQ</a>&#160;&#160;&#160;0x05</td></tr>
 <tr class="separator:aa5c466c896ca728e886aca8648d9b2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6516c8a6fbd0bd4bdf74155c1f6c4921"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a6516c8a6fbd0bd4bdf74155c1f6c4921">COE_SDOI_ENTRY_DESCRIPTION_RSP</a>&#160;&#160;&#160;0x06 /* Get Entry Description Response */</td></tr>
+<tr class="memitem:a6516c8a6fbd0bd4bdf74155c1f6c4921"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a6516c8a6fbd0bd4bdf74155c1f6c4921">COE_SDOI_ENTRY_DESCRIPTION_RSP</a>&#160;&#160;&#160;0x06</td></tr>
 <tr class="separator:a6516c8a6fbd0bd4bdf74155c1f6c4921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a536d9f7879a449099ac4ed4a73c30273"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a536d9f7879a449099ac4ed4a73c30273">COE_SDOI_INFO_ERR_REQ</a>&#160;&#160;&#160;0x07 /* SDO Info Error Request */</td></tr>
+<tr class="memitem:a536d9f7879a449099ac4ed4a73c30273"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a536d9f7879a449099ac4ed4a73c30273">COE_SDOI_INFO_ERR_REQ</a>&#160;&#160;&#160;0x07</td></tr>
 <tr class="separator:a536d9f7879a449099ac4ed4a73c30273"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acebd286b8776bb2e0a9d79b4e421d578"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#acebd286b8776bb2e0a9d79b4e421d578">COE_SDO_LAST_FRAGMENT</a>&#160;&#160;&#160;0x00  /* last SDO Information fragment */</td></tr>
+<tr class="memitem:acebd286b8776bb2e0a9d79b4e421d578"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#acebd286b8776bb2e0a9d79b4e421d578">COE_SDO_LAST_FRAGMENT</a>&#160;&#160;&#160;0x00</td></tr>
 <tr class="separator:acebd286b8776bb2e0a9d79b4e421d578"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af71acd5689e2b699366ba095fa8bfabf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#af71acd5689e2b699366ba095fa8bfabf">COE_SDO_MORE_FRAGMENTS</a>&#160;&#160;&#160;0x01  /* SDO Information fragments will follow */</td></tr>
+<tr class="memitem:af71acd5689e2b699366ba095fa8bfabf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#af71acd5689e2b699366ba095fa8bfabf">COE_SDO_MORE_FRAGMENTS</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="separator:af71acd5689e2b699366ba095fa8bfabf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6462a5589cd19e60e432d4924770d83e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a6462a5589cd19e60e432d4924770d83e">COE_DATA_SET_SIZE_4</a>&#160;&#160;&#160;0x00  /* 4 octet data */</td></tr>
+<tr class="memitem:a6462a5589cd19e60e432d4924770d83e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a6462a5589cd19e60e432d4924770d83e">COE_DATA_SET_SIZE_4</a>&#160;&#160;&#160;0x00</td></tr>
 <tr class="separator:a6462a5589cd19e60e432d4924770d83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f7dd469f8fde497e04078555093d134"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a5f7dd469f8fde497e04078555093d134">COE_DATA_SET_SIZE_3</a>&#160;&#160;&#160;0x01  /* 3 octet data */</td></tr>
+<tr class="memitem:a5f7dd469f8fde497e04078555093d134"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a5f7dd469f8fde497e04078555093d134">COE_DATA_SET_SIZE_3</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="separator:a5f7dd469f8fde497e04078555093d134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8126925a903d4a6a72661cea40a33897"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a8126925a903d4a6a72661cea40a33897">COE_DATA_SET_SIZE_2</a>&#160;&#160;&#160;0x02  /* 2 octet data */</td></tr>
+<tr class="memitem:a8126925a903d4a6a72661cea40a33897"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a8126925a903d4a6a72661cea40a33897">COE_DATA_SET_SIZE_2</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="separator:a8126925a903d4a6a72661cea40a33897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1a7b3321372ccb8383b6e4f7ff933c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#ae1a7b3321372ccb8383b6e4f7ff933c6">COE_DATA_SET_SIZE_1</a>&#160;&#160;&#160;0x03  /* 1 octet data */</td></tr>
+<tr class="memitem:ae1a7b3321372ccb8383b6e4f7ff933c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#ae1a7b3321372ccb8383b6e4f7ff933c6">COE_DATA_SET_SIZE_1</a>&#160;&#160;&#160;0x03</td></tr>
 <tr class="separator:ae1a7b3321372ccb8383b6e4f7ff933c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bb7f2885d50e7ae2d100e22be70500a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a9bb7f2885d50e7ae2d100e22be70500a">COE_CMD_DOWNLOAD_SEG_REQ</a>&#160;&#160;&#160;0x00  /* download segment request */</td></tr>
+<tr class="memitem:a9bb7f2885d50e7ae2d100e22be70500a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a9bb7f2885d50e7ae2d100e22be70500a">COE_CMD_DOWNLOAD_SEG_REQ</a>&#160;&#160;&#160;0x00</td></tr>
 <tr class="separator:a9bb7f2885d50e7ae2d100e22be70500a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa60cecdb5862be4b77312a0a076c2699"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#aa60cecdb5862be4b77312a0a076c2699">COE_CMD_DOWNLOAD_SEG_RSP</a>&#160;&#160;&#160;0x01  /* download segment response */</td></tr>
+<tr class="memitem:aa60cecdb5862be4b77312a0a076c2699"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#aa60cecdb5862be4b77312a0a076c2699">COE_CMD_DOWNLOAD_SEG_RSP</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="separator:aa60cecdb5862be4b77312a0a076c2699"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf153a36f3f6a57c55b57f5448a25b52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#adf153a36f3f6a57c55b57f5448a25b52">COE_CMD_DOWNLOAD_REQ</a>&#160;&#160;&#160;0x01  /* download request */</td></tr>
+<tr class="memitem:adf153a36f3f6a57c55b57f5448a25b52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#adf153a36f3f6a57c55b57f5448a25b52">COE_CMD_DOWNLOAD_REQ</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="separator:adf153a36f3f6a57c55b57f5448a25b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc031c7f7426c9d1ad5ad7456ddeba52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#adc031c7f7426c9d1ad5ad7456ddeba52">COE_CMD_DOWNLOAD_RSP</a>&#160;&#160;&#160;0x03  /* download response */</td></tr>
+<tr class="memitem:adc031c7f7426c9d1ad5ad7456ddeba52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#adc031c7f7426c9d1ad5ad7456ddeba52">COE_CMD_DOWNLOAD_RSP</a>&#160;&#160;&#160;0x03</td></tr>
 <tr class="separator:adc031c7f7426c9d1ad5ad7456ddeba52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a082bd5b2dfffe5270b0715dd1a6e84ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a082bd5b2dfffe5270b0715dd1a6e84ae">COE_CMD_UPLOAD_REQ</a>&#160;&#160;&#160;0x02  /* upload request */</td></tr>
+<tr class="memitem:a082bd5b2dfffe5270b0715dd1a6e84ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a082bd5b2dfffe5270b0715dd1a6e84ae">COE_CMD_UPLOAD_REQ</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="separator:a082bd5b2dfffe5270b0715dd1a6e84ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f8be00a9725faf2df7982fe3c4c99a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a0f8be00a9725faf2df7982fe3c4c99a0">COE_CMD_UPLOAD_RSP</a>&#160;&#160;&#160;0x02  /* upload response */</td></tr>
+<tr class="memitem:a0f8be00a9725faf2df7982fe3c4c99a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a0f8be00a9725faf2df7982fe3c4c99a0">COE_CMD_UPLOAD_RSP</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="separator:a0f8be00a9725faf2df7982fe3c4c99a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad92fb97cd28489429054b2638ba641ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#ad92fb97cd28489429054b2638ba641ff">COE_CMD_UPLOAD_SEG_REQ</a>&#160;&#160;&#160;0x03  /* upload segment request */</td></tr>
+<tr class="memitem:ad92fb97cd28489429054b2638ba641ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#ad92fb97cd28489429054b2638ba641ff">COE_CMD_UPLOAD_SEG_REQ</a>&#160;&#160;&#160;0x03</td></tr>
 <tr class="separator:ad92fb97cd28489429054b2638ba641ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a59800cdbf579fdf6bbb378f04fba3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a3a59800cdbf579fdf6bbb378f04fba3f">COE_CMD_UPLOAD_SEG_RSP</a>&#160;&#160;&#160;0x00  /* upload segment response */</td></tr>
+<tr class="memitem:a3a59800cdbf579fdf6bbb378f04fba3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a3a59800cdbf579fdf6bbb378f04fba3f">COE_CMD_UPLOAD_SEG_RSP</a>&#160;&#160;&#160;0x00</td></tr>
 <tr class="separator:a3a59800cdbf579fdf6bbb378f04fba3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82f0f2eb6a26a0881150367040a390ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a82f0f2eb6a26a0881150367040a390ea">COE_CMD_ABORT_REQ</a>&#160;&#160;&#160;0x04  /* abort transfer request */</td></tr>
+<tr class="memitem:a82f0f2eb6a26a0881150367040a390ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a82f0f2eb6a26a0881150367040a390ea">COE_CMD_ABORT_REQ</a>&#160;&#160;&#160;0x04</td></tr>
 <tr class="separator:a82f0f2eb6a26a0881150367040a390ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c9c8784a7803b8f599a6298e581215e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a6c9c8784a7803b8f599a6298e581215e">COE_ABORT_TOGGLE_BIT</a>&#160;&#160;&#160;0x05030000 /* Toggle bit not changed */</td></tr>
+<tr class="memitem:a6c9c8784a7803b8f599a6298e581215e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a6c9c8784a7803b8f599a6298e581215e">COE_ABORT_TOGGLE_BIT</a>&#160;&#160;&#160;0x05030000</td></tr>
 <tr class="separator:a6c9c8784a7803b8f599a6298e581215e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1513b484abc8db6d7e1dbce3c4ce37db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a1513b484abc8db6d7e1dbce3c4ce37db">COE_ABORT_PROTO_TIMEOUT</a>&#160;&#160;&#160;0x05040000 /* SDO protocol timeout */</td></tr>
+<tr class="memitem:a1513b484abc8db6d7e1dbce3c4ce37db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a1513b484abc8db6d7e1dbce3c4ce37db">COE_ABORT_PROTO_TIMEOUT</a>&#160;&#160;&#160;0x05040000</td></tr>
 <tr class="separator:a1513b484abc8db6d7e1dbce3c4ce37db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b66c88d04eafd819d50a9bbca010710"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a9b66c88d04eafd819d50a9bbca010710">COE_ABORT_CLIENTSERVER</a>&#160;&#160;&#160;0x05040001 /* Client/Server command specifier not valid or unknown */</td></tr>
+<tr class="memitem:a9b66c88d04eafd819d50a9bbca010710"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a9b66c88d04eafd819d50a9bbca010710">COE_ABORT_CLIENTSERVER</a>&#160;&#160;&#160;0x05040001</td></tr>
 <tr class="separator:a9b66c88d04eafd819d50a9bbca010710"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab45e64efeca6ed64fabe96f03e37191d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#ab45e64efeca6ed64fabe96f03e37191d">COE_ABORT_MEMORY</a>&#160;&#160;&#160;0x05040005 /* Out of memory */</td></tr>
+<tr class="memitem:ab45e64efeca6ed64fabe96f03e37191d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#ab45e64efeca6ed64fabe96f03e37191d">COE_ABORT_MEMORY</a>&#160;&#160;&#160;0x05040005</td></tr>
 <tr class="separator:ab45e64efeca6ed64fabe96f03e37191d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af96c5be41d957af79b1cbd08737fa29b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#af96c5be41d957af79b1cbd08737fa29b">COE_ABORT_UNSUPPORTED</a>&#160;&#160;&#160;0x06010000 /* Unsupported access to an object */</td></tr>
+<tr class="memitem:af96c5be41d957af79b1cbd08737fa29b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#af96c5be41d957af79b1cbd08737fa29b">COE_ABORT_UNSUPPORTED</a>&#160;&#160;&#160;0x06010000</td></tr>
 <tr class="separator:af96c5be41d957af79b1cbd08737fa29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ac3438ce13d46c1ecc77637ee43fdf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a7ac3438ce13d46c1ecc77637ee43fdf1">COE_ABORT_READ_WO</a>&#160;&#160;&#160;0x06010001 /* Attempt to read to a write only object */</td></tr>
+<tr class="memitem:a7ac3438ce13d46c1ecc77637ee43fdf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a7ac3438ce13d46c1ecc77637ee43fdf1">COE_ABORT_READ_WO</a>&#160;&#160;&#160;0x06010001</td></tr>
 <tr class="separator:a7ac3438ce13d46c1ecc77637ee43fdf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fc2f89c57b7ebaa7600f66a9f7701dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a7fc2f89c57b7ebaa7600f66a9f7701dd">COE_ABORT_WRITE_RO</a>&#160;&#160;&#160;0x06010002 /* Attempt to write to a read only object */</td></tr>
+<tr class="memitem:a7fc2f89c57b7ebaa7600f66a9f7701dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a7fc2f89c57b7ebaa7600f66a9f7701dd">COE_ABORT_WRITE_RO</a>&#160;&#160;&#160;0x06010002</td></tr>
 <tr class="separator:a7fc2f89c57b7ebaa7600f66a9f7701dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a1e87f2af3a580bd356b7f854fac756"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a3a1e87f2af3a580bd356b7f854fac756">COE_ABORT_OBJNOTEXIST</a>&#160;&#160;&#160;0x06020000 /* The object does not exist in the object directory */</td></tr>
+<tr class="memitem:a3a1e87f2af3a580bd356b7f854fac756"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a3a1e87f2af3a580bd356b7f854fac756">COE_ABORT_OBJNOTEXIST</a>&#160;&#160;&#160;0x06020000</td></tr>
 <tr class="separator:a3a1e87f2af3a580bd356b7f854fac756"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa26dcc5a51de8fc832bcd0c6f8290acd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#aa26dcc5a51de8fc832bcd0c6f8290acd">COE_ABORT_NOPDOMAPPING</a>&#160;&#160;&#160;0x06040041 /* The object can not be mapped into the PDO */</td></tr>
+<tr class="memitem:aa26dcc5a51de8fc832bcd0c6f8290acd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#aa26dcc5a51de8fc832bcd0c6f8290acd">COE_ABORT_NOPDOMAPPING</a>&#160;&#160;&#160;0x06040041</td></tr>
 <tr class="separator:aa26dcc5a51de8fc832bcd0c6f8290acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3ceecc99589d1d9f1c55e871216defd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#ac3ceecc99589d1d9f1c55e871216defd">COE_ABORT_EXCEED_PDO</a>&#160;&#160;&#160;0x06040042 /* The number and length of the objects to be mapped would exceed the PDO length */</td></tr>
+<tr class="memitem:ac3ceecc99589d1d9f1c55e871216defd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#ac3ceecc99589d1d9f1c55e871216defd">COE_ABORT_EXCEED_PDO</a>&#160;&#160;&#160;0x06040042</td></tr>
 <tr class="separator:ac3ceecc99589d1d9f1c55e871216defd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae98ef8f676b378624bd02e4b19d0ab8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#ae98ef8f676b378624bd02e4b19d0ab8e">COE_ABORT_PARAM_INCOMPATIBLE</a>&#160;&#160;&#160;0x06040043 /* General parameter incompatibility reason */</td></tr>
+<tr class="memitem:ae98ef8f676b378624bd02e4b19d0ab8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#ae98ef8f676b378624bd02e4b19d0ab8e">COE_ABORT_PARAM_INCOMPATIBLE</a>&#160;&#160;&#160;0x06040043</td></tr>
 <tr class="separator:ae98ef8f676b378624bd02e4b19d0ab8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75f8f0c3b6595a288b23f5ae962a1208"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a75f8f0c3b6595a288b23f5ae962a1208">COE_ABORT_INTERNAL_INCOMP</a>&#160;&#160;&#160;0x06040047 /* General internal incompatibility in the device */</td></tr>
+<tr class="memitem:a75f8f0c3b6595a288b23f5ae962a1208"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a75f8f0c3b6595a288b23f5ae962a1208">COE_ABORT_INTERNAL_INCOMP</a>&#160;&#160;&#160;0x06040047</td></tr>
 <tr class="separator:a75f8f0c3b6595a288b23f5ae962a1208"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f5d02dc775b8fc4ed78aa242f56150a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a6f5d02dc775b8fc4ed78aa242f56150a">COE_ABORT_HW_ERROR</a>&#160;&#160;&#160;0x06060000 /* Access failed due to a hardware error */</td></tr>
+<tr class="memitem:a6f5d02dc775b8fc4ed78aa242f56150a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a6f5d02dc775b8fc4ed78aa242f56150a">COE_ABORT_HW_ERROR</a>&#160;&#160;&#160;0x06060000</td></tr>
 <tr class="separator:a6f5d02dc775b8fc4ed78aa242f56150a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5670b76139a4a978025254dcc7477a69"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a5670b76139a4a978025254dcc7477a69">COE_ABORT_TYPE_MISMATCH</a>&#160;&#160;&#160;0x06070010 /* Data type does not match, length of service parameter does not match */</td></tr>
+<tr class="memitem:a5670b76139a4a978025254dcc7477a69"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a5670b76139a4a978025254dcc7477a69">COE_ABORT_TYPE_MISMATCH</a>&#160;&#160;&#160;0x06070010</td></tr>
 <tr class="separator:a5670b76139a4a978025254dcc7477a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a9769e27493439acb7b3774e02f7c4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a6a9769e27493439acb7b3774e02f7c4c">COE_ABORT_TYPE_MISMATCH_HI</a>&#160;&#160;&#160;0x06070012 /* Data type does not match, length of service parameter too high */</td></tr>
+<tr class="memitem:a6a9769e27493439acb7b3774e02f7c4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a6a9769e27493439acb7b3774e02f7c4c">COE_ABORT_TYPE_MISMATCH_HI</a>&#160;&#160;&#160;0x06070012</td></tr>
 <tr class="separator:a6a9769e27493439acb7b3774e02f7c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a673d8aaf06bdcba882534522b657f6d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a673d8aaf06bdcba882534522b657f6d5">COE_ABORT_TYPE_MISMATCH_LO</a>&#160;&#160;&#160;0x06070013 /* Data type does not match, length of service parameter too low */</td></tr>
+<tr class="memitem:a673d8aaf06bdcba882534522b657f6d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a673d8aaf06bdcba882534522b657f6d5">COE_ABORT_TYPE_MISMATCH_LO</a>&#160;&#160;&#160;0x06070013</td></tr>
 <tr class="separator:a673d8aaf06bdcba882534522b657f6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78e13edcf3b8fa1b31ab475527f78ee5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a78e13edcf3b8fa1b31ab475527f78ee5">COE_ABORT_NO_SUBINDEX</a>&#160;&#160;&#160;0x06090011 /* Subindex does not exist */</td></tr>
+<tr class="memitem:a78e13edcf3b8fa1b31ab475527f78ee5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a78e13edcf3b8fa1b31ab475527f78ee5">COE_ABORT_NO_SUBINDEX</a>&#160;&#160;&#160;0x06090011</td></tr>
 <tr class="separator:a78e13edcf3b8fa1b31ab475527f78ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0c443373cc0a30045ba1721a2910991"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#af0c443373cc0a30045ba1721a2910991">COE_ABORT_RANGE_EXCEED</a>&#160;&#160;&#160;0x06090030 /* Value range of parameter exceeded (only for write access) */</td></tr>
+<tr class="memitem:af0c443373cc0a30045ba1721a2910991"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#af0c443373cc0a30045ba1721a2910991">COE_ABORT_RANGE_EXCEED</a>&#160;&#160;&#160;0x06090030</td></tr>
 <tr class="separator:af0c443373cc0a30045ba1721a2910991"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa835cf5cf95cc1c889133d43965d433e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#aa835cf5cf95cc1c889133d43965d433e">COE_ABORT_VALUE_WRHIGH</a>&#160;&#160;&#160;0x06090031 /* Value of parameter written too high */</td></tr>
+<tr class="memitem:aa835cf5cf95cc1c889133d43965d433e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#aa835cf5cf95cc1c889133d43965d433e">COE_ABORT_VALUE_WRHIGH</a>&#160;&#160;&#160;0x06090031</td></tr>
 <tr class="separator:aa835cf5cf95cc1c889133d43965d433e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8832e763c50a88ca1ee00ca65e3b8da7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a8832e763c50a88ca1ee00ca65e3b8da7">COE_ABORT_VALUE_WRLOW</a>&#160;&#160;&#160;0x06090032 /* Value of parameter written too low */</td></tr>
+<tr class="memitem:a8832e763c50a88ca1ee00ca65e3b8da7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a8832e763c50a88ca1ee00ca65e3b8da7">COE_ABORT_VALUE_WRLOW</a>&#160;&#160;&#160;0x06090032</td></tr>
 <tr class="separator:a8832e763c50a88ca1ee00ca65e3b8da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a639a302e6d2c795ddcde9771742dbd5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a639a302e6d2c795ddcde9771742dbd5b">COE_ABORT_MINMAX</a>&#160;&#160;&#160;0x06090036 /* Maximum value is less than minimum value */</td></tr>
+<tr class="memitem:a639a302e6d2c795ddcde9771742dbd5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a639a302e6d2c795ddcde9771742dbd5b">COE_ABORT_MINMAX</a>&#160;&#160;&#160;0x06090036</td></tr>
 <tr class="separator:a639a302e6d2c795ddcde9771742dbd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b9c50f0b06cfebc650eec1ff80a84b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a2b9c50f0b06cfebc650eec1ff80a84b1">COE_ABORT_ERROR</a>&#160;&#160;&#160;0x08000000 /* General error */</td></tr>
+<tr class="memitem:a2b9c50f0b06cfebc650eec1ff80a84b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a2b9c50f0b06cfebc650eec1ff80a84b1">COE_ABORT_ERROR</a>&#160;&#160;&#160;0x08000000</td></tr>
 <tr class="separator:a2b9c50f0b06cfebc650eec1ff80a84b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9fd8e9fedfdbd9db438d7662d790953"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#ad9fd8e9fedfdbd9db438d7662d790953">COE_ABORT_NOTRANS</a>&#160;&#160;&#160;0x08000020 /* Data cannot be transferred or stored to the application */</td></tr>
+<tr class="memitem:ad9fd8e9fedfdbd9db438d7662d790953"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#ad9fd8e9fedfdbd9db438d7662d790953">COE_ABORT_NOTRANS</a>&#160;&#160;&#160;0x08000020</td></tr>
 <tr class="separator:ad9fd8e9fedfdbd9db438d7662d790953"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08e6eb632f1fdb84adea2d075562a508"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a08e6eb632f1fdb84adea2d075562a508">COE_ABORT_NOTRANS_LOCAL</a>&#160;&#160;&#160;0x08000021 /* Data cannot be transferred or stored to the application because of local control */</td></tr>
+<tr class="memitem:a08e6eb632f1fdb84adea2d075562a508"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a08e6eb632f1fdb84adea2d075562a508">COE_ABORT_NOTRANS_LOCAL</a>&#160;&#160;&#160;0x08000021</td></tr>
 <tr class="separator:a08e6eb632f1fdb84adea2d075562a508"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6df743b6302b3a3f722922adbdb2a86c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a6df743b6302b3a3f722922adbdb2a86c">COE_ABORT_NOTRANS_STATE</a>&#160;&#160;&#160;0x08000022 /* Data cannot be transferred or stored to the application because of the present device state */</td></tr>
+<tr class="memitem:a6df743b6302b3a3f722922adbdb2a86c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a6df743b6302b3a3f722922adbdb2a86c">COE_ABORT_NOTRANS_STATE</a>&#160;&#160;&#160;0x08000022</td></tr>
 <tr class="separator:a6df743b6302b3a3f722922adbdb2a86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d52e55f67b10dcdeb18d5768f1f7c41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a0d52e55f67b10dcdeb18d5768f1f7c41">COE_ABORT_NO_OBJECT_DICT</a>&#160;&#160;&#160;0x08000023 /* Object dictionary dynamic generation fails or no object dictionary is present */</td></tr>
+<tr class="memitem:a0d52e55f67b10dcdeb18d5768f1f7c41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a0d52e55f67b10dcdeb18d5768f1f7c41">COE_ABORT_NO_OBJECT_DICT</a>&#160;&#160;&#160;0x08000023</td></tr>
 <tr class="separator:a0d52e55f67b10dcdeb18d5768f1f7c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af35175803bccf487b8447d39bbea1083"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#af35175803bccf487b8447d39bbea1083">COE_SMCT_UNUSED</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:af35175803bccf487b8447d39bbea1083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22d2e13bfdb4ec647b128018985f3973"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a22d2e13bfdb4ec647b128018985f3973">COE_SMCT_MAILBOX_RX</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a22d2e13bfdb4ec647b128018985f3973"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92b108acfd83ddad7da51fd89868ac29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a92b108acfd83ddad7da51fd89868ac29">COE_SMCT_MAILBOX_TX</a>&#160;&#160;&#160;2   /* slave to master */</td></tr>
+<tr class="memitem:a92b108acfd83ddad7da51fd89868ac29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#a92b108acfd83ddad7da51fd89868ac29">COE_SMCT_MAILBOX_TX</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:a92b108acfd83ddad7da51fd89868ac29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae89d952a2925d377192f608afe4bcb6c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#ae89d952a2925d377192f608afe4bcb6c">COE_SMCT_PDO_OUT</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:ae89d952a2925d377192f608afe4bcb6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa38b4e64fba763e371488c1c34cf47df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#aa38b4e64fba763e371488c1c34cf47df">COE_SMCT_PDO_IN</a>&#160;&#160;&#160;4   /* slave to master */</td></tr>
+<tr class="memitem:aa38b4e64fba763e371488c1c34cf47df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d68/coe_8h.html#aa38b4e64fba763e371488c1c34cf47df">COE_SMCT_PDO_IN</a>&#160;&#160;&#160;4</td></tr>
 <tr class="separator:aa38b4e64fba763e371488c1c34cf47df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -301,10 +301,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_CLIENTSERVER&#160;&#160;&#160;0x05040001 /* Client/Server command specifier not valid or unknown */</td>
+          <td class="memname">#define COE_ABORT_CLIENTSERVER&#160;&#160;&#160;0x05040001</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Client/Server command specifier not valid or unknown </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00095">95</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -315,10 +316,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_ERROR&#160;&#160;&#160;0x08000000 /* General error */</td>
+          <td class="memname">#define COE_ABORT_ERROR&#160;&#160;&#160;0x08000000</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>General error </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00114">114</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -329,10 +331,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_EXCEED_PDO&#160;&#160;&#160;0x06040042 /* The number and length of the objects to be mapped would exceed the PDO length */</td>
+          <td class="memname">#define COE_ABORT_EXCEED_PDO&#160;&#160;&#160;0x06040042</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The number and length of the objects to be mapped would exceed the PDO length </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00102">102</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -343,10 +346,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_HW_ERROR&#160;&#160;&#160;0x06060000 /* Access failed due to a hardware error */</td>
+          <td class="memname">#define COE_ABORT_HW_ERROR&#160;&#160;&#160;0x06060000</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Access failed due to a hardware error </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00105">105</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -357,10 +361,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_INTERNAL_INCOMP&#160;&#160;&#160;0x06040047 /* General internal incompatibility in the device */</td>
+          <td class="memname">#define COE_ABORT_INTERNAL_INCOMP&#160;&#160;&#160;0x06040047</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>General internal incompatibility in the device </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00104">104</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -371,10 +376,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_MEMORY&#160;&#160;&#160;0x05040005 /* Out of memory */</td>
+          <td class="memname">#define COE_ABORT_MEMORY&#160;&#160;&#160;0x05040005</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Out of memory </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00096">96</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -385,10 +391,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_MINMAX&#160;&#160;&#160;0x06090036 /* Maximum value is less than minimum value */</td>
+          <td class="memname">#define COE_ABORT_MINMAX&#160;&#160;&#160;0x06090036</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Maximum value is less than minimum value </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00113">113</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -399,10 +406,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_NO_OBJECT_DICT&#160;&#160;&#160;0x08000023 /* Object dictionary dynamic generation fails or no object dictionary is present */</td>
+          <td class="memname">#define COE_ABORT_NO_OBJECT_DICT&#160;&#160;&#160;0x08000023</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Object dictionary dynamic generation fails or no object dictionary is present </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00118">118</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -413,10 +421,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_NO_SUBINDEX&#160;&#160;&#160;0x06090011 /* Subindex does not exist */</td>
+          <td class="memname">#define COE_ABORT_NO_SUBINDEX&#160;&#160;&#160;0x06090011</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Subindex does not exist </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00109">109</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -427,10 +436,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_NOPDOMAPPING&#160;&#160;&#160;0x06040041 /* The object can not be mapped into the PDO */</td>
+          <td class="memname">#define COE_ABORT_NOPDOMAPPING&#160;&#160;&#160;0x06040041</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The object can not be mapped into the PDO </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00101">101</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -441,10 +451,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_NOTRANS&#160;&#160;&#160;0x08000020 /* Data cannot be transferred or stored to the application */</td>
+          <td class="memname">#define COE_ABORT_NOTRANS&#160;&#160;&#160;0x08000020</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Data cannot be transferred or stored to the application </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00115">115</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -455,10 +466,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_NOTRANS_LOCAL&#160;&#160;&#160;0x08000021 /* Data cannot be transferred or stored to the application because of local control */</td>
+          <td class="memname">#define COE_ABORT_NOTRANS_LOCAL&#160;&#160;&#160;0x08000021</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Data cannot be transferred or stored to the application because of local control </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00116">116</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -469,10 +481,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_NOTRANS_STATE&#160;&#160;&#160;0x08000022 /* Data cannot be transferred or stored to the application because of the present device state */</td>
+          <td class="memname">#define COE_ABORT_NOTRANS_STATE&#160;&#160;&#160;0x08000022</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Data cannot be transferred or stored to the application because of the present device state </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00117">117</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -483,10 +496,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_OBJNOTEXIST&#160;&#160;&#160;0x06020000 /* The object does not exist in the object directory */</td>
+          <td class="memname">#define COE_ABORT_OBJNOTEXIST&#160;&#160;&#160;0x06020000</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The object does not exist in the object directory </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00100">100</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -497,10 +511,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_PARAM_INCOMPATIBLE&#160;&#160;&#160;0x06040043 /* General parameter incompatibility reason */</td>
+          <td class="memname">#define COE_ABORT_PARAM_INCOMPATIBLE&#160;&#160;&#160;0x06040043</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>General parameter incompatibility reason </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00103">103</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -511,10 +526,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_PROTO_TIMEOUT&#160;&#160;&#160;0x05040000 /* SDO protocol timeout */</td>
+          <td class="memname">#define COE_ABORT_PROTO_TIMEOUT&#160;&#160;&#160;0x05040000</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>SDO protocol timeout </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00094">94</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -525,10 +541,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_RANGE_EXCEED&#160;&#160;&#160;0x06090030 /* Value range of parameter exceeded (only for write access) */</td>
+          <td class="memname">#define COE_ABORT_RANGE_EXCEED&#160;&#160;&#160;0x06090030</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Value range of parameter exceeded (only for write access) </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00110">110</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -539,10 +556,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_READ_WO&#160;&#160;&#160;0x06010001 /* Attempt to read to a write only object */</td>
+          <td class="memname">#define COE_ABORT_READ_WO&#160;&#160;&#160;0x06010001</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Attempt to read to a write only object </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00098">98</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -553,10 +571,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_TOGGLE_BIT&#160;&#160;&#160;0x05030000 /* Toggle bit not changed */</td>
+          <td class="memname">#define COE_ABORT_TOGGLE_BIT&#160;&#160;&#160;0x05030000</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Toggle bit not changed </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00093">93</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -567,10 +586,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_TYPE_MISMATCH&#160;&#160;&#160;0x06070010 /* Data type does not match, length of service parameter does not match */</td>
+          <td class="memname">#define COE_ABORT_TYPE_MISMATCH&#160;&#160;&#160;0x06070010</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Data type does not match, length of service parameter does not match </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00106">106</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -581,10 +601,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_TYPE_MISMATCH_HI&#160;&#160;&#160;0x06070012 /* Data type does not match, length of service parameter too high */</td>
+          <td class="memname">#define COE_ABORT_TYPE_MISMATCH_HI&#160;&#160;&#160;0x06070012</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Data type does not match, length of service parameter too high </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00107">107</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -595,10 +616,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_TYPE_MISMATCH_LO&#160;&#160;&#160;0x06070013 /* Data type does not match, length of service parameter too low */</td>
+          <td class="memname">#define COE_ABORT_TYPE_MISMATCH_LO&#160;&#160;&#160;0x06070013</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Data type does not match, length of service parameter too low </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00108">108</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -609,10 +631,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_UNSUPPORTED&#160;&#160;&#160;0x06010000 /* Unsupported access to an object */</td>
+          <td class="memname">#define COE_ABORT_UNSUPPORTED&#160;&#160;&#160;0x06010000</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Unsupported access to an object </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00097">97</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -623,10 +646,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_VALUE_WRHIGH&#160;&#160;&#160;0x06090031 /* Value of parameter written too high */</td>
+          <td class="memname">#define COE_ABORT_VALUE_WRHIGH&#160;&#160;&#160;0x06090031</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Value of parameter written too high </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00111">111</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -637,10 +661,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_VALUE_WRLOW&#160;&#160;&#160;0x06090032 /* Value of parameter written too low */</td>
+          <td class="memname">#define COE_ABORT_VALUE_WRLOW&#160;&#160;&#160;0x06090032</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Value of parameter written too low </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00112">112</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -651,10 +676,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_ABORT_WRITE_RO&#160;&#160;&#160;0x06010002 /* Attempt to write to a read only object */</td>
+          <td class="memname">#define COE_ABORT_WRITE_RO&#160;&#160;&#160;0x06010002</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Attempt to write to a read only object </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00099">99</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -665,10 +691,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_CMD_ABORT_REQ&#160;&#160;&#160;0x04  /* abort transfer request */</td>
+          <td class="memname">#define COE_CMD_ABORT_REQ&#160;&#160;&#160;0x04</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>abort transfer request </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00089">89</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -679,10 +706,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_CMD_DOWNLOAD_REQ&#160;&#160;&#160;0x01  /* download request */</td>
+          <td class="memname">#define COE_CMD_DOWNLOAD_REQ&#160;&#160;&#160;0x01</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>download request </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00081">81</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -693,10 +721,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_CMD_DOWNLOAD_RSP&#160;&#160;&#160;0x03  /* download response */</td>
+          <td class="memname">#define COE_CMD_DOWNLOAD_RSP&#160;&#160;&#160;0x03</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>download response </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00082">82</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -707,10 +736,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_CMD_DOWNLOAD_SEG_REQ&#160;&#160;&#160;0x00  /* download segment request */</td>
+          <td class="memname">#define COE_CMD_DOWNLOAD_SEG_REQ&#160;&#160;&#160;0x00</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>download segment request </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00079">79</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -721,10 +751,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_CMD_DOWNLOAD_SEG_RSP&#160;&#160;&#160;0x01  /* download segment response */</td>
+          <td class="memname">#define COE_CMD_DOWNLOAD_SEG_RSP&#160;&#160;&#160;0x01</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>download segment response </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00080">80</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -735,10 +766,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_CMD_UPLOAD_REQ&#160;&#160;&#160;0x02  /* upload request */</td>
+          <td class="memname">#define COE_CMD_UPLOAD_REQ&#160;&#160;&#160;0x02</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>upload request </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00083">83</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -749,10 +781,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_CMD_UPLOAD_RSP&#160;&#160;&#160;0x02  /* upload response */</td>
+          <td class="memname">#define COE_CMD_UPLOAD_RSP&#160;&#160;&#160;0x02</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>upload response </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00084">84</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -763,10 +796,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_CMD_UPLOAD_SEG_REQ&#160;&#160;&#160;0x03  /* upload segment request */</td>
+          <td class="memname">#define COE_CMD_UPLOAD_SEG_REQ&#160;&#160;&#160;0x03</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>upload segment request </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00085">85</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -777,10 +811,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_CMD_UPLOAD_SEG_RSP&#160;&#160;&#160;0x00  /* upload segment response */</td>
+          <td class="memname">#define COE_CMD_UPLOAD_SEG_RSP&#160;&#160;&#160;0x00</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>upload segment response </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00086">86</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -791,10 +826,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_DATA_SET_SIZE_1&#160;&#160;&#160;0x03  /* 1 octet data */</td>
+          <td class="memname">#define COE_DATA_SET_SIZE_1&#160;&#160;&#160;0x03</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>1 octet data </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00076">76</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -805,10 +841,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_DATA_SET_SIZE_2&#160;&#160;&#160;0x02  /* 2 octet data */</td>
+          <td class="memname">#define COE_DATA_SET_SIZE_2&#160;&#160;&#160;0x02</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>2 octet data </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00075">75</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -819,10 +856,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_DATA_SET_SIZE_3&#160;&#160;&#160;0x01  /* 3 octet data */</td>
+          <td class="memname">#define COE_DATA_SET_SIZE_3&#160;&#160;&#160;0x01</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>3 octet data </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00074">74</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -833,10 +871,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_DATA_SET_SIZE_4&#160;&#160;&#160;0x00  /* 4 octet data */</td>
+          <td class="memname">#define COE_DATA_SET_SIZE_4&#160;&#160;&#160;0x00</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>4 octet data </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00073">73</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -893,10 +932,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SDO_LAST_FRAGMENT&#160;&#160;&#160;0x00  /* last SDO Information fragment */</td>
+          <td class="memname">#define COE_SDO_LAST_FRAGMENT&#160;&#160;&#160;0x00</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>last SDO Information fragment </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00069">69</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -907,10 +947,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SDO_MORE_FRAGMENTS&#160;&#160;&#160;0x01  /* SDO Information fragments will follow */</td>
+          <td class="memname">#define COE_SDO_MORE_FRAGMENTS&#160;&#160;&#160;0x01</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>SDO Information fragments will follow </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00070">70</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -921,10 +962,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SDOI_ENTRY_DESCRIPTION_REQ&#160;&#160;&#160;0x05 /* Get Entry Description Request */</td>
+          <td class="memname">#define COE_SDOI_ENTRY_DESCRIPTION_REQ&#160;&#160;&#160;0x05</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get Entry Description Request </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00064">64</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -935,10 +977,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SDOI_ENTRY_DESCRIPTION_RSP&#160;&#160;&#160;0x06 /* Get Entry Description Response */</td>
+          <td class="memname">#define COE_SDOI_ENTRY_DESCRIPTION_RSP&#160;&#160;&#160;0x06</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get Entry Description Response </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00065">65</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -949,10 +992,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SDOI_GET_ODLIST_REQ&#160;&#160;&#160;0x01 /* Get OD List Request */</td>
+          <td class="memname">#define COE_SDOI_GET_ODLIST_REQ&#160;&#160;&#160;0x01</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get OD List Request </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00060">60</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -963,10 +1007,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SDOI_GET_ODLIST_RSP&#160;&#160;&#160;0x02 /* Get OD List Response */</td>
+          <td class="memname">#define COE_SDOI_GET_ODLIST_RSP&#160;&#160;&#160;0x02</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get OD List Response </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00061">61</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -977,10 +1022,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SDOI_INFO_ERR_REQ&#160;&#160;&#160;0x07 /* SDO Info Error Request */</td>
+          <td class="memname">#define COE_SDOI_INFO_ERR_REQ&#160;&#160;&#160;0x07</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>SDO Info Error Request </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00066">66</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -991,10 +1037,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SDOI_OBJDICT_REQ&#160;&#160;&#160;0x03 /* Get Object Description Request */</td>
+          <td class="memname">#define COE_SDOI_OBJDICT_REQ&#160;&#160;&#160;0x03</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get Object Description Request </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00062">62</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -1005,10 +1052,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SDOI_OBJDICT_RSP&#160;&#160;&#160;0x04 /* Get Object Description Response */</td>
+          <td class="memname">#define COE_SDOI_OBJDICT_RSP&#160;&#160;&#160;0x04</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Get Object Description Response </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00063">63</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -1019,10 +1067,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SERVICE_EMERGENCY&#160;&#160;&#160;0x01  /* Emergency */</td>
+          <td class="memname">#define COE_SERVICE_EMERGENCY&#160;&#160;&#160;0x01</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Emergency </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00050">50</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -1035,10 +1084,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SERVICE_RXPDO&#160;&#160;&#160;0x05  /* RxPDO */</td>
+          <td class="memname">#define COE_SERVICE_RXPDO&#160;&#160;&#160;0x05</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>RxPDO </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00054">54</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -1051,10 +1101,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SERVICE_RXPDO_REMOTE&#160;&#160;&#160;0x07  /* RxPDO remote request */</td>
+          <td class="memname">#define COE_SERVICE_RXPDO_REMOTE&#160;&#160;&#160;0x07</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>RxPDO remote request </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00056">56</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -1067,10 +1118,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SERVICE_SDO_INFO&#160;&#160;&#160;0x08  /* SDO Information */</td>
+          <td class="memname">#define COE_SERVICE_SDO_INFO&#160;&#160;&#160;0x08</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>SDO Information </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00057">57</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -1083,10 +1135,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SERVICE_SDO_REQ&#160;&#160;&#160;0x02  /* SDO Request */</td>
+          <td class="memname">#define COE_SERVICE_SDO_REQ&#160;&#160;&#160;0x02</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>SDO Request </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00051">51</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -1099,10 +1152,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SERVICE_SDO_RSP&#160;&#160;&#160;0x03  /* SDO Response */</td>
+          <td class="memname">#define COE_SERVICE_SDO_RSP&#160;&#160;&#160;0x03</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>SDO Response </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00052">52</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -1115,10 +1169,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SERVICE_TXPDO&#160;&#160;&#160;0x04  /* TxPDO */</td>
+          <td class="memname">#define COE_SERVICE_TXPDO&#160;&#160;&#160;0x04</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TxPDO </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00053">53</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -1131,10 +1186,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SERVICE_TXPDO_REMOTE&#160;&#160;&#160;0x06  /* TxPDO remote request */</td>
+          <td class="memname">#define COE_SERVICE_TXPDO_REMOTE&#160;&#160;&#160;0x06</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TxPDO remote request </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00055">55</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -1161,10 +1217,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SMCT_MAILBOX_TX&#160;&#160;&#160;2   /* slave to master */</td>
+          <td class="memname">#define COE_SMCT_MAILBOX_TX&#160;&#160;&#160;2</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>slave to master </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00130">130</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -1175,10 +1232,11 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COE_SMCT_PDO_IN&#160;&#160;&#160;4   /* slave to master */</td>
+          <td class="memname">#define COE_SMCT_PDO_IN&#160;&#160;&#160;4</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>slave to master </p>
 
 <p>Definition at line <a class="el" href="../../d1/d68/coe_8h_source.html#l00132">132</a> of file <a class="el" href="../../d1/d68/coe_8h_source.html">coe.h</a>.</p>
 
@@ -1230,11 +1288,11 @@ Functions</h2></td></tr>
 <p>Get currently pending reply. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buffer[]</td><td>buffer for outgoing packet </td></tr>
+    <tr><td class="paramname">buffer[]</td><td>Buffer for outgoing packet </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>number of bytes stored in buffer </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes stored in buffer </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d7/d33/coe_8xc_source.html#l00630">630</a> of file <a class="el" href="../../d7/d33/coe_8xc_source.html">coe.xc</a>.</p>
 
@@ -1358,10 +1416,10 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_1a53beccfd2fa3da043ac402501b3b8a.html">sc_sncn_ethercat</a></li><li class="navelem"><a class="el" href="../../dir_6f3f382d006816a1005c3c5b1dcb87d6.html">module_ethercat</a></li><li class="navelem"><a class="el" href="../../dir_34900637cef1aa1a14d43fbad7a415ab.html">src</a></li><li class="navelem"><a class="el" href="../../d1/d68/coe_8h.html">coe.h</a></li>
+    <li class="navelem"><a class="el" href="../../dir_07bd8aa21d7b6d2c17c75cf15b658a12.html">module_ethercat</a></li><li class="navelem"><a class="el" href="../../dir_a2fe551c5c0583e07c257de604a7b33f.html">src</a></li><li class="navelem"><a class="el" href="../../d1/d68/coe_8h.html">coe.h</a></li>
     <li class="footer">Developed at
     <a href="http://www.synapticon.com">
-    <img class="footer" style="width: 30%" src="../../synapticon-logo-scaled.png" alt="Synapticon"/></a>&nbsp;(Documentation generated on Tue Feb 11 2014)</li>
+    <img class="footer" style="width: 30%" src="../../synapticon-logo-scaled.png" alt="Synapticon"/></a>&nbsp;(Documentation generated on Fri Feb 14 2014)</li>
   </ul>
 </div>
 </body>
