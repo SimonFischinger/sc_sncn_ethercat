@@ -1,0 +1,37 @@
+/**
+
+\page module_ethercat
+
+
+\brief The module_ethercat provides the basic components to implement EtherCAT.
+
+It is composed by several APIs, which cover the lowest layer of the EtherCAT protocol, such as packet declarations or functions to send and receive such packets. . 
+
+===alstate.h===
+
+This header describes all possible state of the application layer. Hence, here are defined all hexadecimal control registers as well as state and error codes.
+
+===eoe.h===
+
+This header defines the structure of an EoE packet. An EoE is composed by three main structures. Those three structures are the data, parameter and parameter filter structures. As well as those structures, the packet is also composed with a header where some basic information is stored, such as the packet type or the timestamps.
+
+Besides the structures, the header provides the necessary functions to manage the stated structures. Those functions able the developer to initialize the channels and carry out the transmission and receive handlers among other capabilities.
+
+===ethercat.h===
+
+The ethercat header provides an ethercat mail header structure, where the length of the data area, the originator address and further features can be filled up. Furthermore, an ethercat handler function is provided, where the communication channels can be defined. Moreover, a second and third functions are provided in order to initialize and reset the entire EtherCAT network.
+
+===foe_chan.h===
+
+The foe_chan header defines file access over a channel. Meaning, commands for the caller are defined within this header, such as the commands to manipulate the files, reply the caller or control the file status.
+
+===foe.h===
+
+It is the header to carry out file over EtherCAT access. There are defined the FoE packet types, the structure of the package and the necessary functions to carry out file over EtherCAT access.
+
+===foefs.h===
+
+It is the API to implement a simple and specialized filesystem with EtherCAT. It provides the structure as well as the required functions in order to implement a simple file system.
+
+
+*/
