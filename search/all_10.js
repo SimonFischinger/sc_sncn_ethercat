@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['synapticon',['Synapticon',['../de/daa/company.html',1,'']]],
   ['sdata',['sdata',['../d4/d5c/struct__eoe__packet.html#a855102ed1119da99553f69410b4ed2a5',1,'_eoe_packet']]],
   ['sdo_5faccess',['SDO_ACCESS',['../d0/d29/main_8c.html#a27a9bc9539b6eff90e0acca763d2baa1',1,'main.c']]],
   ['sdo_5finfo_5fentries',['SDO_Info_Entries',['../dc/df5/canod_8xc.html#aca4a62fa605b7376a4391ba42eb7e9fd',1,'canod.xc']]],
@@ -22,6 +23,7 @@ var searchData=
   ['soe_5fpacket',['SOE_PACKET',['../df/d04/ethercat_8h.html#aa4ce86e182df41f3c578948c80b413d9a2d4bf26a690be079557247fc302d685f',1,'ethercat.h']]],
   ['somanet_5fid',['SOMANET_ID',['../d0/d29/main_8c.html#a37f3707e02932768d1b6e074f173f3e6',1,'main.c']]],
   ['somanetpos',['SomanetPos',['../d0/d29/main_8c.html#a810e00c59a277b602a82e847122fe2f0',1,'main.c']]],
+  ['sort_2edox',['sort.dox',['../db/df8/sort_8dox.html',1,'']]],
   ['src_5fmac',['src_mac',['../d9/de6/struct__eoe__data.html#a64c924778ecfa2e7f7f77e650807299b',1,'_eoe_data']]],
   ['state',['state',['../d2/d23/eoe_8xc.html#a89f234133d3efe315836311cbf21c64b',1,'eoe.xc']]],
   ['status',['status',['../d0/d07/struct__cia402__values.html#a2d1bd6c1e90a154e99359734899e02ae',1,'_cia402_values::status()'],['../da/da2/struct__syncm.html#ae52f3abafefdde6af2355da608fcca2b',1,'_syncm::status()']]],
@@ -31,7 +33,7 @@ var searchData=
   ['subindex',['subindex',['../d2/def/struct__sdo__request__header.html#a82372367e6fdbf19be601b8159dceca2',1,'_sdo_request_header']]],
   ['subnet',['subnet',['../dd/d1e/struct__eoe__parameter.html#ae39c53e446066d8803cb1b7bdb9dcc97',1,'_eoe_parameter']]],
   ['subnetmasq_5fincluded',['subnetmasq_included',['../dd/d1e/struct__eoe__parameter.html#a5a1b78ec35211295159fc209cf6b4aca',1,'_eoe_parameter']]],
-  ['synapticon_2edox',['synapticon.dox',['../d6/de7/synapticon_8dox.html',1,'']]],
+  ['synapticon_2edox',['SYNAPTICON.dox',['../d1/d41/SYNAPTICON_8dox.html',1,'']]],
   ['syncm_5fbuffer_5fmode',['SYNCM_BUFFER_MODE',['../d3/d46/ethercat_8xc.html#a8448374628b267170506e1d552668432',1,'ethercat.xc']]],
   ['syncm_5fbuffer_5fmode_5fread',['SYNCM_BUFFER_MODE_READ',['../d3/d46/ethercat_8xc.html#a0d0ab048a4f8070550203f2d8e190b0c',1,'ethercat.xc']]],
   ['syncm_5fbuffer_5fmode_5fwrite',['SYNCM_BUFFER_MODE_WRITE',['../d3/d46/ethercat_8xc.html#ac66d7d12ffe273c06dee266c2e5cd584',1,'ethercat.xc']]],

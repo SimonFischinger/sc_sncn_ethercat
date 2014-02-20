@@ -68,5 +68,6 @@ var searchData=
   ['al_5fsyncm_5fwatchdog',['AL_SYNCM_WATCHDOG',['../d6/dda/alstate_8h.html#a2b03754d5675b1b85354cc6cf1f01771',1,'alstate.h']]],
   ['al_5funknown_5frequest',['AL_UNKNOWN_REQUEST',['../d6/dda/alstate_8h.html#aadf80b96fc74156285d2d61d1871bd83',1,'alstate.h']]],
   ['alstate_2eh',['alstate.h',['../d6/dda/alstate_8h.html',1,'']]],
+  ['applications',['Applications',['../d3/d4f/apps.html',1,'']]],
   ['arp_5fresponse',['ARP_RESPONSE',['../d4/d81/demo_8xc.html#a50af1410f30264534bb29e7bf9340f08',1,'demo.xc']]]
 ];

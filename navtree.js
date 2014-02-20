@@ -1,7 +1,14 @@
 var NAVTREE =
 [
   [ "sc_sncn_ethercat", "index.html", [
-    [ "Synapticon", "d4/df0/Synapticon.html", null ],
+    [ "module_ethercat", "d4/d97/module_ethercat.html", null ],
+    [ "Applications", "d3/d4f/apps.html", [
+      [ "Ethercat-test", "d3/d4f/apps.html#Ethercat-test", null ],
+      [ "Ethernet-demo", "d3/d4f/apps.html#Ethernet-demo", null ],
+      [ "Linux-igh-master", "d3/d4f/apps.html#Linux-igh-master", null ],
+      [ "Simple-webserver", "d3/d4f/apps.html#Simple-webserver", null ]
+    ] ],
+    [ "Synapticon", "de/daa/company.html", null ],
     [ "License", "de/d54/legal.html", null ],
     [ "Data Structures", null, [
       [ "Data Structures", "annotated.html", "annotated" ],
@@ -29,9 +36,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d3/d51/foe_8h.html#a9672aa84af83a4b3e2399547c2505a01",
-"da/d39/main_8xc.html#ae2bf4dd485d02ba7f03b0c499a59fcec",
-"globals_p.html"
+"d3/d51/foe_8h.html#a7d1c4fd42d945112b7020c8cf44db261",
+"da/d39/main_8xc.html#a945933a3054c1cb93ad0e10307d09581",
+"globals_func.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
