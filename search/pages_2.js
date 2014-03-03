@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['module_5fethercat',['module_ethercat',['../d4/d97/module_ethercat.html',1,'']]]
+  ['modules',['Modules',['../d7/df6/mods.html',1,'']]]
 ];

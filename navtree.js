@@ -1,7 +1,9 @@
 var NAVTREE =
 [
   [ "sc_sncn_ethercat", "index.html", [
-    [ "module_ethercat", "d4/d97/module_ethercat.html", null ],
+    [ "Modules", "d7/df6/mods.html", [
+      [ "module_ethercat", "d7/df6/mods.html#module_ethercat", null ]
+    ] ],
     [ "Applications", "d3/d4f/apps.html", [
       [ "Ethercat-test", "d3/d4f/apps.html#Ethercat-test", null ],
       [ "Ethernet-demo", "d3/d4f/apps.html#Ethernet-demo", null ],
@@ -37,8 +39,8 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d3/d51/foe_8h.html#a7d1c4fd42d945112b7020c8cf44db261",
-"da/d39/main_8xc.html#a945933a3054c1cb93ad0e10307d09581",
-"globals_func.html"
+"da/d39/main_8xc.html#a840291bc02cba5474a4cb46a9b9566fe",
+"globals_f.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

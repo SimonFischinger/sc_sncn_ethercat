@@ -25,5 +25,5 @@ var searchData=
   ['mode_5fro',['MODE_RO',['../d0/df5/foefs_8h.html#ac1bd375cd1f8b91c08bf77b0f2e0a58b',1,'foefs.h']]],
   ['mode_5frw',['MODE_RW',['../d0/df5/foefs_8h.html#aa2fe847a57a577186f190e94d2831f67',1,'foefs.h']]],
   ['modes',['modes',['../d0/d07/struct__cia402__values.html#a5e6a64fe99bdcedc5f3a13e9635ffd0e',1,'_cia402_values']]],
-  ['module_5fethercat',['module_ethercat',['../d4/d97/module_ethercat.html',1,'']]]
+  ['modules',['Modules',['../d7/df6/mods.html',1,'']]]
 ];
