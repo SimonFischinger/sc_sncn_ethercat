@@ -1,0 +1,11 @@
+<map id="module_ethercat/src/ethercat.xc" name="module_ethercat/src/ethercat.xc">
+<area shape="rect" id="node3" href="$ethercat_8h.html" title="ethercat.h" alt="" coords="8,101,88,131"/>
+<area shape="rect" id="node9" href="$alstate_8h.html" title="alstate.h" alt="" coords="112,101,184,131"/>
+<area shape="rect" id="node11" href="$foefs_8h.html" title="API for simple and specialized filesystem for use within the EtherCAT module. " alt="" coords="208,101,269,131"/>
+<area shape="rect" id="node13" href="$foe_8h.html" title="header for file file over EtherCAT access. " alt="" coords="293,101,344,131"/>
+<area shape="rect" id="node16" href="$eoe_8h.html" title="eoe.h" alt="" coords="368,101,421,131"/>
+<area shape="rect" id="node19" href="$coe_8h.html" title="Implementation of the CoE handling of the EtherCAT module. " alt="" coords="445,101,499,131"/>
+<area shape="rect" id="node22" href="$coecmd_8h.html" title="Defines and definitions for applications commands to handle object dictionary entries. " alt="" coords="523,101,600,131"/>
+<area shape="rect" id="node24" href="$canod_8h.html" title="Handle CAN object dictionary. " alt="" coords="624,101,731,131"/>
+<area shape="rect" id="node5" href="$foe__chan_8h.html" title="foe_chan.h" alt="" coords="5,179,91,208"/>
+</map>

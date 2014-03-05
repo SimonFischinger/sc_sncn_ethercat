@@ -1,0 +1,5 @@
+<map id="_eoe_packet" name="_eoe_packet">
+<area shape="rect" id="node2" href="$struct__eoe__param__filter.html" title="{_eoe_param_filter\n|+ mac_filter_count\l+ eac_filter_mask\l+ reservedb\l+ inhibit_bcast\l+ reserved\l+ maclist\l+ listfilter\l|}" alt="" coords="5,57,136,247"/>
+<area shape="rect" id="node4" href="$struct__eoe__parameter.html" title="{_eoe_parameter\n|+ mac_included\l+ ip_included\l+ subnetmasq_included\l+ gateway_included\l+ dns_server_included\l+ dns_name_included\l+ reserved\l+ mac\l+ ip\l+ subnet\l+ gateway\l+ dnsip\l+ dns_name\l|}" alt="" coords="160,5,320,299"/>
+<area shape="rect" id="node6" href="$struct__eoe__data.html" title="{_eoe_data\n|+ dst_mac\l+ src_mac\l+ vlan_tag\l+ ether_type\l+ data\l+ padding\l|}" alt="" coords="344,66,437,238"/>
+</map>

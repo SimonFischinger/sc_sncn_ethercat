@@ -1,0 +1,5 @@
+<map id="module_ethercat/src/foe.h" name="module_ethercat/src/foe.h">
+<area shape="rect" id="node3" href="$ethercat_8xc.html" title="A simple configuration file for the ethercat module to activate or disable specific features..." alt="" coords="5,102,144,149"/>
+<area shape="rect" id="node5" href="$foe_8xc.html" title="header for file file over EtherCAT access. " alt="" coords="168,102,307,149"/>
+<area shape="rect" id="node7" href="$foefs_8xc.html" title="API for simple and specialized filesystem for use within the EtherCAT module. " alt="" coords="331,102,469,149"/>
+</map>

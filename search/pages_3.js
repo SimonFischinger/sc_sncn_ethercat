@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['synapticon',['Synapticon',['../de/daa/company.html',1,'']]]
+  ['synapticon',['Synapticon',['../company.html',1,'']]]
 ];

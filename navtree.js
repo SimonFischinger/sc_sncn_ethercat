@@ -1,17 +1,17 @@
 var NAVTREE =
 [
   [ "sc_sncn_ethercat", "index.html", [
-    [ "Modules", "d7/df6/mods.html", [
-      [ "module_ethercat", "d7/df6/mods.html#module_ethercat", null ]
+    [ "Modules", "mods.html", [
+      [ "module_ethercat", "mods.html#module_ethercat", null ]
     ] ],
-    [ "Applications", "d3/d4f/apps.html", [
-      [ "Ethercat-test", "d3/d4f/apps.html#Ethercat-test", null ],
-      [ "Ethernet-demo", "d3/d4f/apps.html#Ethernet-demo", null ],
-      [ "Linux-igh-master", "d3/d4f/apps.html#Linux-igh-master", null ],
-      [ "Simple-webserver", "d3/d4f/apps.html#Simple-webserver", null ]
+    [ "Applications", "apps.html", [
+      [ "Ethercat-test", "apps.html#Ethercat-test", null ],
+      [ "Ethernet-demo", "apps.html#Ethernet-demo", null ],
+      [ "Linux-igh-master", "apps.html#Linux-igh-master", null ],
+      [ "Simple-webserver", "apps.html#Simple-webserver", null ]
     ] ],
-    [ "Synapticon", "de/daa/company.html", null ],
-    [ "License", "de/d54/legal.html", null ],
+    [ "Synapticon", "company.html", null ],
+    [ "License", "legal.html", null ],
     [ "Data Structures", null, [
       [ "Data Structures", "annotated.html", "annotated" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -37,10 +37,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"d3/d51/foe_8h.html#a7d1c4fd42d945112b7020c8cf44db261",
-"da/d39/main_8xc.html#a840291bc02cba5474a4cb46a9b9566fe",
-"globals_f.html"
+"alstate_8h.html",
+"coe_8h.html#ae89d952a2925d377192f608afe4bcb6c",
+"globals.html",
+"structhttpd__state__t.html#a4c5e217878b81673799a0d3a68fccf1c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

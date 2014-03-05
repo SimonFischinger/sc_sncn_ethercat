@@ -1,8 +1,0 @@
-<map id="foe_file_access" name="foe_file_access">
-<area shape="rect" id="node3" href="$d0/df5/foefs_8h.html#a7d08acc8d0c75b7aeab8e89a0f9953cd" title="close file handle " alt="" coords="172,5,260,35"/>
-<area shape="rect" id="node5" href="$d0/df5/foefs_8h.html#a72a652a91f85a9bfab2f93557b8f0b56" title="format file system " alt="" coords="169,59,263,88"/>
-<area shape="rect" id="node9" href="$d0/df5/foefs_8h.html#a3d55ac1ff412cb0d31bd2b4a10352735" title="open file " alt="" coords="173,112,259,141"/>
-<area shape="rect" id="node11" href="$d0/df5/foefs_8h.html#a14368b2b8a6ef7ca453ef5e770c3151e" title="read from file handle " alt="" coords="175,165,257,195"/>
-<area shape="rect" id="node13" href="$d0/df5/foefs_8h.html#af2d25fb21c84b13e8d5c9a0e376e0bcf" title="set file position " alt="" coords="173,219,259,248"/>
-<area shape="rect" id="node7" href="$d8/d2d/foefs_8xc.html#a1baac8acf6642707091e029160180c33" title="init pseudo filesystem " alt="" coords="312,59,387,88"/>
-</map>

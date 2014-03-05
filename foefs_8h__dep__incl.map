@@ -1,0 +1,6 @@
+<map id="module_ethercat/src/foefs.h" name="module_ethercat/src/foefs.h">
+<area shape="rect" id="node3" href="$main_8xc.html" title="Test appliction for module_ethercat. " alt="" coords="5,102,149,149"/>
+<area shape="rect" id="node5" href="$ethercat_8xc.html" title="A simple configuration file for the ethercat module to activate or disable specific features..." alt="" coords="173,102,312,149"/>
+<area shape="rect" id="node7" href="$foe_8xc.html" title="header for file file over EtherCAT access. " alt="" coords="336,102,475,149"/>
+<area shape="rect" id="node9" href="$foefs_8xc.html" title="API for simple and specialized filesystem for use within the EtherCAT module. " alt="" coords="499,102,637,149"/>
+</map>

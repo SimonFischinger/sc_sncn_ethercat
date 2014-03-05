@@ -1,0 +1,9 @@
+<map id="main" name="main">
+<area shape="rect" id="node3" href="$main_8c.html#acd382bcdfc8b54fa10de12eb43a84d3c" title="cyclic_task" alt="" coords="113,120,201,149"/>
+<area shape="rect" id="node15" href="$main_8c.html#af675374954cdabdf63d036fe3c12d348" title="signal_handler" alt="" coords="105,173,209,203"/>
+<area shape="rect" id="node5" href="$main_8c.html#a54789270dccb8eccbd08aec04200a446" title="check_domain1_state" alt="" coords="259,5,408,35"/>
+<area shape="rect" id="node7" href="$main_8c.html#a17736068bd6664404ad732ff7809a79a" title="check_master_state" alt="" coords="264,59,403,88"/>
+<area shape="rect" id="node9" href="$main_8c.html#ab5271f1067ae861b511a11d1163c83dd" title="check_slave_config\l_states" alt="" coords="265,111,401,158"/>
+<area shape="rect" id="node11" href="$main_8c.html#a43bd22fc1aa9ddd24d095b63939a826b" title="read_sdo" alt="" coords="296,181,371,211"/>
+<area shape="rect" id="node13" href="$main_8c.html#a94c50b698d3f9a2b8cd080e68a80dcee" title="write_sdo" alt="" coords="295,235,372,264"/>
+</map>

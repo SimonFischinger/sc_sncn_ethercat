@@ -1,9 +1,0 @@
-<map id="xhttpd" name="xhttpd">
-<area shape="rect" id="node3" href="$d1/de7/httpd_8c.html#ae9f4376aca043de20b9d32c0511b3893" title="httpd_handle_event" alt="" coords="113,85,247,115"/>
-<area shape="rect" id="node15" href="$d1/de7/httpd_8c.html#a1e2cf5c7fc76fde6bba0fe97664a7587" title="httpd_init" alt="" coords="143,139,217,168"/>
-<area shape="rect" id="node5" href="$d1/de7/httpd_8c.html#abe7c8ffe9daef9ae41b6b3efba7c2fb1" title="httpd_free_state" alt="" coords="297,5,412,35"/>
-<area shape="rect" id="node7" href="$d1/de7/httpd_8c.html#a42568d5932b72ad4894ac88b58be473b" title="httpd_init_state" alt="" coords="300,59,409,88"/>
-<area shape="rect" id="node9" href="$d1/de7/httpd_8c.html#a3e408a894690c9e8fe327b2d83923668" title="httpd_recv" alt="" coords="313,112,396,141"/>
-<area shape="rect" id="node13" href="$d1/de7/httpd_8c.html#a2b18c21c964018a82c9344c5f8ef1ee8" title="httpd_send" alt="" coords="312,165,397,195"/>
-<area shape="rect" id="node11" href="$d1/de7/httpd_8c.html#abe7e6007150fd9ed49c8d505eb4e6baa" title="parse_http_request" alt="" coords="461,112,595,141"/>
-</map>
