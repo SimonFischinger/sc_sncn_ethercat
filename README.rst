@@ -38,17 +38,17 @@ Required software (dependencies)
 Changelog
 =======
 
-  - `0.9beta`_ (2013-01-24)
+  * `0.9beta`_ (2013-01-24)
 
-    Features
+    Features:
 
-    - 1	
-    - 2
+    * 1	
+    * 2
 
-    Bugfixes
+    Bugfixes:
 
-    - 1 
-    - 2
+    * 1 
+    * 2
 
 License
 =======
