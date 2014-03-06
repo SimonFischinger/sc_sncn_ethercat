@@ -4,11 +4,11 @@ Ethercat Communication SOFTWARE COMPONENT
 
 Implementation of Ethercat Communication for SOMANET devices
 
-================= ========================
-| Latest release: 0.9beta                |
------------------ ------------------------
-| Maintainer:     support@synapticon.com |
-================= ========================
++------------------------+------------------------------------+
+| Latest release:        | ``0.9beta``                        |                
++========================+====================================+
+| Maintainer:            | support@synapticon.com             | 
++------------------------+------------------------------------+
 
 Key Features
 ============
