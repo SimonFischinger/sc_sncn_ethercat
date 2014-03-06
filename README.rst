@@ -4,7 +4,7 @@
 
 #Description
 
-:Latest release: `#versionN`_
+:Latest release: `versionN`_
 :Maintainer: #
 
 
@@ -35,20 +35,20 @@ Issues may be submitted via email at support@synapticon.com
 Required software (dependencies)
 ================================
 
-  * `#Dependancy1`_
-  * `#Dependancy2`_
-  * `#DependancyN`_
+  * `Dependancy1`_
+  * `Dependancy2`_
+  * `DependancyN`_
 
 Changelog
 =======
 
-  * `#versionN`_ (#date)
+  * `versionN`_ (#date)
      * #change1
      * #change2
-  * `#version2`_ (#date)
+  * `version2`_ (#date)
      * #change1
      * #change2
-  * `#version1`_ (#date)
+  * `version1`_ (#date)
      * #change1
      * #change2
 
