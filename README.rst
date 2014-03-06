@@ -1,6 +1,6 @@
 Ethercat Communication SOFTWARE COMPONENT
 .........................................
-.. image:: https://s3-eu-west-1.amazonaws.com/synapticon-resources/synapticon_xs.png
+.. image:: https://s3-eu-west-1.amazonaws.com/synapticon-resources/images/logos/synapticon_fullname_white_280x48.png
 
 Implementation of Ethercat Communication for SOMANET devices
 
