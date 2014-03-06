@@ -39,12 +39,17 @@ Changelog
 =======
 
   - `0.9beta`_ (2013-01-24)
+
     Features
+
     - 1	
     - 2
+
     Bugfixes
+
     - 1 
     - 2
+
 License
 =======
 
