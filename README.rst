@@ -43,14 +43,14 @@ Changelog
 =======
 
   * `versionN`_ (#date)
-     * #change1
-     * #change2
+    * #change1
+    * #change2
   * `version2`_ (#date)
-     * #change1
-     * #change2
+    * #change1
+    * #change2
   * `version1`_ (#date)
-     * #change1
-     * #change2
+    * #change1
+    * #change2
 
 License
 =======
