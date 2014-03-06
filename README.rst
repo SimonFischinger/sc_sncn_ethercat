@@ -59,5 +59,14 @@ Please see `LICENSE`_.
 
 
 .. _DOCUMENTATION: #link_to_documentation
-.. _sc_somanet-base: https://github.com/synapticon/sc_somanet-base
 .. _LICENSE: #link_to_license_file
+
+.. _dependancyN: #link to dependancyN
+.. _dependancy2: #link to dependancy2
+.. _dependancy1: #link to dependancy1
+
+.. _versionN: #link to versionN
+.. _version2: #link to version2
+.. _version1: #link to version1
+
+
