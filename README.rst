@@ -1,31 +1,29 @@
-#Name
+Ethercat Communication SOFTWARE COMPONENT
 .........................................
 .. image:: https://s3-eu-west-1.amazonaws.com/synapticon-resources/synapticon_xs.png
 
-#Description
+Implementation of Ethercat Communication for SOMANET devices
 
-:Latest release: `versionN`_
-:Maintainer: #
+:Latest release: `0.9beta`_
+:Maintainer: support@synapticon.com
 
 
 Key Features
 ============
 
-   * #Feature1
-   * #Feature2
-   * #FeatureN  
+   * EtherCAT Slave Controller 
+   * File Access over EtherCAT (FoE)
+   * CAN application protocol over EtherCAT (CoE)  
 
 Further information
 =======
 
-   #softwarename `DOCUMENTATION`_.
+   sc_sncn_ethercat `DOCUMENTATION`_.
 
 Known Issues
 ============
 
-   * #Issue1
-   * #Issue2
-   * #IssueN
+   None 
 
 Support
 =======
@@ -35,22 +33,13 @@ Issues may be submitted via email at support@synapticon.com
 Required software (dependencies)
 ================================
 
-  * `Dependancy1`_
-  * `Dependancy2`_
-  * `DependancyN`_
+  * `sc_somanet-base`_ 
 
 Changelog
 =======
 
-  * `versionN`_ (#date)
-    * #change1
-    * #change2
-  * `version2`_ (#date)
-    * #change1
-    * #change2
-  * `version1`_ (#date)
-    * #change1
-    * #change2
+  * `1.0`_ (2013-02-14)
+  * `0.9beta`_ (2013-01-24)
 
 License
 =======
@@ -58,15 +47,9 @@ License
 Please see `LICENSE`_.
 
 
-.. _DOCUMENTATION: #link_to_documentation
-.. _LICENSE: #link_to_license_file
+.. _DOCUMENTATION: http://synapticon.github.io/sc_sncn_ethercat/
+.. _sc_somanet-base: https://github.com/synapticon/sc_somanet-base
+.. _LICENSE: https://github.com/synapticon/sc_sncn_motorctrl_sin/blob/master/LICENSE.dox
 
-.. _dependancyN: #link to dependancyN
-.. _dependancy2: #link to dependancy2
-.. _dependancy1: #link to dependancy1
-
-.. _versionN: #link to versionN
-.. _version2: #link to version2
-.. _version1: #link to version1
-
-
+.. _1.0: https://github.com/synapticon/sc_sncn_ethercat/releases/tag/v1.0
+.. _0.9beta: 
