@@ -1,6 +1,6 @@
 Ethercat Communication SOFTWARE COMPONENT
 .........................................
-.. image:: http://forum.synapticon.com/Themes/MinimalistAndEffective_by_SMFSimple/images/logo.png
+.. image:: https://s3-eu-west-1.amazonaws.com/synapticon-resources/synapticon_xs.png
 
 Implementation of Ethercat Communication for SOMANET devices
 
@@ -38,8 +38,13 @@ Required software (dependencies)
 Changelog
 =======
 
-  * * `0.9beta`_ (2013-01-24)
-
+  * `0.9beta`_ (2013-01-24)
+  ** Features
+  *** 1	
+  *** 2
+  ** Bugfixes
+  *** 1 
+  *** 2
 License
 =======
 
@@ -49,3 +54,5 @@ Please see `LICENSE`_.
 .. _DOCUMENTATION: http://synapticon.github.io/sc_sncn_ethercat/
 .. _sc_somanet-base: https://github.com/synapticon/sc_somanet-base
 .. _LICENSE: https://github.com/synapticon/sc_sncn_motorctrl_sin/blob/master/LICENSE.dox
+
+.. _0.9beta: 
