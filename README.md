@@ -10,11 +10,11 @@ Implementation of Ethercat Communication for SOMANET devices.
 <table >
 <tr>
   <td width="150px" height="30px">Latest release: </td>
-  <td width="300px">1.0</td>
+  <td width="300px"><a href="https://github.com/synapticon/sc_sncn_ethercat/releases/tag/v1.0">1.0</a></td>
 </tr>
 <tr>
   <td height="30px">Maintainer:</td>
-  <td>support@synapticon.com</td>
+  <td><a href="mailto:support@synapticon.com">support@synapticon.com</a></td>
 </tr>
 </table> 
 
