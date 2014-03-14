@@ -129,6 +129,7 @@
 #define COMMUTATION_OFFSET_CLKWISE		0x2001
 #define COMMUTATION_OFFSET_CCLKWISE		0x2002
 #define MOTOR_WINDING_TYPE				0x2003
+#define SENSOR_POLARITY					0x2004
 #define CIA402_MOTOR_TYPE               0x6402
 #define CIA402_MOTOR_SPECIFIC           0x6410 /* Sub 01 = nominal current
 	                                          Sub 02 = ???
